@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NomenclatureAttributesControllerTest < ActionController::TestCase
+class PropertyNatureTranslationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

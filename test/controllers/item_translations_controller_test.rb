@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NomenclatureItemTest < ActiveSupport::TestCase
+class ItemTranslationsControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end

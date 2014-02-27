@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NomenclatureItemPropertyTest < ActiveSupport::TestCase
+class ItemTranslationTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

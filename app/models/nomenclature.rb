@@ -1,2 +1,27 @@
+# == Schema Information
+#
+# Table name: nomenclatures
+#
+#  id            :integer          not null, primary key
+#  nomenspace_id :integer
+#  property_id   :integer
+#  name          :string(255)      not null
+#  translateable :boolean          default(FALSE), not null
+#  hierarchical  :boolean          default(FALSE), not null
+#  state         :string(255)      not null
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
 class Nomenclature < ActiveRecord::Base
+  include Translateable
+  belongs_to :property
+  belongs_to :nomenspace
+  has_many :property_natures
+  has_many :items, -> { order(:name) }
+
+  def to_param
+    self.name
+  end
+
 end

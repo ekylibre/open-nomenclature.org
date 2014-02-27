@@ -1,0 +1,14 @@
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th= Item.human_attribute_name(:name)
+      %th= Item.human_attribute_name(:label)
+      %th= Item.human_attribute_name(:description)
+  %tbody
+    - for nomenclature in @nomenclatures
+      %tr
+        %td
+          = link_to(nomenclature_path(nomenclature)) do
+            %strong= nomenclature.name
+        %td= nomenclature.label
+        %td= nomenclature.description

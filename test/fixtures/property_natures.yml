@@ -1,12 +1,16 @@
 # == Schema Information
 #
-# Table name: nomenclature_translations
+# Table name: property_natures
 #
 #  id              :integer          not null, primary key
 #  nomenclature_id :integer          not null
-#  language        :string(255)      not null
-#  label           :text
-#  description     :text
+#  name            :string(255)      not null
+#  datatype        :string(255)      not null
+#  required        :boolean          default(FALSE), not null
+#  default_value   :text
+#  fallbacks       :string(255)
+#  state           :string(255)      not null
+#  choices_id      :integer
 #  created_at      :datetime
 #  updated_at      :datetime
 #

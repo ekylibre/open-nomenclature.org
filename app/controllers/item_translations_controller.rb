@@ -1,0 +1,2 @@
+class ItemTranslationsController < ApplicationController
+end

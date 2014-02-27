@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: items
+#
+#  id              :integer          not null, primary key
+#  nomenclature_id :integer          not null
+#  parent_id       :integer
+#  name            :string(255)      not null
+#  state           :string(255)      not null
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined.  If you add columns to the

@@ -23,8 +23,15 @@ gem 'font-awesome-rails'
 
 gem 'haml'
 
+gem 'faker'
+
+gem 'annotate'
+
+gem 'acts_as_tree'
+
 gem 'state_machine'
 
+gem 'rails-i18n'
 gem 'i18n-complements'
 gem 'http_accept_language'
 

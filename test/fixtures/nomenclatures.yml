@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: nomenclatures
+#
+#  id            :integer          not null, primary key
+#  nomenspace_id :integer
+#  property_id   :integer
+#  name          :string(255)      not null
+#  translateable :boolean          default(FALSE), not null
+#  hierarchical  :boolean          default(FALSE), not null
+#  state         :string(255)      not null
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined.  If you add columns to the

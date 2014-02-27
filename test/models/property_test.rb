@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NomenclatureItemPropertiesControllerTest < ActionController::TestCase
+class PropertyTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,2 +1,0 @@
-class NomenclatureItemTranslationsController < ApplicationController
-end

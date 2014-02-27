@@ -16,57 +16,18 @@ ActiveRecord::Schema.define(version: 20140227154532) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "nomenclature_attribute_translations", force: true do |t|
-    t.integer  "nomenclature_attribute_id", null: false
-    t.string   "language",                  null: false
-    t.text     "name"
+  create_table "item_translations", force: true do |t|
+    t.integer  "item_id",     null: false
+    t.string   "language",    null: false
+    t.text     "label"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "nomenclature_attribute_translations", ["language"], name: "index_nomenclature_attribute_translations_on_language", using: :btree
+  add_index "item_translations", ["language"], name: "index_item_translations_on_language", using: :btree
 
-  create_table "nomenclature_attributes", force: true do |t|
-    t.integer  "nomenclature_id",                 null: false
-    t.string   "name",                            null: false
-    t.string   "nature",                          null: false
-    t.boolean  "required",        default: false, null: false
-    t.text     "default_value"
-    t.string   "fallbacks"
-    t.string   "state",                           null: false
-    t.integer  "choices_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "nomenclature_attributes", ["choices_id"], name: "index_nomenclature_attributes_on_choices_id", using: :btree
-  add_index "nomenclature_attributes", ["name"], name: "index_nomenclature_attributes_on_name", using: :btree
-  add_index "nomenclature_attributes", ["nomenclature_id"], name: "index_nomenclature_attributes_on_nomenclature_id", using: :btree
-
-  create_table "nomenclature_item_properties", force: true do |t|
-    t.integer  "item_id",      null: false
-    t.integer  "attribute_id", null: false
-    t.text     "value",        null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "nomenclature_item_properties", ["attribute_id"], name: "index_nomenclature_item_properties_on_attribute_id", using: :btree
-  add_index "nomenclature_item_properties", ["item_id"], name: "index_nomenclature_item_properties_on_item_id", using: :btree
-
-  create_table "nomenclature_item_properties_translations", force: true do |t|
-    t.integer  "nomenclature_item_properties_id", null: false
-    t.string   "language",                        null: false
-    t.text     "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "nomenclature_item_properties_translations", ["language"], name: "index_nomenclature_item_properties_translations_on_language", using: :btree
-
-  create_table "nomenclature_items", force: true do |t|
+  create_table "items", force: true do |t|
     t.integer  "nomenclature_id", null: false
     t.integer  "parent_id"
     t.string   "name",            null: false
@@ -75,14 +36,14 @@ ActiveRecord::Schema.define(version: 20140227154532) do
     t.datetime "updated_at"
   end
 
-  add_index "nomenclature_items", ["name"], name: "index_nomenclature_items_on_name", using: :btree
-  add_index "nomenclature_items", ["nomenclature_id"], name: "index_nomenclature_items_on_nomenclature_id", using: :btree
-  add_index "nomenclature_items", ["parent_id"], name: "index_nomenclature_items_on_parent_id", using: :btree
+  add_index "items", ["name"], name: "index_items_on_name", using: :btree
+  add_index "items", ["nomenclature_id"], name: "index_items_on_nomenclature_id", using: :btree
+  add_index "items", ["parent_id"], name: "index_items_on_parent_id", using: :btree
 
   create_table "nomenclature_translations", force: true do |t|
     t.integer  "nomenclature_id", null: false
     t.string   "language",        null: false
-    t.text     "name"
+    t.text     "label"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -92,8 +53,7 @@ ActiveRecord::Schema.define(version: 20140227154532) do
 
   create_table "nomenclatures", force: true do |t|
     t.integer  "nomenspace_id"
-    t.integer  "parent_id"
-    t.integer  "attribute_id"
+    t.integer  "property_id"
     t.string   "name",                          null: false
     t.boolean  "translateable", default: false, null: false
     t.boolean  "hierarchical",  default: false, null: false
@@ -102,15 +62,14 @@ ActiveRecord::Schema.define(version: 20140227154532) do
     t.datetime "updated_at"
   end
 
-  add_index "nomenclatures", ["attribute_id"], name: "index_nomenclatures_on_attribute_id", using: :btree
   add_index "nomenclatures", ["name"], name: "index_nomenclatures_on_name", using: :btree
   add_index "nomenclatures", ["nomenspace_id"], name: "index_nomenclatures_on_nomenspace_id", using: :btree
-  add_index "nomenclatures", ["parent_id"], name: "index_nomenclatures_on_parent_id", using: :btree
+  add_index "nomenclatures", ["property_id"], name: "index_nomenclatures_on_property_id", using: :btree
 
   create_table "nomenspace_translations", force: true do |t|
     t.integer  "nomenspace_id", null: false
     t.string   "language",      null: false
-    t.text     "name"
+    t.text     "label"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -128,5 +87,44 @@ ActiveRecord::Schema.define(version: 20140227154532) do
 
   add_index "nomenspaces", ["name"], name: "index_nomenspaces_on_name", using: :btree
   add_index "nomenspaces", ["parent_id"], name: "index_nomenspaces_on_parent_id", using: :btree
+
+  create_table "properties", force: true do |t|
+    t.integer  "item_id",    null: false
+    t.integer  "nature_id",  null: false
+    t.text     "value",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "properties", ["item_id"], name: "index_properties_on_item_id", using: :btree
+  add_index "properties", ["nature_id"], name: "index_properties_on_nature_id", using: :btree
+
+  create_table "property_nature_translations", force: true do |t|
+    t.integer  "property_nature_id", null: false
+    t.string   "language",           null: false
+    t.text     "label"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "property_nature_translations", ["language"], name: "index_property_nature_translations_on_language", using: :btree
+
+  create_table "property_natures", force: true do |t|
+    t.integer  "nomenclature_id",                 null: false
+    t.string   "name",                            null: false
+    t.string   "datatype",                        null: false
+    t.boolean  "required",        default: false, null: false
+    t.text     "default_value"
+    t.string   "fallbacks"
+    t.string   "state",                           null: false
+    t.integer  "choices_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "property_natures", ["choices_id"], name: "index_property_natures_on_choices_id", using: :btree
+  add_index "property_natures", ["name"], name: "index_property_natures_on_name", using: :btree
+  add_index "property_natures", ["nomenclature_id"], name: "index_property_natures_on_nomenclature_id", using: :btree
 
 end

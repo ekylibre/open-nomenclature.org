@@ -25,6 +25,11 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    acts_as_tree (1.5.0)
+      activerecord (>= 3.0.0)
+    annotate (2.6.2)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (4.0.2)
     atomic (1.1.15)
     bootstrap-sass (3.1.1.0)
@@ -39,6 +44,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    faker (1.2.0)
+      i18n (~> 0.5)
     font-awesome-rails (4.0.3.1)
       railties (>= 3.2, < 5.0)
     haml (4.0.5)
@@ -83,6 +90,9 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.3)
       sprockets-rails (~> 2.0.0)
+    rails-i18n (4.0.1)
+      i18n (~> 0.6)
+      rails (~> 4.0)
     railties (4.0.3)
       actionpack (= 4.0.3)
       activesupport (= 4.0.3)
@@ -131,8 +141,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_tree
+  annotate
   bootstrap-sass
   coffee-rails (~> 4.0.1)
+  faker
   font-awesome-rails
   haml
   http_accept_language
@@ -144,6 +157,7 @@ DEPENDENCIES
   nokogiri (~> 1.6.0)
   pg
   rails (= 4.0.3)
+  rails-i18n
   sass-rails (~> 4.0.1)
   sdoc
   state_machine

@@ -1,0 +1,15 @@
+- title @nomenclature.label
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th= Nomenclature.human_attribute_name(:name)
+      %th= Nomenclature.human_attribute_name(:label)
+      %th= Nomenclature.human_attribute_name(:description)
+  %tbody
+    - for item in @nomenclature.items
+      %tr
+        %td
+          %strong= item.name
+        %td= item.label
+        %td= item.description
