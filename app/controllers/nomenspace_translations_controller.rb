@@ -1,0 +1,2 @@
+class NomenspaceTranslationsController < ApplicationController
+end

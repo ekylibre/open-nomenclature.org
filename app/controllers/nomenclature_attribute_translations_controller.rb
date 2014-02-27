@@ -1,0 +1,2 @@
+class NomenclatureAttributeTranslationsController < ApplicationController
+end

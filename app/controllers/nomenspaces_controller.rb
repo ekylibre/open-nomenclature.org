@@ -1,0 +1,2 @@
+class NomenspacesController < ApplicationController
+end

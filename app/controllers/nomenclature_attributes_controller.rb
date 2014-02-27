@@ -1,0 +1,2 @@
+class NomenclatureAttributesController < ApplicationController
+end

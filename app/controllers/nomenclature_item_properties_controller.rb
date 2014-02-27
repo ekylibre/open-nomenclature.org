@@ -1,0 +1,2 @@
+class NomenclatureItemPropertiesController < ApplicationController
+end
