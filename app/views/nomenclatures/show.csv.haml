@@ -1,0 +1,3 @@
+= raw CSV.generate_line ["Name", "Label"]
+- for item in @nomenclature.items
+  = raw CSV.generate_line [item.name, item.label]

@@ -12,10 +12,10 @@
 #
 
 class Item < ActiveRecord::Base
-  include Translateable
+  include Translateable, Checkable
   belongs_to :nomenclature
   has_many :properties
-  acts_as_tree
+  acts_as_nested_set
 
   def to_param
     self.name

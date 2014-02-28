@@ -1,0 +1,20 @@
+- title do
+  %h1 
+    %i.fa.fa-book
+    Open Nomenclature
+
+%p Open Nomenclature est un projet de gestion de nomenclatures métiers. Il a pour but de fournir des nomenclatures absolues pouvant servir de références solides. Certaines de ces nomenclatures sont des normes reconnues issues de l'ISO entre autres.
+
+%h2 Interopérabilité
+
+%p Ce projet a vu le jour avec la nécessité actuelle de pouvoir échanger des données de manière claire. Pour assurer le principe, il est nécessaire que ces nomenclatures soient ouvertes pour inviter à la mutualisation des données.
+
+%h2= link_to("Nomenclatures", nomenclatures_path)
+
+%p= h("Aujourd'hui, le service propose ") + link_to("labels.x_nomenclatures".t(count: Nomenclature.count), nomenclatures_url) + h(" dans les formats XML, JSON et CSV.")
+
+%ul.list-group
+  - for nomenclature in Nomenclature.localized
+    %li.list-group-item
+      %span.badge= nomenclature.items.count
+      = link_to(nomenclature.label, nomenclature_path(nomenclature))

@@ -14,8 +14,79 @@
  *= require_self
  */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:700italic,700,300italic,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700italic,700,400italic,400);
 
 $font-family-sans-serif: Roboto, 'Open Sans', Helvetica, sans-serif;
+$brand-primary: #359;
+$text-color: #666;
 
 @import "bootstrap";
+@import "font-awesome";
+@import "font_awesome";
+
+@mixin icon($icon-name) {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:before {
+	@each $icon in $icons {
+	    @if nth($icon, 1) == $icon-name {
+		content: nth($icon, 2);
+	    }
+	}
+    }
+}
+
+a > i.state, i.state {
+    &.draft {
+	color: gray;
+	@include icon(file);
+    }
+    &.deliberating {
+	color: orange;
+	@include icon(gavel);
+    }
+    &.approved {
+	color: green;
+	@include icon(check);
+    }
+    &.deliberating {
+	color: orange;
+	@include icon(warning);
+    }
+    &.removed {
+	color: red;
+	@include icon(ban);
+    }
+}
+
+a.back {
+    i {
+	@include icon(chevron-left);
+    }
+    &:hover {
+	text-decoration: none;
+    }
+}
+
+table {
+    > tbody {
+	> tr {
+	    td {
+		&.decimal {
+		    text-align: right;
+		}
+	    }
+	}
+    }
+}
+
+
+#legals {
+    text-align: center;
+    padding: 8px;
+}

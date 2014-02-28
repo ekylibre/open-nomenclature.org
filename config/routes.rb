@@ -7,5 +7,5 @@ Nomen::Application.routes.draw do
     end
   end
 
-  root to: "nomenclatures#index"
+  root to: "home#index"
 end

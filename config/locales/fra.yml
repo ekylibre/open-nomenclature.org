@@ -3,3 +3,7 @@ fra:
     nomenclatures:
       index: Nomenclatures
       show: "Nomenclature %{name}"
+  labels:
+    x_nomenclatures:
+      one: "%{count} nomenclature"
+      other: "%{count} nomenclatures"

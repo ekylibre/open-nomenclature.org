@@ -32,6 +32,9 @@ ActiveRecord::Schema.define(version: 20140227154532) do
     t.integer  "parent_id"
     t.string   "name",            null: false
     t.string   "state",           null: false
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -81,6 +84,9 @@ ActiveRecord::Schema.define(version: 20140227154532) do
     t.integer  "parent_id"
     t.string   "name",       null: false
     t.string   "state",      null: false
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -5,6 +5,9 @@ class CreateBase < ActiveRecord::Migration
       t.references :parent,                                     index: true
       t.string     :name,                          null: false
       t.string     :state,                         null: false
+      t.integer    :lft
+      t.integer    :rgt
+      t.integer    :depth
       t.timestamps
       t.index      :name
     end
@@ -26,6 +29,9 @@ class CreateBase < ActiveRecord::Migration
       t.references :parent,                                     index: true
       t.string     :name,                          null: false
       t.string     :state,                         null: false
+      t.integer    :lft
+      t.integer    :rgt
+      t.integer    :depth
       t.timestamps
       t.index      :name
     end

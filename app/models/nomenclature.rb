@@ -14,11 +14,11 @@
 #
 
 class Nomenclature < ActiveRecord::Base
-  include Translateable
+  include Translateable, Checkable
   belongs_to :property
   belongs_to :nomenspace
   has_many :property_natures
-  has_many :items, -> { order(:name) }
+  has_many :items
 
   def to_param
     self.name

@@ -11,9 +11,9 @@
 #
 
 class Nomenspace < ActiveRecord::Base
-  include Translateable
+  include Translateable, Checkable
   has_many :nomenclatures
-  acts_as_tree
+  acts_as_nested_set
 
   def to_param
     self.name

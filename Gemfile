@@ -23,11 +23,15 @@ gem 'font-awesome-rails'
 
 gem 'haml'
 
+gem 'fastercsv'
+
 gem 'faker'
 
 gem 'annotate'
 
-gem 'acts_as_tree'
+gem 'enumerize'
+
+gem 'awesome_nested_set'
 
 gem 'state_machine'
 

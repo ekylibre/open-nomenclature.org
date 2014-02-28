@@ -32,31 +32,51 @@ end
 
 
 translations = {}
-Dir.chdir(Rails.root.join("config", "locales", "import")) do
-  for locale in Dir.glob("*")
-    translations.update YAML.load_file("#{locale}/nomenclatures.yml").symbolize_keys
+Dir.chdir(Rails.root.join("config", "locales")) do
+  for file in Dir.glob("**/*.yml")
+    translations.update YAML.load_file(file).symbolize_keys
   end
 end
 
-locales = translations.keys
-puts locales.inspect
+LOCALES = translations.keys.freeze
+puts LOCALES.inspect
+
+STDOUT.sync = true
+
+def import_items(nomenclature, name, subsets, parent = nil)
+  print "<#{name}>"
+  for element in subsets[name].xpath('xmlns:items/xmlns:item')
+    item = Item.create!(name: element.attr(:name), nomenclature: nomenclature, state: "approved", parent: parent)
+    for locale in LOCALES
+      I18n.with_locale(locale) do
+        item.label = "nomenclatures.#{nomenclature.name}.items.#{item.name}".t
+      end
+    end if nomenclature.translateable?
+    print "."
+    if subsets[item.name]
+      import_items(nomenclature, item.name, subsets, item)
+    end
+  end
+  puts ""
+end
 
 for name, subsets in master
-  nomenclature = Nomenclature.create!(name: name, state: "approved")
-  for locale in locales
+  print "#{name}: "
+  root = subsets[:root]
+  nomenclature = Nomenclature.create!(name: name, state: "approved", translateable: (root.attr('translateable').to_s != 'false'))
+  for locale in LOCALES
     I18n.with_locale(locale) do
       nomenclature.label = "nomenclatures.#{name}.name".t
     end
   end
-  for element in subsets[:root].xpath('xmlns:items/xmlns:item')
-    item = Item.create!(name: element.attr(:name), nomenclature: nomenclature, state: "approved")
-    for locale in locales
+  for element in subsets[:root].xpath('xmlns:property-natures/xmlns:property-nature')
+    property_nature = PropertyNature.create!(name: element.attr(:name), nomenclature: nomenclature, datatype: element.attr("type"), state: "approved")
+    for locale in LOCALES
       I18n.with_locale(locale) do
-        item.label = "nomenclatures.#{name}.items.#{item.name}".t
+        property_nature.label = "nomenclatures.#{name}.property_natures.#{property_nature.name}".t
       end
     end
-
   end
 
-
+  import_items(nomenclature, :root, subsets)
 end

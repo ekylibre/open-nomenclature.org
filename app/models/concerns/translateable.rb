@@ -3,6 +3,18 @@ module Translateable
   
   included do
     has_many :translations, class_name: "#{self.name}Translation"
+
+    scope :localized, -> {
+      where(translations_model.table_name => {language: I18n.locale}).includes(:translations).order("#{translations_model.table_name}.label")
+    }
+  end
+
+  module ClassMethods
+
+    def translations_model
+      self.reflections[:translations].class_name.constantize
+    end
+
   end
 
   def label

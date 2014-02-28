@@ -1,15 +1,24 @@
-- title @nomenclature.label
+- title do
+  %h1
+    = link_to(nomenclatures_path, class: :back) do
+      %i
+    = @nomenclature.label
+  %p
+    - for format in [:xml, :json, :csv]
+      = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
+
 
 %table.table.table-bordered.table-striped
   %thead
     %tr
-      %th= Nomenclature.human_attribute_name(:name)
-      %th= Nomenclature.human_attribute_name(:label)
-      %th= Nomenclature.human_attribute_name(:description)
+      %th= Item.human_attribute_name(:label)
+      %th= Item.human_attribute_name(:name)
+      -# %th= Item.human_attribute_name(:description)
   %tbody
-    - for item in @nomenclature.items
+    - for item in @nomenclature.items.localized
       %tr
-        %td
-          %strong= item.name
         %td= item.label
-        %td= item.description
+        %td
+          = state_icon(item)
+          %strong= item.name
+        -# %td= item.description

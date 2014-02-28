@@ -1,14 +1,24 @@
+- title do |default|
+  %h1
+    = "labels.x_nomenclatures".t count: Nomenclature.count
+  %p
+    - for format in [:xml, :json, :csv]
+      = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
+
 %table.table.table-bordered.table-striped
   %thead
     %tr
-      %th= Item.human_attribute_name(:name)
-      %th= Item.human_attribute_name(:label)
-      %th= Item.human_attribute_name(:description)
+      %th= Nomenclature.human_attribute_name(:label)
+      %th= Nomenclature.human_attribute_name(:name)
+      %th= Nomenclature.human_attribute_name(:items_count)
+      -# %th= Nomenclature.human_attribute_name(:description)
   %tbody
     - for nomenclature in @nomenclatures
       %tr
+        %td= link_to(nomenclature.label, nomenclature_path(nomenclature))
         %td
           = link_to(nomenclature_path(nomenclature)) do
+            = state_icon(nomenclature)
             %strong= nomenclature.name
-        %td= nomenclature.label
-        %td= nomenclature.description
+        %td.decimal= nomenclature.items.count
+        -# %td= nomenclature.description
