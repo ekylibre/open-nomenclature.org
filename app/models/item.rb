@@ -20,4 +20,12 @@ class Item < ActiveRecord::Base
   def to_param
     self.name
   end
+
+  def get(property_nature)
+    unless property_nature.is_a? PropertyNature
+      property_nature = self.nomenclature.property_nature.find_by(name: property_nature)
+    end
+    return self.properties.find_by(nature_id: property_nature.id)
+  end
+
 end

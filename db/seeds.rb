@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -44,7 +45,7 @@ puts LOCALES.inspect
 STDOUT.sync = true
 
 def import_items(nomenclature, name, subsets, parent = nil)
-  print "<#{name}>"
+  print "<#{name}"
   for element in subsets[name].xpath('xmlns:items/xmlns:item')
     item = Item.create!(name: element.attr(:name), nomenclature: nomenclature, state: "approved", parent: parent)
     for locale in LOCALES
@@ -52,12 +53,21 @@ def import_items(nomenclature, name, subsets, parent = nil)
         item.label = "nomenclatures.#{nomenclature.name}.items.#{item.name}".t
       end
     end if nomenclature.translateable?
-    print "."
+    
+    for property_nature in nomenclature.property_natures
+      if element.has_attribute?(property_nature.name)
+        property = item.properties.new(nature: property_nature)
+        property.value = element.attr(property_nature.name)
+        property.save!
+      end
+    end
+
+    print "·"
     if subsets[item.name]
       import_items(nomenclature, item.name, subsets, item)
     end
   end
-  puts ""
+  print ">"
 end
 
 for name, subsets in master
@@ -79,4 +89,5 @@ for name, subsets in master
   end
 
   import_items(nomenclature, :root, subsets)
+  puts ""
 end

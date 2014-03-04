@@ -41,6 +41,10 @@ $text-color: #666;
     }
 }
 
+#main {
+  padding: 0 14px;
+}
+
 a > i.state, i.state {
     &.draft {
 	color: gray;
@@ -67,6 +71,15 @@ a > i.state, i.state {
 a.back {
     i {
 	@include icon(chevron-left);
+    }
+    &:hover {
+	text-decoration: none;
+    }
+}
+
+a.home {
+    i {
+	@include icon(home);
     }
     &:hover {
 	text-decoration: none;

@@ -1,0 +1,24 @@
+- title do
+  %h1
+    = link_to(nomenclatures_path, class: :home) do
+      %i
+    %span= "/"
+    = link_to(nomenclature_path(@item.nomenclature), class: :back) do
+      = @item.nomenclature.label
+    %span= "/"
+    = @item.label
+  %p
+    - for format in [:xml, :json, :csv]
+      = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
+
+- if @item.properties.any?
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th= Property.human_attribute_name(:name)
+        %th= Property.human_attribute_name(:value)
+    %tbody
+      - for property in @item.properties
+        %tr
+          %td= property.label
+          %td= property.value

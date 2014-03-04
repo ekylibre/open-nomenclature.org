@@ -1,24 +1,34 @@
 - title do
   %h1
-    = link_to(nomenclatures_path, class: :back) do
+    = link_to(nomenclatures_path, class: :home) do
       %i
+    %span= "/"
     = @nomenclature.label
   %p
     - for format in [:xml, :json, :csv]
       = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
 
-
+- property_natures = @nomenclature.property_natures
 %table.table.table-bordered.table-striped
   %thead
     %tr
       %th= Item.human_attribute_name(:label)
       %th= Item.human_attribute_name(:name)
       -# %th= Item.human_attribute_name(:description)
+      - for property_nature in property_natures
+        %th= property_nature.label
   %tbody
     - for item in @nomenclature.items.localized
       %tr
-        %td= item.label
         %td
-          = state_icon(item)
-          %strong= item.name
+          = link_to(nomenclature_item_path(@nomenclature, item)) do
+            = item.label
+        %td
+          = link_to(nomenclature_item_path(@nomenclature, item)) do
+            = state_icon(item)
+            %strong= item.name
+        - for property_nature in property_natures
+          %td
+            - if property = item.get(property_nature)
+              = property.value
         -# %td= item.description
