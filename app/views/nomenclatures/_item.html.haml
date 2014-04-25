@@ -1,0 +1,6 @@
+%li 
+  = link_to(nomenclature_item_path(@nomenclature, item)) do
+    = item.label
+  %ul
+    - for child in item.children.localized
+      = render "item", item: child

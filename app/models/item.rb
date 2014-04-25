@@ -7,6 +7,9 @@
 #  parent_id       :integer
 #  name            :string(255)      not null
 #  state           :string(255)      not null
+#  lft             :integer
+#  rgt             :integer
+#  depth           :integer
 #  created_at      :datetime
 #  updated_at      :datetime
 #
@@ -15,7 +18,10 @@ class Item < ActiveRecord::Base
   include Translateable, Checkable
   belongs_to :nomenclature
   has_many :properties
+  belongs_to :parent, class_name: "Item"
   acts_as_nested_set
+
+  scope :root, -> { where(parent_id: nil) }
 
   def to_param
     self.name

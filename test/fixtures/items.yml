@@ -7,6 +7,9 @@
 #  parent_id       :integer
 #  name            :string(255)      not null
 #  state           :string(255)      not null
+#  lft             :integer
+#  rgt             :integer
+#  depth           :integer
 #  created_at      :datetime
 #  updated_at      :datetime
 #

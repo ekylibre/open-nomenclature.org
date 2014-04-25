@@ -77,6 +77,20 @@ a.back {
     }
 }
 
+a.tree {
+    i {
+	@include icon(indent);
+    }
+}
+
+
+a.list {
+    i {
+	@include icon(table);
+    }
+}
+
+
 a.home {
     i {
 	@include icon(home);

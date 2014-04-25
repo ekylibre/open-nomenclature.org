@@ -7,6 +7,8 @@
   %p
     - for format in [:xml, :json, :csv]
       = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
+    = link_to(tree_nomenclature_path(@nomenclature), class: "label label-primary tree") do
+      %i
 
 - property_natures = @nomenclature.property_natures
 %table.table.table-bordered.table-striped

@@ -10,4 +10,8 @@ class NomenclaturesController < ApplicationController
     @nomenclature = Nomenclature.find_by(name: params[:id])
   end
 
+  def tree
+    @nomenclature = Nomenclature.find_by(name: params[:id])
+  end
+
 end
