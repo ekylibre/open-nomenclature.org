@@ -16,8 +16,8 @@
 /tmp
 
 /config/database.yml
-/config/locales/nomenclatures.*.yml
+# /config/locales/nomenclatures.*.yml
 
-/db/import
+# /db/import
 
 *~
