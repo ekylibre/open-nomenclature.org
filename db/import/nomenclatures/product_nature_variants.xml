@@ -8,7 +8,7 @@
       <property-nature name="derivative_of" type="choice" nomenclature="varieties" required="false"/>
       <property-nature name="nature" type="choice" nomenclature="product_natures" required="true"/>
       <property-nature name="frozen_indicators_values" type="string" required="false"/>
-      <property-nature name="unit_name" type="choice" choices="month,server,domain, 100g_dose, dose, 1l_dose, 10ml_dose, 20ml_dose, 50ml_dose, 10kg_bag, 12kg_bag, 20kg_bag, 25kg_bag, 50tg_bag, 150tg_bag, 220tg_bag, bag, box, building, can, 24liter_can, cubic_meter, equipment, head, hectare, meal, night, square_meter, day, hour, kilogram, kilometer, kilowatt_hour, liter, person, room, ton, unit, hectoliter, band, round_bale, big_rectangular_bale, small_rectangular_bale, 75cl_bottle, 100cl_bottle, plant, gram, 2g_pill, 5g_pill, group, subject, herd, roll, stake" required="true" default="unit"/>
+      <property-nature name="unit_name" type="choice" choices="month,server,domain, 100g_dose, dose, 1l_dose, 10ml_dose, 20ml_dose, 50ml_dose, 10kg_bag, 12kg_bag, 20kg_bag, 25kg_bag, 50tg_bag, 150tg_bag, 220tg_bag, bag, box, building, can, 24liter_can, cubic_meter, equipment, head, hectare, meal, night, square_meter, day, hour, kilogram, kilometer, kilowatt_hour, liter, person, room, ton, unit, hectoliter, band, round_bale, big_rectangular_bale, small_rectangular_bale, 75cl_bottle, 100cl_bottle, plant, gram, 2g_pill, 5g_pill, group, subject, herd, roll, stake, package" required="true" default="unit"/>
     </property-natures>
     <items>
       <!-- ANIMAL VIAL -->
@@ -24,31 +24,31 @@
             nature="cattle_herd"
             derivative_of="bos"
             unit_name="band"
-            frozen_indicators_values="sex: undefined"
+            frozen_indicators_values="sex: undefined, population: 1"
             />
       <item name="male_young_cattle_herd"
             nature="cattle_herd"
             derivative_of="bos"
             unit_name="band"
-            frozen_indicators_values="sex: male"
+            frozen_indicators_values="sex: male, population: 1"
             />
       <item name="female_young_cattle_herd"
             nature="cattle_herd"
             derivative_of="bos"
             unit_name="band"
-            frozen_indicators_values="sex: female"
+            frozen_indicators_values="sex: female, population: 1"
             />
       <item name="male_adult_cattle_herd"
             nature="cattle_herd"
             derivative_of="bos"
             unit_name="band"
-            frozen_indicators_values="sex: male"
+            frozen_indicators_values="sex: male, population: 1"
             />
       <item name="female_adult_cattle_herd"
             nature="female_adult_cattle_herd"
             derivative_of="bos"
             unit_name="band"
-            frozen_indicators_values="sex: female, reproductor: true"
+            frozen_indicators_values="sex: female, reproductor: true, population: 1"
             />
       <item name="female_adult_cow"
             nature="female_adult_cow"
@@ -136,14 +136,19 @@
             unit_name="head"
             frozen_indicators_values="population: 1, sex: male, reproductor: true, livestock_unit: 0.17"
             />
-       <item name="male_adult_goat_herd"
+      <item name="male_adult_goat_herd"
             nature="male_adult_goat_herd"
             derivative_of="capra"
             unit_name="band"
             frozen_indicators_values="sex: male, reproductor: true"
             />
-      <item name="young_goat"
-            nature="young_goat"
+      <item name="male_young_goat"
+            nature="male_young_goat"
+            unit_name="head"
+            frozen_indicators_values="population: 1, livestock_unit: 0.09, reproductor: false"
+            />
+      <item name="female_young_goat"
+            nature="female_young_goat"
             unit_name="head"
             frozen_indicators_values="population: 1, livestock_unit: 0.09, reproductor: false"
             />
@@ -196,25 +201,6 @@
             unit_name="head"
             frozen_indicators_values="reproductor: false"
             />
-      <!-- MILK -->
-      <item name="cow_milk"
-            nature="milk"
-            derivative_of="bos"
-            unit_name="liter"
-            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.03kilogram"
-            />
-      <item name="goat_milk"
-            nature="milk"
-            derivative_of="capra"
-            unit_name="liter"
-            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.031kilogram"
-            />
-      <item name="ewe_milk"
-            nature="milk"
-            derivative_of="ovis"
-            unit_name="liter"
-            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.037kilogram"
-            />
       <!-- HEN -->
       <item name="hen_herd"
             nature="hen_herd"
@@ -231,6 +217,11 @@
             nature="hen_band"
             unit_name="subject"
             frozen_indicators_values="sex: male, reproductor: false"
+            />
+      <item name="chick_hen_band"
+            nature="hen_band"
+            unit_name="subject"
+            frozen_indicators_values="sex: undefined, reproductor: false"
             />
       <item name="chicken_egg"
             nature="egg"
@@ -298,6 +289,17 @@
             unit_name="head"
             frozen_indicators_values="population: 1, sex: male, reproductor: true, livestock_unit: 0.83"
             />
+      <!-- BEE -->
+      <item name="bumblebee_band"
+            nature="bumblebee_band"
+            unit_name="subject"
+            frozen_indicators_values=""
+           />
+      <item name="bee_band"
+            nature="bee_band"
+            unit_name="subject"
+            frozen_indicators_values=""
+           />
       <!-- FISH -->
       <item name="salmon_band"
             nature="salmon_band"
@@ -472,7 +474,7 @@
             />
       <item name="soy_crop"
             nature="grain_crop"
-            variety="glycine"
+            variety="glycine_max"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
@@ -485,6 +487,12 @@
       <item name="lentil_crop"
             nature="grain_crop"
             variety="lens"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="lupin_crop"
+            nature="grain_crop"
+            variety="lupinus"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
@@ -527,6 +535,30 @@
       <item name="tobacco_crop"
             nature="crop"
             variety="nicotiana"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="flax_crop"
+            nature="crop"
+            variety="linum"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="quinoa_crop"
+            nature="crop"
+            variety="chenopodium_quinoa"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="burdock_crop"
+            nature="crop"
+            variety="arctium"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="chicory_crop"
+            nature="crop"
+            variety="cichorium"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
@@ -586,6 +618,12 @@
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
+       <item name="lettuce_crop"
+            nature="vegetable_crop"
+            variety="lactuca"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
       <item name="leek_crop"
             nature="vegetable_crop"
             variety="allium_porrum"
@@ -604,16 +642,22 @@
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
-      <item name="melon_crop"
-            nature="vegetable_crop"
-            variety="cucumis"
+      <item name="muskmelon_crop"
+            nature="melon_crop"
+            variety="cucumis_melo"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="peanut_crop"
+            nature="crop"
+            variety="arachis"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
       <!-- TREE CROP -->
       <item name="plum_crop"
             nature="fruit_crop"
-            variety="prunus"
+            variety="prunus_domestica"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
@@ -632,20 +676,6 @@
       <item name="hazel_crop"
             nature="walnut_crop"
             variety="corylus"
-            unit_name="hectare"
-            frozen_indicators_values="net_surface_area: 1.00hectare"
-            />
-
-      <!-- FLOWER CROP -->
-      <item name="saffron_crop"
-            nature="flower_crop"
-            variety="crocus_sativus"
-            unit_name="hectare"
-            frozen_indicators_values="net_surface_area: 1.00square_meter"
-            />
-      <item name="rose_crop"
-            nature="fruit_crop"
-            variety="rosa"
             unit_name="hectare"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
@@ -673,6 +703,12 @@
             unit_name="plant"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
+      <item name="quince_crop"
+            nature="fruit_crop"
+            variety="cydonia_oblonga"
+            unit_name="plant"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
       <item name="pear_crop"
             nature="fruit_crop"
             variety="pyrus"
@@ -691,6 +727,45 @@
             unit_name="plant"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
+      <item name="tangerine_crop"
+            nature="fruit_crop"
+            variety="citrus_reticulata"
+            unit_name="plant"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <!-- thicket CROP -->
+      <item name="thicket_crop"
+            nature="crop"
+            variety="plant"
+            unit_name="plant"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <!-- FLOWER & DECORATIVE CROP -->
+      <item name="saffron_crop"
+            nature="flower_crop"
+            variety="crocus_sativus"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00square_meter"
+            />
+      <item name="rose_crop"
+            nature="fruit_crop"
+            variety="rosa"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="cherry_laurel_crop"
+            nature="fruit_crop"
+            variety="prunus_laurocerasus"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+      <item name="myrobalan_plum_crop"
+            nature="fruit_crop"
+            variety="prunus_cerasifera"
+            unit_name="hectare"
+            frozen_indicators_values="net_surface_area: 1.00hectare"
+            />
+
       <!-- VINE CROP -->
       <item name="vine_grape_crop"
             nature="wine_crop"
@@ -698,72 +773,140 @@
             unit_name="plant"
             frozen_indicators_values="net_surface_area: 1.00hectare"
             />
-      <!-- TRANSFORM PRODUCT -->
-      <!-- VINE BASED -->
-      <item name="bottle_75cl_wine"
-            nature="wine"
-            unit_name="75cl_bottle"
-            frozen_indicators_values="net_mass: 760gram, net_volume: 75.00centiliter"
+
+      <!-- RAW PRODUCT -->
+      <!-- ANIMAL DERIVATIVE BASED -->
+      <!-- MILK -->
+      <item name="cow_milk"
+            nature="milk"
+            derivative_of="bos"
+            unit_name="liter"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.03kilogram"
             />
-      <!-- FLOWER BASED -->
-      <item name="saffron_pollen"
-            nature="species"
-            variety="pollen"
-            derivative_of="crocus_sativus"
-            unit_name="gram"
-            frozen_indicators_values="net_mass: 1.00gram, net_volume: 1.00milliliter"
+      <item name="goat_milk"
+            nature="milk"
+            derivative_of="capra"
+            unit_name="liter"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.031kilogram"
             />
-      <!-- FRUIT BASED -->
-      <item name="frozen_fruit"
-            nature="fruit"
-            derivative_of="plant"
+      <item name="ewe_milk"
+            nature="milk"
+            derivative_of="ovis"
+            unit_name="liter"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.037kilogram"
+            />
+      <!-- BEEF MEAT -->
+      <item name="beef_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
             unit_name="kilogram"
-            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter, best_before_period: 180day"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
             />
-      <item name="115g_jam"
-            nature="packaged_process_food"
-            derivative_of="fruit"
-            unit_name="unit"
-            frozen_indicators_values="net_mass: 115gram, net_volume: 115milliliter"
+      <item name="minced_beef_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
             />
-      <item name="230g_jam"
-            nature="packaged_process_food"
-            derivative_of="fruit"
-            unit_name="unit"
-            frozen_indicators_values="net_mass: 230gram, net_volume: 230milliliter"
+      <item name="packed_beef_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
             />
-      <item name="fruit_derivative_good"
-            nature="process_food"
-            derivative_of="fruit"
-            unit_name="unit"
-            frozen_indicators_values=""
+      <!-- VEAL MEAT -->
+      <item name="veal_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
             />
+      <item name="shoulder_veal_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="escalope_veal_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="roast_veal_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="packed_veal_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <!-- OX MEAT -->
+      <item name="ox_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="minced_ox_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="packed_ox_meat"
+            nature="beef_meat"
+            derivative_of="bos_taurus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <!-- LAMB MEAT -->
+      <item name="milked_lamb_meat"
+            nature="lamb_meat"
+            derivative_of="ovis"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="nibble_lamb_meat"
+            nature="lamb_meat"
+            derivative_of="ovis"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="lamb_meat"
+            nature="lamb_meat"
+            derivative_of="ovis"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <!-- PORK MEAT -->
+      <item name="milked_pork_meat"
+            nature="pork_meat"
+            derivative_of="sus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <item name="piglet_meat"
+            nature="pork_meat"
+            derivative_of="sus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <!-- POULTRY MEAT -->
+      <item name="chicken_meat"
+            nature="poultry_meat"
+            derivative_of="gallus_gallus_domesticus"
+            unit_name="kilogram"
+            frozen_indicators_values="net_volume: 1.00liter, net_mass: 1.00kilogram"
+            />
+      <!-- VEGETAL DERIVATIVE BASED -->
       <item name="vine_grape_berry"
             nature="grape"
             derivative_of="vitis_vinifera"
-            unit_name="kilogram"
-            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
-            />
-      <item name="vine_grape_juice"
-            nature="grape_juice"
-            derivative_of="grape"
-            unit_name="hectoliter"
-            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
-            />
-      <item name="vine_grape_must"
-            nature="fermented_grape_juice"
-            derivative_of="grape"
-            unit_name="hectoliter"
-            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
-            />
-      <item name="wine"
-            nature="wine"
-            unit_name="hectoliter"
-            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
-            />
-      <item name="vine_residu"
-            nature="fruit_residu"
-            variety="pomace"
             unit_name="kilogram"
             frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
             />
@@ -777,6 +920,12 @@
       <item name="corn_grain"
             nature="grain"
             derivative_of="zea"
+            unit_name="ton"
+            frozen_indicators_values="net_mass: 1.00ton"
+            />
+      <item name="popcorn_grain"
+            nature="grain"
+            derivative_of="zea_mays_everta"
             unit_name="ton"
             frozen_indicators_values="net_mass: 1.00ton"
             />
@@ -809,6 +958,13 @@
             derivative_of="brassica_napus"
             unit_name="ton"
             frozen_indicators_values="net_mass: 1.00ton"
+            />
+      <!-- plum -->
+      <item name="plum"
+            nature="plum"
+            derivative_of="prunus_domestica"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1.00kilogram"
             />
       <!-- hazelnut -->
       <item name="hazelnut"
@@ -969,6 +1125,106 @@
             unit_name="small_rectangular_bale"
             frozen_indicators_values="net_mass: 12.50kilogram, net_volume: 0.16cubic_meter"
             />
+      <item name="peanut"
+            nature="peanut"
+            derivative_of="arachis"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1.00kilogram"
+            />
+      <!-- TRANSFORM PRODUCT -->
+      <!-- ANIMAL BASED -->
+      <item name="pork_dried_sausage"
+            nature="processed_pork_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <item name="pork_sausage"
+            nature="processed_pork_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <item name="beef_dried_sausage"
+            nature="processed_beef_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <item name="beef_sausage"
+            nature="processed_beef_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <item name="lamb_sausage"
+            nature="processed_lamb_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <item name="poultry_sausage"
+            nature="processed_poultry_meat"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1000gram, net_volume: 100.00centiliter"
+            />
+      <!-- VINE BASED -->
+      <item name="bottle_75cl_wine"
+            nature="wine"
+            unit_name="75cl_bottle"
+            frozen_indicators_values="net_mass: 760gram, net_volume: 75.00centiliter"
+            />
+      <!-- FLOWER BASED -->
+      <item name="saffron_pollen"
+            nature="species"
+            variety="pollen"
+            derivative_of="crocus_sativus"
+            unit_name="gram"
+            frozen_indicators_values="net_mass: 1.00gram, net_volume: 1.00milliliter"
+            />
+      <!-- FRUIT BASED -->
+      <item name="frozen_fruit"
+            nature="fruit"
+            derivative_of="plant"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter, best_before_period: 180day"
+            />
+      <item name="115g_jam"
+            nature="packaged_process_food"
+            derivative_of="fruit"
+            unit_name="unit"
+            frozen_indicators_values="net_mass: 115gram, net_volume: 115milliliter"
+            />
+      <item name="230g_jam"
+            nature="packaged_process_food"
+            derivative_of="fruit"
+            unit_name="unit"
+            frozen_indicators_values="net_mass: 230gram, net_volume: 230milliliter"
+            />
+      <item name="fruit_derivative_good"
+            nature="process_food"
+            derivative_of="fruit"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+      <item name="vine_grape_juice"
+            nature="grape_juice"
+            derivative_of="grape"
+            unit_name="hectoliter"
+            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
+            />
+      <item name="vine_grape_must"
+            nature="fermented_grape_juice"
+            derivative_of="grape"
+            unit_name="hectoliter"
+            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
+            />
+      <item name="wine"
+            nature="wine"
+            unit_name="hectoliter"
+            frozen_indicators_values="net_mass: 100.00 kilogram, net_volume: 100.00liter"
+            />
+      <item name="vine_residu"
+            nature="fruit_residu"
+            variety="pomace"
+            unit_name="kilogram"
+            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
+            />
       <item name="crop_residue"
             nature="crop_residue"
             unit_name="ton"
@@ -999,7 +1255,7 @@
             unit_name="25kg_bag"
             frozen_indicators_values="net_mass: 25.00kilogram, net_volume: 0.030cubic_meter"
             />
-       <item name="25kg_bag_rabbit_food"
+      <item name="25kg_bag_rabbit_food"
             nature="animal_food"
             derivative_of="plant"
             unit_name="25kg_bag"
@@ -1015,6 +1271,12 @@
       <item name="bulk_hay"
             nature="grass"
             derivative_of="poaceae"
+            unit_name="ton"
+            frozen_indicators_values="net_mass: 1.00ton, net_volume: 10.00cubic_meter"
+            />
+      <item name="lucerne_bulk_hay"
+            nature="grass"
+            derivative_of="medicago"
             unit_name="ton"
             frozen_indicators_values="net_mass: 1.00ton, net_volume: 10.00cubic_meter"
             />
@@ -1123,6 +1385,12 @@
             nature="sugar"
             unit_name="25kg_bag"
             frozen_indicators_values="net_mass: 25.00kilogram"
+            />
+     <!-- PLANT ANIMAL AUXILIARY -->
+     <item name="bee_band_pollinate_service"
+            nature="animals_making_services"
+            unit_name="unit"
+            frozen_indicators_values=""
             />
       <!-- PLANT MEDICINE -->
       <item name="helianthus_herbicide"
@@ -1528,6 +1796,7 @@
             />
       <item name="seedling"
             nature="seedling"
+            derivative_of="plant"
             unit_name="unit"
             frozen_indicators_values=""
             />
@@ -1711,8 +1980,13 @@
             unit_name="25kg_bag"
             frozen_indicators_values="net_mass: 25kilogram, net_volume: 25.00liter"
             />
-      <!-- PACKAGING PRODUCT -->
+      <!-- PACKAGING & TRANSPORT PRODUCT -->
       <item name="common_package"
+            nature="common_package"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+      <item name="pallet"
             nature="common_package"
             unit_name="unit"
             frozen_indicators_values=""
@@ -1771,6 +2045,17 @@
       <!-- OTHER MATERIAL -->
       <item name="building_material"
             nature="raw_material"
+            unit_name="unit"
+            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
+            />
+       <item name="building_material_in_own_outstanding_installation"
+            nature="construction_material_in_own_outstanding_installation"
+            unit_name="unit"
+            frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
+            />
+      <!-- ANIMAL MATERIAL -->
+      <item name="animal_fence"
+            nature="land_parcel_construction"
             unit_name="unit"
             frozen_indicators_values="net_mass: 1.00kilogram, net_volume: 1.00liter"
             />
@@ -1896,6 +2181,11 @@
             unit_name="equipment"
             frozen_indicators_values="population: 1"
             />
+      <item name="forklift"
+            nature="forklift"
+            unit_name="equipment"
+            frozen_indicators_values="population: 1"
+            />
       <item name="car"
             nature="car"
             unit_name="equipment"
@@ -1911,7 +2201,7 @@
             unit_name="equipment"
             frozen_indicators_values="population: 1"
             />
-      <!-- EQUIPMENT FOR VINE -->
+      <!-- EQUIPMENT FOR SOIL -->
       <item name="manual_implanter"
             nature="implanter"
             unit_name="equipment"
@@ -1954,6 +2244,11 @@
             />
       <item name="superficial_plow"
             nature="superficial_plow"
+            unit_name="equipment"
+            frozen_indicators_values="population: 1"
+            />
+      <item name="roll"
+            nature="roll"
             unit_name="equipment"
             frozen_indicators_values="population: 1"
             />
@@ -2107,6 +2402,11 @@
             unit_name="equipment"
             frozen_indicators_values="population: 1"
 	          />
+	 <item name="grain_crusher"
+            nature="food_distributor"
+            unit_name="equipment"
+            frozen_indicators_values="population: 1"
+            />
 	    <item name="silage_distributor"
             nature="food_distributor"
             unit_name="equipment"
@@ -2639,27 +2939,27 @@
             frozen_indicators_values="net_mass: 1.00ton"
             />
 
-       <item name="coop:eca_excel_pack_protor_b_vrac"
+      <item name="coop:eca_excel_pack_protor_b_vrac"
             nature="animal_food"
             variety="mix"
             unit_name="ton"
             frozen_indicators_values="net_mass: 1.00ton"
             />
-       <item name="coop:eca_pack_tonus_b_vrac"
-            nature="animal_food"
-            variety="mix"
-            unit_name="ton"
-            frozen_indicators_values="net_mass: 1.00ton"
-            />
-
-       <item name="coop:altiplus_gr_vrac"
+      <item name="coop:eca_pack_tonus_b_vrac"
             nature="animal_food"
             variety="mix"
             unit_name="ton"
             frozen_indicators_values="net_mass: 1.00ton"
             />
 
-       <item name="coop:altacid_vrac"
+      <item name="coop:altiplus_gr_vrac"
+            nature="animal_food"
+            variety="mix"
+            unit_name="ton"
+            frozen_indicators_values="net_mass: 1.00ton"
+            />
+
+      <item name="coop:altacid_vrac"
             nature="animal_food"
             variety="mix"
             unit_name="ton"
@@ -2690,27 +2990,51 @@
             />
 
 
-	 <!-- AGRICULTURAL SERVICES -->
+	    <!-- AGRICULTURAL SERVICES -->
 
-
-	 <item name="drying_making_service"
+        <!-- vegetal agricultural service -->
+	    <item name="drying_making_service"
             nature="vegetals_making_services"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-     <item name="harvesting_making_service"
+      <item name="harvesting_making_service"
             nature="vegetals_making_services"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+      <!-- animal agricultural service -->
+
+      <item name="animals_making_service"
+            nature="animals_making_services"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="animal_housing_service"
+            nature="animal_housing_services"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <!-- farm agricultural service -->
+      <item name="farm_teaching_service"
+            nature="farm_teaching_services"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="equipment_repair_service"
+            nature="equipment_repair_services"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
 
-
-
-     <!-- COMMON SERVICES -->
-     <!-- COMMON SERVICES -->
-     <!-- COMMON SERVICES -->
+      <!-- COMMON SERVICES -->
+      <!-- COMMON SERVICES -->
+      <!-- COMMON SERVICES -->
 
 
 
@@ -2791,9 +3115,9 @@
             />
 
 
-	  <!-- Subsidies -->
+	    <!-- Subsidies -->
 
-	  <item name="cap_subsidies"
+	    <item name="cap_subsidies"
             nature="exploitation_subsidies"
             unit_name="unit"
             frozen_indicators_values=""
@@ -2803,7 +3127,17 @@
             unit_name="unit"
             frozen_indicators_values=""
             />
+
       <!-- OTHER PRODUCT -->
+
+      <!-- STARTED SERVICES -->
+
+      <item name="creation_society_study"
+            nature="installing_charge"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
       <item name="small_equipment"
             nature="small_equipment"
             unit_name="unit"
@@ -2821,8 +3155,14 @@
             frozen_indicators_values=""
             />
 
-       <item name="little_office_good"
+      <item name="little_office_good"
             nature="little_office_item"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+     <item name="consumer_goods_office_item"
+            nature="consumer_goods_office_item"
             unit_name="unit"
             frozen_indicators_values=""
             />
@@ -2867,7 +3207,7 @@
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="carriage"
+      <item name="carriage"
             nature="carriage"
             unit_name="unit"
             frozen_indicators_values=""
@@ -2888,108 +3228,152 @@
             unit_name="hour"
             frozen_indicators_values="usage_duration: 1hour"
             />
+      <item name="land_parcel_locative_charge"
+            nature="land_parcel_locative_charge"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
       <item name="maintenance"
             nature="maintenance"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="insurance"
+      <item name="insurance"
             nature="insurance"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="equipment_insurance"
+      <item name="equipment_insurance"
             nature="insurance"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="building_insurance"
+      <item name="building_insurance"
             nature="insurance"
             unit_name="unit"
             frozen_indicators_values=""
             />
-        <item name="responsibility_insurance"
+      <item name="responsibility_insurance"
             nature="insurance"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="fee"
+      <item name="infirmity_and_death_insurance"
+            nature="infirmity_and_death_insurance"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="project_study"
+            nature="studies_and_research"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+
+
+      <item name="fee"
             nature="fee"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="car_moving_travel"
+      <item name="forwarding_agent_fees_expense"
+            nature="forwarding_agent_fees_expense"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="fiscal_fine"
+            nature="fiscal_fine"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="car_moving_travel"
             nature="moving_travel"
             unit_name="kilometer"
             frozen_indicators_values=""
             />
-        <item name="moving_travel"
+      <item name="moving_travel"
             nature="moving_travel"
             unit_name="unit"
             frozen_indicators_values=""
             />
-        <item name="meal_travel"
+      <item name="meal_travel"
             nature="meal_travel"
             unit_name="meal"
             frozen_indicators_values=""
             />
-        <item name="accommodation_travel"
+      <item name="accommodation_travel"
             nature="accommodation_travel"
             unit_name="night"
             frozen_indicators_values=""
             />
 
-        <item name="accommodation_taxe"
+      <item name="accommodation_taxe"
             nature="accommodation_travel"
             unit_name="night"
             frozen_indicators_values=""
             />
 
 
-	   <item name="congress"
+	    <item name="congress"
             nature="congress"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-       <item name="phone_line_subscription"
+      <item name="phone_line_subscription"
             nature="radio_subscription"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="internet_line_subscription"
+      <item name="internet_line_subscription"
             nature="radio_subscription"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="postal_stamp"
+      <item name="postal_stamp"
             nature="mail_subscription"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="postal_charges"
+      <item name="postal_charges"
             nature="mail_subscription"
             unit_name="unit"
             frozen_indicators_values=""
             />
-        <item name="representation_suit"
+      <item name="representation_suit"
             nature="representation_item"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
 
-       <item name="bank_service"
+      <item name="bank_service"
             nature="bank_service"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="taxe"
+
+      <item name="loan_interest"
+            nature="loan_interest"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+      <item name="various_loan_interest"
+            nature="various_loan_interest"
+            unit_name="unit"
+            frozen_indicators_values=""
+            />
+
+      <item name="taxe"
             nature="taxe"
             unit_name="unit"
             frozen_indicators_values=""
             />
-       <item name="legal_registration"
+      <item name="legal_registration"
             nature="legal_registration"
             unit_name="unit"
             frozen_indicators_values=""
@@ -2997,85 +3381,85 @@
 
 
 
-       <item name="domain_name_subscription"
+      <item name="domain_name_subscription"
             nature="numeric_subscription"
             unit_name="domain"
             frozen_indicators_values=""
             />
 
-       <item name="server_certificate_subscription"
+      <item name="server_certificate_subscription"
             nature="numeric_subscription"
             unit_name="domain"
             frozen_indicators_values=""
             />
 
-        <item name="ip_address_subscription"
+      <item name="ip_address_subscription"
             nature="numeric_subscription"
             unit_name="domain"
             frozen_indicators_values=""
             />
 
-        <item name="server_rental"
+      <item name="server_rental"
             nature="numeric_hosting_rental"
             unit_name="server"
             frozen_indicators_values=""
             />
 
-        <item name="portable_computer"
+      <item name="portable_computer"
             nature="computer"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="printer"
+      <item name="printer"
             nature="computer"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="computer_mouse"
+      <item name="computer_mouse"
             nature="computer_device"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-        <item name="computer_item"
+      <item name="computer_item"
             nature="computer_device"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-          <item name="ink_cartridge"
+      <item name="ink_cartridge"
             nature="computer_device"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="computer_display"
+      <item name="computer_display"
             nature="computer_device"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="portable_hard_disk"
+      <item name="portable_hard_disk"
             nature="computer_device"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="eco_participation"
+      <item name="eco_participation"
             nature="recycling_contribution"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-         <item name="product_warranty"
+      <item name="product_warranty"
             nature="product_insurance"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-           <item name="food_show"
+      <item name="food_show"
             nature="trade_show"
             unit_name="unit"
             frozen_indicators_values=""
@@ -3093,19 +3477,19 @@
             frozen_indicators_values=""
             />
 
-       <item name="intership"
+      <item name="intership"
             nature="bonus_staff_expense"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-       <item name="salary_social_contribution"
+      <item name="salary_social_contribution"
             nature="salary_social_contribution"
             unit_name="unit"
             frozen_indicators_values=""
             />
 
-       <item name="associate_social_contribution"
+      <item name="associate_social_contribution"
             nature="associate_social_contribution"
             unit_name="unit"
             frozen_indicators_values=""
@@ -3116,7 +3500,7 @@
       <!-- SERVICES LINK TO NUMERIC -->
 
 
-	  <!-- training course -->
+	    <!-- training course -->
       <item name="daily_training_course"
             nature="training_course"
             unit_name="day"
@@ -3136,7 +3520,7 @@
             frozen_indicators_values="usage_duration: 1day"
             />
 
-     <item name="hourly_project_management"
+      <item name="hourly_project_management"
             nature="project_management"
             unit_name="hour"
             frozen_indicators_values="usage_duration: 1hour"

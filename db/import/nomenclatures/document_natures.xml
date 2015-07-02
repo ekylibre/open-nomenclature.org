@@ -24,7 +24,7 @@
       <item name="general_ledger" category="accountancy"/>
       <item name="trial_balance" category="accountancy"/>
       <item name="tax_assessment" category="accountancy"/>
-      <item name="vat_taxe_registry" category="accountancy"/>
+      <item name="vat_registry" category="accountancy"/>
 
       <item name="inventory_sheet" category="exploitation"/>
       <item name="stocks" category="exploitation"/>
@@ -53,6 +53,7 @@
       <item name="activity_cost" category="management"/>
       <item name="intervention_sheet" category="management"/>
       <item name="intervention_registry" category="management"/>
+      <item name="products_sheet" category="management"/>
 
       <item name="wine_detention_registry" category="vinification"/>
       <item name="wine_bottling_registry" category="vinification"/>

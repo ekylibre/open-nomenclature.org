@@ -44,10 +44,22 @@
             telepac_crop_code="BH"
             variant_support="wheat_crop"
             />
+      <item name="spring_soft_wheat"
+            production_code="1100"
+            activity="common_wheat_crops"
+            telepac_crop_code="BP"
+            variant_support="wheat_crop"
+            />
       <item name="winter_hard_wheat"
             production_code="1200"
             activity="durum_wheat_crops"
             telepac_crop_code="BA"
+            variant_support="hard_wheat_crop"
+            />
+      <item name="spring_hard_wheat"
+            production_code="1230"
+            activity="durum_wheat_crops"
+            telepac_crop_code="BB"
             variant_support="hard_wheat_crop"
             />
       <item name="rye"
@@ -88,13 +100,13 @@
             />
       <item name="grain_corn"
             production_code="1710"
-            activity="corn_crops"
+            activity="maize_crops"
             telepac_crop_code="MA"
             variant_support="corn_grain_crop"
             />
       <item name="seed_corn"
             production_code="1712"
-            activity="corn_crops"
+            activity="maize_crops"
             telepac_crop_code="MS"
             variant_support="corn_seed_crop"
             />
@@ -132,6 +144,12 @@
       <item name="lentil"
             production_code="2050"
             activity="lentil_crops"
+            telepac_crop_code="LE"
+            variant_support="lentil_crop"
+            />
+      <item name="marketable_lentil"
+            production_code="2050"
+            activity="lentil_crops"
             telepac_crop_code="LH"
             variant_support="lentil_crop"
             />
@@ -153,10 +171,16 @@
             telepac_crop_code="PH"
             variant_support="pea_crop"
             />
-      <item name="soy"
+      <item name="marketable_soy"
             production_code="2120"
             activity="soybean_crops"
             telepac_crop_code="SJ"
+            variant_support="soy_crop"
+            />
+      <item name="soy"
+            production_code="2120"
+            activity="soybean_crops"
+            telepac_crop_code="SO"
             variant_support="soy_crop"
             />
       <item name="beet"
@@ -183,10 +207,28 @@
             telepac_crop_code="CS"
             variant_support="rape_crop"
             />
+      <item name="flax"
+            production_code="2330"
+            activity="flax_crops"
+            telepac_crop_code="LN"
+            variant_support="flax_crop"
+            />
+      <item name="marketable_flax"
+            production_code="2330"
+            activity="flax_crops"
+            telepac_crop_code="LJ"
+            variant_support="flax_crop"
+            />
       <item name="sunflower"
             production_code="2380"
             activity="sunflower_crops"
             telepac_crop_code="TO"
+            variant_support="sunflower_crop"
+            />
+      <item name="marketable_sunflower"
+            production_code="2380"
+            activity="sunflower_crops"
+            telepac_crop_code="TS"
             variant_support="sunflower_crop"
             />
       <item name="tobacco"
@@ -208,9 +250,21 @@
             variant_support="saffron_crop"
             />
       <!-- 3 - FODDER CROP -->
+      <item name="forager_lupin"
+            production_code="3140"
+            activity="lupin_crops"
+            telepac_crop_code="FO"
+            variant_support="lupin_crop"
+            />
+      <item name="marketable_forager_lupin"
+            production_code="3140"
+            activity="lupin_crops"
+            telepac_crop_code="FD"
+            variant_support="lupin_crop"
+            />
       <item name="silage_corn"
             production_code="3150"
-            activity="corn_crops"
+            activity="maize_crops"
             telepac_crop_code="ME"
             variant_support="corn_silage_crop"
             />
@@ -219,6 +273,18 @@
             activity="sorghum_crops"
             telepac_crop_code="SH"
             variant_support="sorghum_crop"
+            />
+      <item name="forager_soy"
+            production_code="3220"
+            activity="soybean_crops"
+            telepac_crop_code="FO"
+            variant_support="soy_crop"
+            />
+       <item name="marketable_forager_soy"
+            production_code="3220"
+            activity="soybean_crops"
+            telepac_crop_code="FD"
+            variant_support="soy_crop"
             />
       <item name="temporary_meadow"
             production_code="3400"
@@ -303,7 +369,7 @@
             production_code="4570"
             activity="muskmelon_crops"
             telepac_crop_code="MN"
-            variant_support="melon_crop"
+            variant_support="muskmelon_crop"
             />
       <item name="market_gardening"
             production_code="4999"
@@ -397,6 +463,12 @@
             telepac_crop_code="RE"
             variant_support="vine_grape_crop"
             />
+      <item name="table_grape_vine"
+            production_code="6500"
+            activity="vines"
+            telepac_crop_code="VU"
+            variant_support="vine_grape_crop"
+            />
 
       <item name="winery"
             activity="wine"
@@ -406,7 +478,13 @@
             activity="wine"
             variant_support="wine"
             />
-      <!-- 7 - TREE AND FLOWER CROP  -->
+      <!-- 7 - TREE AND FLOWER CROP -->
+      <item name="thicket"
+            production_code="7200"
+            activity="field_crops"
+            telepac_crop_code="TI"
+            variant_support="thicket_crop"
+            />
       <item name="rose"
             production_code="7460"
             activity="aromatic_and_medicinal_plants"
@@ -417,6 +495,12 @@
             production_code="7500"
             activity="vegetal_crops"
             telepac_crop_code="BV"
+            variant_support="market_gardening_crop"
+            />
+      <item name="marketable_garden_center"
+            production_code="7500"
+            activity="vegetal_crops"
+            telepac_crop_code="BW"
             variant_support="market_gardening_crop"
             />
       <!-- 8 - BIG ANIMALS -->

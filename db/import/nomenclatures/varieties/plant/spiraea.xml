@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <nomenclatures xmlns="http://www.ekylibre.org/XML/2013/nomenclatures">
-  <nomenclature name="varieties-moraceae" hierarchical="true">
+  <nomenclature name="varieties-spiraea" hierarchical="true">
     <items>
-      <item name="ficus" itis_tsn="19081"/>
-      <item name="morus" itis_tsn="19064"/>
+      <item name="spiraea_x_billiardii" itis_tsn="25332"/>
     </items>
   </nomenclature>
 

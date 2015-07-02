@@ -18,6 +18,7 @@
       <item name="reserves" fr_pcg82="106"/>
       <item name="legal_reserves" fr_pcg82="1061"/>
       <item name="other_reserves" fr_pcg82="1068"/>
+      <item name="owner_account" fr_pcg82="108"/>
       <item name="financial_year_result" fr_pcg82="12"/>
       <item name="financial_year_result_profit" fr_pcg82="120"/>
       <item name="financial_year_result_balance" fr_pcg82="128"/>
@@ -25,26 +26,54 @@
       <item name="equipment_subventions" fr_pcg82="131"/>
       <item name="other_investment_subventions" fr_pcg82="138"/>
       <item name="other_investment_subventions_in_earnings_statement" fr_pcg82="139"/>
+      <item name="loans" fr_pcg82="164"/>
       <item name="land_loans" fr_pcg82="1641"/>
       <item name="long_term_loans" fr_pcg82="1642"/>
       <item name="short_term_loans" fr_pcg82="1643"/>
       <item name="accrued_interests" fr_pcg82="1688"/>
       <item name="accrued_interests_on_bank" fr_pcg82="16884"/>
 
-      <!--                      FINANCIAL_ASSETS               -->
-      <item name="financial_assets" fr_pcg82="2"/>
+      <!--                      FIXED ASSETS               -->
+      <item name="fixed_assets" fr_pcg82="2"/>
+      <item name="establishment_charge_assets" fr_pcga="201"/>
+      <item name="research_and_development_charge_assets" fr_pcga="203"/>
+      <item name="brands_and_patents_assets" fr_pcga="205"/>
       <item name="other_incorporeal_assets" fr_pcga="208"/>
+      <item name="corporeal_assets" fr_pcga="21"/>
       <item name="land_parcel_assets" fr_pcga="2111"/>
       <item name="land_parcel_construction_assets" fr_pcga="212"/>
+      <item name="redeemable_land_parcel_construction_assets" fr_pcga="2121"/>
+      <item name="construction_on_own_land_parcel_assets" fr_pcga="213"/>
       <item name="building_assets" fr_pcga="2131"/>
       <item name="general_installation_assets" fr_pcga="2135"/>
+      <item name="construction_on_other_land_parcel_assets" fr_pcga="214"/>
+      <item name="technical_installation_equipment_and_tools_assets" fr_pcga="215"/>
+      <item name="technical_installation_on_own_land_parcel_assets" fr_pcga="2151"/>
+      <item name="technical_installation_on_other_land_parcel_assets" fr_pcga="2152"/>
       <item name="equipment_assets" fr_pcga="2154"/>
+      <item name="tools_assets" fr_pcga="2155"/>
+      <item name="other_corporeal_assets" fr_pcga="218"/>
       <item name="other_general_installation_assets" fr_pcga="2181"/>
       <item name="transport_vehicle_assets" fr_pcga="2182"/>
       <item name="office_equipment_assets" fr_pcga="2183"/>
       <item name="office_furniture_assets" fr_pcga="2184"/>
       <item name="sustainable_packaging_assets" fr_pcga="2186"/>
       <item name="other_assets" fr_pcga="2188"/>
+      <item name="concession_assets" fr_pcga="22"/>
+      <item name="outstanding_assets" fr_pcga="23"/>
+      <item name="outstanding_corporeal_assets" fr_pcga="231"/>
+      <item name="outstanding_land_parcel_assets" fr_pcga="2311"/>
+      <item name="outstanding_land_parcel_construction_assets" fr_pcga="2312"/>
+      <item name="outstanding_construction_on_own_land_parcel_assets" fr_pcga="2313"/>
+      <item name="outstanding_construction_on_other_land_parcel_assets" fr_pcga="2314"/>
+      <item name="outstanding_equipment_assets" fr_pcga="2315"/>
+      <item name="outstanding_other_general_installation_assets" fr_pcga="2318"/>
+      <item name="outstanding_living_corporeal_assets" fr_pcga="234"/>
+      <item name="outstanding_adult_animal_assets" fr_pcga="2341"/>
+      <item name="outstanding_young_animal_assets" fr_pcga="2342"/>
+      <item name="outstanding_service_animal_assets" fr_pcga="2343"/>
+      <item name="outstanding_sustainables_plants_assets" fr_pcga="2346"/>
+      <item name="living_corporeal_assets" fr_pcga="24"/>
       <item name="adult_animal_assets" fr_pcga="241"/>
       <item name="young_animal_assets" fr_pcga="242"/>
       <item name="service_animal_assets" fr_pcga="243"/>
@@ -59,7 +88,7 @@
       <item name="other_professional_agricultural_participation_assets" fr_pcga="2628"/>
       <item name="ownership_assets" fr_pcga="271"/>
       <item name="ownership_loan" fr_pcga="274"/>
-      <item name="financial_asset_depreciations" fr_pcga="28"/>
+      <item name="fixed_asset_depreciations" fr_pcga="28"/>
       <item name="incorporeal_asset_depreciations" fr_pcga="280"/>
       <item name="other_incorporeal_asset_depreciations" fr_pcga="2808"/>
       <item name="corporeal_asset_depreciations" fr_pcga="281"/>
@@ -91,6 +120,7 @@
       <item name="animal_reproduction_stock" fr_pcga="3016"/>
       <item name="fuel_stock" fr_pcga="3021"/>
       <item name="maintenances_consumables_stock" fr_pcga="3022"/>
+      <item name="other_materials_stock" fr_pcga="3026"/>
       <item name="other_consumables_stock" fr_pcga="3027"/>
       <item name="long_time_animal_stock" fr_pcga="31"/>
       <item name="short_time_animal_stock" fr_pcga="32"/>
@@ -100,30 +130,42 @@
       <item name="short_cycle_cultivation_advances_seeds" fr_pcga="3412"/>
       <item name="short_cycle_cultivation_advances_plants_medicines" fr_pcga="3413"/>
       <item name="short_cycle_cultivation_advances_culturals_ways" fr_pcga="3415"/>
+      <item name="long_cycle_products_stock" fr_pcga="35"/>
+      <item name="long_cycle_products_wines_stock" fr_pcga="351"/>
+      <item name="long_cycle_products_liquors_stock" fr_pcga="352"/>
+      <item name="short_cycle_products_stock" fr_pcga="36"/>
       <item name="end_products_stock" fr_pcga="37"/>
       <item name="plant_derivative_stock" fr_pcga="374"/>
       <item name="animal_derivative_stock" fr_pcga="375"/>
+      <item name="processing_products_stock" fr_pcga="376"/>
+      <item name="residual_products_stock" fr_pcga="377"/>
 
       <!--                      THIRD-PARTY               -->
       <item name="third_party" fr_pcg82="4"/>
       <item name="suppliers" fr_pcg82="401"/>
       <item name="suppliers_balance_after_compensation" fr_pcg82="402"/>
-      <item name="financial_assets_suppliers" fr_pcg82="404"/>
+      <item name="fixed_assets_suppliers" fr_pcg82="404"/>
       <item name="suppliers_invoices_not_received" fr_pcg82="408"/>
       <item name="debtor_suppliers" fr_pcg82="409"/>
       <item name="clients"   fr_pcg82="411"/>
       <item name="staff_due_remunerations"   fr_pcg82="421"/>
       <item name="social_agricultural_mutuality"   fr_pcga="431"/>
-      <item name="vat"   fr_pcga="445"/>
-      <item name="deductible_vat"      fr_pcg82="445661"/>
+      <item name="vat" fr_pcga="445"/>
+      <item name="enterprise_deductible_vat"   fr_pcga="4456"/>
+      <item name="deductible_asset_vat" fr_pcg82="44562"/>
+      <item name="deductible_vat_to_resolve" fr_pcg82="44565"/>
+      <item name="deductible_vat" fr_pcg82="44566"/>
+      <item name="report_vat_credit" fr_pcg82="44567"/>
+      <item name="enterprise_collected_vat"   fr_pcga="4457"/>
       <item name="collected_vat" fr_pcg82="44571"/>
-      <item name="rectify_collected_vat" fr_pcg82="44575"/>
+      <item name="collected_vat_to_resolve" fr_pcg82="44575"/>
       <item name="waiting_vat" fr_pcg82="4458"/>
       <item name="associated_accounts" fr_pcga="455"/>
       <item name="principal_associated_accounts" fr_pcga="4551"/>
       <item name="usual_associated_accounts" fr_pcga="4552"/>
       <item name="locked_associated_accounts" fr_pcga="4553"/>
       <item name="attorneys" fr_pcg82="467"/>
+      <item name="temporary_operations" fr_pcg82="47"/>
       <item name="compensation_operations" fr_pcg82="472"/>
 
       <!--                      FINANCES              -->
@@ -177,17 +219,23 @@
       <item name="rent_expenses" fr_pcg82="613"/>
       <item name="land_parcel_rent_expenses" fr_pcga="6131"/>
       <item name="equipment_rent_expenses" fr_pcga="6132"/>
+      <item name="co_ownership_and_locative_expenses" fr_pcga="614"/>
+      <item name="land_parcel_locative_expenses" fr_pcga="6141"/>
+      <item name="equipment_locative_expenses" fr_pcga="6142"/>
+      <item name="animal_locative_expenses" fr_pcga="6144"/>
       <item name="maintenance_expenses" fr_pcg82="615"/>
       <item name="own_building_expenses" fr_pcga="6153"/>
       <item name="other_building_expenses" fr_pcga="6154"/>
       <item name="equipment_expenses" fr_pcga="6155"/>
       <item name="insurance_expenses" fr_pcg82="616"/>
+      <item name="infirmity_and_death_insurance_expenses" fr_pcga="6168"/>
       <item name="studies_and_research_expenses" fr_pcga="617"/>
       <item name="other_expenses" fr_pcga="618"/>
       <item name="congress_and_symposium_expenses" fr_pcga="6185"/>
       <item name="external_expenses" fr_pcga="62"/>
       <item name="external_staff_expenses" fr_pcga="621"/>
       <item name="fees_expenses" fr_pcga="622"/>
+      <item name="forwarding_agent_fees_expenses" fr_pcga="6223"/>
       <item name="veterinary_fees_expenses" fr_pcga="6225"/>
       <item name="other_fees_expenses" fr_pcga="6226"/>
       <item name="advertising_expenses" fr_pcg82="623"/>
@@ -211,12 +259,20 @@
       <item name="other_staff_expenses" fr_pcga="648"/>
       <item name="licences_expenses" fr_pcga="651"/>
       <item name="other_usual_running_expenses" fr_pcga="658"/>
+      <item name="loans_interests" fr_pcg82="661"/>
       <item name="land_loans_interests" fr_pcg82="6611"/>
       <item name="long_term_loans_interests" fr_pcg82="6612"/>
       <item name="short_term_loans_interests" fr_pcg82="6613"/>
       <item name="campaigns_interests" fr_pcg82="6614"/>
-      <item name="other_interests_expenses" fr_pcg82="6618"/>
-      <item name="financial_assets_values" fr_pcg82="675"/>
+      <item name="interests_expenses" fr_pcga="661"/>
+      <item name="other_interests_expenses" fr_pcga="6618"/>
+      <item name="other_various_interests_expenses" fr_pcga="66188"/>
+      <item name="exceptional_expenses" fr_pcga="67"/>
+      <item name="management_operation_exceptional_expenses" fr_pcga="671"/>
+      <item name="market_fine_exceptional_expenses" fr_pcga="6711"/>
+      <item name="fiscal_fine_exceptional_expenses" fr_pcga="6712"/>
+      <item name="donation_exceptional_expenses" fr_pcga="6713"/>
+      <item name="fixed_assets_values" fr_pcg82="675"/>
       <item name="depreciations_inputations_expenses" fr_pcg82="68"/>
       <item name="corporeals_and_incorporeals_depreciations_inputations_expenses" fr_pcg82="6811"/>
       <item name="incorporeals_depreciations_inputations_expenses" fr_pcga="68111"/>
@@ -231,10 +287,12 @@
       <item name="revenues" fr_pcg82="7"/>
       <item name="plant_derivatives_revenues" fr_pcga="701"/>
       <item name="animal_derivatives_revenues" fr_pcga="702"/>
+      <item name="processing_products_revenues" fr_pcga="703"/>
       <item name="animal_revenues" fr_pcga="704"/>
       <item name="adult_animal_revenues" fr_pcga="7041"/>
       <item name="young_animal_revenues" fr_pcga="7042"/>
       <item name="other_animal_revenues" fr_pcga="7045"/>
+      <item name="residual_products_revenues" fr_pcga="705"/>
       <item name="services_revenues" fr_pcg82="706"/>
       <item name="merchandising_revenues" fr_pcg82="707"/>
       <item name="making_services_revenues" fr_pcga="7084"/>
@@ -261,6 +319,7 @@
       <item name="other_usual_running_profits" fr_pcga="758"/>
       <item name="financials_revenues" fr_pcga="76"/>
       <item name="reductions" fr_pcga="765"/>
+      <item name="exceptional_revenues" fr_pcga="77"/>
       <item name="sales_assets_revenues" fr_pcga="775"/>
       <item name="land_parcel_sell_revenues" fr_pcga="7752"/>
       <item name="share_asset_subsidies" fr_pcga="777"/>

@@ -38,9 +38,12 @@
       <item name="pick"       parameters="variety"/>
       <item name="move"/>
       <item name="enclose"/> <!-- clôturer des champs  -->
+      <item name="tamp"/> <!-- tasser le sol  -->
       <!-- inplanting  -->
       <item name="wrap"       parameters="variety"/>
       <item name="seat"       parameters="variety"/>
+      <!-- pollination  -->
+      <item name="pollinate"       parameters="variety"/>
       <!-- store matter  -->
       <item name="store"      parameters="variety"/>
       <item name="store_fluid"/>
@@ -70,6 +73,8 @@
       <!-- Animal reproduction  -->
       <item name="administer_inseminate" parameters="variety"/>
       <item name="inseminate" parameters="variety"/>
+
+      <item name="treat" parameters="issue_nature,variety"/>
     </items>
   </nomenclature>
 </nomenclatures>

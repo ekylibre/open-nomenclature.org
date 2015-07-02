@@ -43,6 +43,7 @@ eng:
         pick: "Pick"
         plow: "Plow"
         plow_superficially: "Plow superficially"
+        pollinate: "Pollinate"
         press: "Press"
         produce: "Produce"
         rake: "Rake"
@@ -56,7 +57,9 @@ eng:
         store_gaz: "Store gaz"
         store_liquid: "Store liquid"
         sulfurize: "Sulfurize"
+        tamp: "Tamp"
         tow: "Tow"
+        treat: "Treat"
         uncompact: "Uncompact"
         wrap: "Wrap"
     accounts:
@@ -78,6 +81,7 @@ eng:
         agricultural_disasters_compensations: "Agricultural disasters compensations"
         animal_derivative_stock: "Animal derivative stock"
         animal_derivatives_revenues: "Animal derivatives revenues"
+        animal_locative_expenses: "Animal locative expenses"
         animal_medicine_matter_expenses: "Animal medicine matter expenses"
         animal_medicine_stock: "Animal medicine stock"
         animal_reproduction_matter_expenses: "Animal reproduction matter expenses"
@@ -95,6 +99,7 @@ eng:
         banks_services_expenses: "Banks services expenses"
         biocorporeal_asset_depreciations: "Biocorporeal asset depreciations"
         bonus_staff_expenses: "Bonus staff expenses"
+        brands_and_patents_assets: "Brands and patents assets"
         building_assets: "Building assets"
         building_depreciations_inputations_expenses: "Building depreciations inputations expenses"
         campaigns_interests: "Campaigns interests"
@@ -103,28 +108,43 @@ eng:
         cashes: "Cashes"
         catalog_and_print_expenses: "Catalog and print expenses"
         clients: "Clients"
+        co_ownership_and_locative_expenses: "Co ownership and locative expenses"
         collected_vat: "Collected vat"
+        collected_vat_to_resolve: "Collected vat to resolve"
         compensation_operations: "Compensation operations"
+        concession_assets: "Concession assets"
         congress_and_symposium_expenses: "Congress and symposium expenses"
+        construction_on_other_land_parcel_assets: "Construction on other land parcel assets"
+        construction_on_own_land_parcel_assets: "Construction on own land parcel assets"
         cooperative_participation_assets: "Cooperative participation assets"
         corporeal_asset_depreciations: "Corporeal asset depreciations"
+        corporeal_assets: "Corporeal assets"
         corporeals_and_incorporeals_depreciations_inputations_expenses: "Corporeals and incorporeals depreciations inputations expenses"
         debtor_suppliers: "Debtor suppliers"
+        deductible_asset_vat: "Deductible asset vat"
         deductible_vat: "Deductible vat"
+        deductible_vat_to_resolve: "Deductible vat to resolve"
         depreciations_inputations_expenses: "Depreciations inputations expenses"
         discount_and_reductions_expenses: "Discount and reductions expenses"
         discount_and_reductions_revenues: "Discount and reductions revenues"
         discount_from_cooperatives: "Discount from cooperatives"
+        donation_exceptional_expenses: "Donation exceptional expenses"
         electricity_expenses: "Electricity expenses"
         end_products_stock: "End products stock"
+        enterprise_collected_vat: "Enterprise collected vat"
+        enterprise_deductible_vat: "Enterprise deductible vat"
         equipment_asset_depreciations: "Equipment asset depreciations"
         equipment_assets: "Equipment assets"
         equipment_cooperative_participation_assets: "Equipment cooperative participation assets"
         equipment_expenses: "Equipment expenses"
+        equipment_locative_expenses: "Equipment locative expenses"
         equipment_rent_expenses: "Equipment rent expenses"
         equipment_subventions: "Equipment subventions"
         equipments_depreciations_inputations_expenses: "Equipments depreciations inputations expenses"
         equipments_expenses: "Equipments expenses"
+        establishment_charge_assets: "Establishment charge assets"
+        exceptional_expenses: "Exceptional expenses"
+        exceptional_revenues: "Exceptional revenues"
         expenses: "Expenses"
         exploitation_expenses_transfers: "Exploitation expenses transfers"
         exploitation_subsidies: "Exploitation subsidies"
@@ -136,15 +156,17 @@ eng:
         fertilizer_stock: "Fertilizer stock"
         fill_up_price_revenues: "Fill up price revenues"
         finances: "Finances"
-        financial_asset_depreciations: "Financial asset depreciations"
-        financial_assets: "Financial assets"
-        financial_assets_suppliers: "Financial assets suppliers"
-        financial_assets_values: "Financial assets values"
         financial_year_result: "Financial year result"
         financial_year_result_balance: "Financial year result balance"
         financial_year_result_loss: "Financial year result loss"
         financial_year_result_profit: "Financial year result profit"
         financials_revenues: "Financials revenues"
+        fiscal_fine_exceptional_expenses: "Fiscal fine exceptional expenses"
+        fixed_asset_depreciations: "Fixed asset depreciations"
+        fixed_assets: "Fixed assets"
+        fixed_assets_suppliers: "Fixed assets suppliers"
+        fixed_assets_values: "Fixed assets values"
+        forwarding_agent_fees_expenses: "Forwarding agent fees expenses"
         fuel_matter_expenses: "Fuel matter expenses"
         fuel_stock: "Fuel stock"
         fuels_expenses: "Fuels expenses"
@@ -155,11 +177,13 @@ eng:
         incorporeal_asset_depreciations: "Incorporeal asset depreciations"
         incorporeals_depreciations_inputations_expenses: "Incorporeals depreciations inputations expenses"
         industrial_cooperative_participation_assets: "Industrial cooperative participation assets"
+        infirmity_and_death_insurance_expenses: "Infirmity and death insurance expenses"
         initial_individual_capital: "Initial individual capital"
         initial_individual_capital_variations: "Initial individual capital variations"
         initial_society_capital: "Initial society capital"
         installation_sustainable_plant_assets: "Installation sustainable plant assets"
         insurance_expenses: "Insurance expenses"
+        interests_expenses: "Interests expenses"
         internal_transfers: "Internal transfers"
         inventory_variations: "Inventory variations"
         irrigation_expenses: "Irrigation expenses"
@@ -170,6 +194,7 @@ eng:
         land_parcel_construction_asset_depreciations: "Land parcel construction asset depreciations"
         land_parcel_construction_assets: "Land parcel construction assets"
         land_parcel_construction_depreciations_inputations_expenses: "Land parcel construction depreciations inputations expenses"
+        land_parcel_locative_expenses: "Land parcel locative expenses"
         land_parcel_rent_expenses: "Land parcel rent expenses"
         land_parcel_sell_revenues: "Land parcel sell revenues"
         leasing_expenses: "Leasing expenses"
@@ -178,9 +203,15 @@ eng:
         little_office_equipment_expenses: "Little office equipment expenses"
         livestock_feed_matter_expenses: "Livestock feed matter expenses"
         livestock_feed_stock: "Livestock feed stock"
+        living_corporeal_assets: "Living corporeal assets"
+        loans: "Loans"
+        loans_interests: "Loans interests"
         locked_associated_accounts: "Locked associated accounts"
         long_cycle_animals_inventory_variations: "Long cycle animals inventory variations"
         long_cycle_cultivation_advances: "Long cycle cultivation advances"
+        long_cycle_products_liquors_stock: "Long cycle products liquors stock"
+        long_cycle_products_stock: "Long cycle products stock"
+        long_cycle_products_wines_stock: "Long cycle products wines stock"
         long_cycle_vegetals_inventory_variations: "Long cycle vegetals inventory variations"
         long_term_loans: "Long term loans"
         long_term_loans_interests: "Long term loans interests"
@@ -190,6 +221,8 @@ eng:
         maintenances_consumables_stock: "Maintenances consumables stock"
         making_services_expenses: "Making services expenses"
         making_services_revenues: "Making services revenues"
+        management_operation_exceptional_expenses: "Management operation exceptional expenses"
+        market_fine_exceptional_expenses: "Market fine exceptional expenses"
         materials_expenses: "Materials expenses"
         merchandising_accessory_expenses: "Merchandising accessory expenses"
         merchandising_accessory_revenues: "Merchandising accessory revenues"
@@ -210,6 +243,7 @@ eng:
         other_consumable_matter_expenses: "Other consumable matter expenses"
         other_consumables_stock: "Other consumables stock"
         other_corporeal_asset_depreciations: "Other corporeal asset depreciations"
+        other_corporeal_assets: "Other corporeal assets"
         other_expenses: "Other expenses"
         other_exploitation_subsidies: "Other exploitation subsidies"
         other_fees_expenses: "Other fees expenses"
@@ -219,6 +253,7 @@ eng:
         other_interests_expenses: "Other interests expenses"
         other_investment_subventions: "Other investment subventions"
         other_investment_subventions_in_earnings_statement: "Other investment subventions in earnings statement"
+        other_materials_stock: "Other materials stock"
         other_professional_agricultural_participation_assets: "Other professional agricultural participation assets"
         other_reserves: "Other reserves"
         other_staff_expenses: "Other staff expenses"
@@ -226,9 +261,24 @@ eng:
         other_taxes: "Other taxes"
         other_usual_running_expenses: "Other usual running expenses"
         other_usual_running_profits: "Other usual running profits"
+        other_various_interests_expenses: "Other various interests expenses"
         others_corporeals_depreciations_inputations_expenses: "Others corporeals depreciations inputations expenses"
+        outstanding_adult_animal_assets: "Outstanding adult animal assets"
+        outstanding_assets: "Outstanding assets"
+        outstanding_construction_on_other_land_parcel_assets: "Outstanding construction on other land parcel assets"
+        outstanding_construction_on_own_land_parcel_assets: "Outstanding construction on own land parcel assets"
+        outstanding_corporeal_assets: "Outstanding corporeal assets"
+        outstanding_equipment_assets: "Outstanding equipment assets"
+        outstanding_land_parcel_assets: "Outstanding land parcel assets"
+        outstanding_land_parcel_construction_assets: "Outstanding land parcel construction assets"
+        outstanding_living_corporeal_assets: "Outstanding living corporeal assets"
+        outstanding_other_general_installation_assets: "Outstanding other general installation assets"
+        outstanding_service_animal_assets: "Outstanding service animal assets"
+        outstanding_sustainables_plants_assets: "Outstanding sustainables plants assets"
+        outstanding_young_animal_assets: "Outstanding young animal assets"
         own_building_asset_depreciations: "Own building asset depreciations"
         own_building_expenses: "Own building expenses"
+        owner_account: "Owner account"
         ownership_assets: "Ownership assets"
         ownership_loan: "Ownership loan"
         packaging: "Packaging"
@@ -239,16 +289,22 @@ eng:
         plant_medicine_stock: "Plant medicine stock"
         plants_subsidies: "Plants subsidies"
         principal_associated_accounts: "Principal associated accounts"
+        processing_products_revenues: "Processing products revenues"
+        processing_products_stock: "Processing products stock"
         products_inventory_variations: "Products inventory variations"
         products_specials_taxes: "Products specials taxes"
         professional_agricultural_organization_assets: "Professional agricultural organization assets"
         professional_subscriptions_expenses: "Professional subscriptions expenses"
         raw_material_expenses: "Raw material expenses"
-        rectify_collected_vat: "Rectify collected vat"
+        redeemable_land_parcel_construction_assets: "Redeemable land parcel construction assets"
         reductions: "Reductions"
         reevaluation_gaps: "Reevaluation gaps"
         rent_expenses: "Rent expenses"
+        report_vat_credit: "Report vat credit"
+        research_and_development_charge_assets: "Research and development charge assets"
         reserves: "Reserves"
+        residual_products_revenues: "Residual products revenues"
+        residual_products_stock: "Residual products stock"
         revenue_subsidies: "Revenue subsidies"
         revenues: "Revenues"
         salary_social_contribution_expenses: "Salary social contribution expenses"
@@ -266,6 +322,7 @@ eng:
         short_cycle_cultivation_advances_fertilizers: "Short cycle cultivation advances fertilizers"
         short_cycle_cultivation_advances_plants_medicines: "Short cycle cultivation advances plants medicines"
         short_cycle_cultivation_advances_seeds: "Short cycle cultivation advances seeds"
+        short_cycle_products_stock: "Short cycle products stock"
         short_cycle_vegetals_inventory_variations: "Short cycle vegetals inventory variations"
         short_term_loans: "Short term loans"
         short_term_loans_interests: "Short term loans interests"
@@ -290,8 +347,13 @@ eng:
         sustainables_plants_on_other_land_parcel_assets: "Sustainables plants on other land parcel assets"
         sustainables_plants_on_own_land_parcel_assets: "Sustainables plants on own land parcel assets"
         taxes_expenses: "Taxes expenses"
+        technical_installation_equipment_and_tools_assets: "Technical installation equipment and tools assets"
+        technical_installation_on_other_land_parcel_assets: "Technical installation on other land parcel assets"
+        technical_installation_on_own_land_parcel_assets: "Technical installation on own land parcel assets"
         telecommunications_expenses: "Telecommunications expenses"
+        temporary_operations: "Temporary operations"
         third_party: "Third party"
+        tools_assets: "Tools assets"
         trade_show_expenses: "Trade show expenses"
         transport_vehicle_asset_depreciations: "Transport vehicle asset depreciations"
         transport_vehicle_assets: "Transport vehicle assets"
@@ -313,13 +375,21 @@ eng:
       name: "Activity families"
       property_natures:
         cultivation_variety: "Cultivation variety"
+        nature: "Nature"
         support_variety: "Support variety"
+      choices:
+        nature:
+          auxiliary: "Auxiliary"
+          main: "Main"
+          standalone: "Standalone"
       items:
         accountancy: "Accountancy"                         #< exploitation
         administrative: "Administrative"                   #< exploitation
-        almond_orchards: "Almond orchards"                 #< orchard_crops
+        agricultural_works: "Agricultural works"           #< works
+        almond_orchards: "Almond orchards"                 #< arboriculture
         animal_farming: "Animal farming"
-        apple_orchards: "Apple orchards"                   #< orchard_crops
+        animal_housing: "Animal housing"                   #< service
+        apple_orchards: "Apple orchards"                   #< arboriculture
         arboriculture: "Arboriculture"                     #< vegetal_crops
         aromatic_and_medicinal_plants: "Aromatic and medicinal plants" #< vegetal_crops
         asparagus_crops: "Asparagus crops"                 #< market_garden_crops
@@ -330,34 +400,35 @@ eng:
         bere_crops: "Bere crops"                           #< cereal_crops
         bison_farming: "Bison farming"                     #< animal_farming
         black_mustard_crops: "Black mustard crops"         #< market_garden_crops
-        blackcurrant_crops: "Blackcurrant crops"           #< fruits_crops
+        blackcurrant_crops: "Blackcurrant crops"           #< arboriculture
+        building_works: "Building works"                   #< works
         cabbage_crops: "Cabbage crops"                     #< market_garden_crops
         canary_grass_crops: "Canary grass crops"           #< cereal_crops
-        carob_orchards: "Carob orchards"                   #< orchard_crops
+        carob_orchards: "Carob orchards"                   #< arboriculture
         carrot_crops: "Carrot crops"                       #< market_garden_crops
+        catering: "Catering"                               #< service
         cattle_farming: "Cattle farming"                   #< animal_farming
         celery_crops: "Celery crops"                       #< market_garden_crops
         cereal_crops: "Cereal crops"                       #< field_crops
-        chestnut_orchards: "Chestnut orchards"             #< orchard_crops
+        chestnut_orchards: "Chestnut orchards"             #< arboriculture
         chickpea_crops: "Chickpea crops"                   #< protein_crops
         cichorium_crops: "Cichorium crops"                 #< market_garden_crops
-        citrus_orchards: "Citrus orchards"                 #< orchard_crops
-        cocoa_crops: "Cocoa crops"                         #< oilseed_crops
+        citrus_orchards: "Citrus orchards"                 #< arboriculture
+        cocoa_crops: "Cocoa crops"                         #< arboriculture
         common_wheat_crops: "Common wheat crops"           #< cereal_crops
-        corn_crops: "Corn crops"                           #< cereal_crops
         cotton_crops: "Cotton crops"                       #< oilseed_crops
         durum_wheat_crops: "Durum wheat crops"             #< cereal_crops
         exploitation: "Exploitation"
         fallow_land: "Fallow land"                         #< field_crops
         field_crops: "Field crops"                         #< vegetal_crops
         flax_crops: "Flax crops"                           #< oilseed_crops
-        flower_crops: "Flower crops"                       #< market_garden_crops
+        flower_crops: "Flower crops"                       #< vegetal_crops
         fodder_crops: "Fodder crops"                       #< field_crops
         fruits_crops: "Fruits crops"                       #< vegetal_crops
         garden_pea_crops: "Garden pea crops"               #< market_garden_crops
         garlic_crops: "Garlic crops"                       #< market_garden_crops
         goat_farming: "Goat farming"                       #< animal_farming
-        hazel_orchards: "Hazel orchards"                   #< orchard_crops
+        hazel_orchards: "Hazel orchards"                   #< arboriculture
         hemp_crops: "Hemp crops"                           #< field_crops
         hop_crops: "Hop crops"                             #< market_garden_crops
         horsebean_crops: "Horsebean crops"                 #< protein_crops
@@ -366,29 +437,30 @@ eng:
         leguminous_crops: "Leguminous crops"               #< protein_crops
         lentil_crops: "Lentil crops"                       #< protein_crops
         lettuce_crops: "Lettuce crops"                     #< market_garden_crops
+        lodging: "Lodging"                                 #< service
         lupin_crops: "Lupin crops"                         #< protein_crops
         maintenance: "Maintenance"
+        maize_crops: "Corn crops"                          #< cereal_crops
         market_garden_crops: "Market garden crops"         #< vegetal_crops
         meadow: "Meadow"                                   #< field_crops
         muskmelon_crops: "Muskmelon crops"                 #< fruits_crops
         mussel_farming: "Mussel farming"                   #< animal_farming
         oat_crops: "Oat crops"                             #< cereal_crops
         oilseed_crops: "Oilseed crops"                     #< field_crops
-        olive_orchards: "Olive orchards"                   #< orchard_crops
+        olive_orchards: "Olive orchards"                   #< arboriculture
         onion_crops: "Onion crops"                         #< market_garden_crops
-        orchard_crops: "Orchard crops"                     #< arboriculture
         ostrich_farming: "Ostrich farming"                 #< animal_farming
         oyster_farming: "Oyster farming"                   #< animal_farming
         palmiped_farming: "Palmiped farming"               #< animal_farming
         parsley_crops: "Parsley crops"                     #< market_garden_crops
         pea_crops: "Pea crops"                             #< protein_crops
-        peach_orchards: "Peach orchards"                   #< orchard_crops
+        peach_orchards: "Peach orchards"                   #< arboriculture
         peanut_crops: "Peanut crops"                       #< oilseed_crops
-        pear_orchards: "Pear orchards"                     #< orchard_crops
+        pear_orchards: "Pear orchards"                     #< arboriculture
         pig_farming: "Pig farming"                         #< animal_farming
         pineapple_crops: "Pineapple crops"                 #< fruits_crops
-        pistachio_orchards: "Pistachio orchards"           #< orchard_crops
-        plum_orchards: "Plum orchards"                     #< orchard_crops
+        pistachio_orchards: "Pistachio orchards"           #< arboriculture
+        plum_orchards: "Plum orchards"                     #< arboriculture
         poaceae_crops: "Poaceae crops"                     #< cereal_crops
         potato_crops: "Potato crops"                       #< field_crops
         poultry_farming: "Poultry farming"                 #< animal_farming
@@ -397,8 +469,9 @@ eng:
         purchases: "Purchases"                             #< exploitation
         rabbit_farming: "Rabbit farming"                   #< animal_farming
         rapeseed_crops: "Rapeseed crops"                   #< oilseed_crops
-        raspberry_crops: "Raspberry crops"                 #< fruits_crops
-        redcurrant_crops: "Redcurrant crops"               #< fruits_crops
+        raspberry_crops: "Raspberry crops"                 #< arboriculture
+        redcurrant_crops: "Redcurrant crops"               #< arboriculture
+        renting: "Renting"                                 #< service
         rice_crops: "Rice crops"                           #< cereal_crops
         rye_crops: "Rye crops"                             #< cereal_crops
         saffron_crops: "Saffron crops"                     #< aromatic_and_medicinal_plants
@@ -409,22 +482,22 @@ eng:
         sheep_farming: "Sheep farming"                     #< animal_farming
         snail_farming: "Snail farming"                     #< animal_farming
         sorghum_crops: "Sorghum crops"                     #< cereal_crops
-        soybean_crops: "Soybean crops"                     #< oilseed_crops
+        soybean_crops: "Soybean crops"                     #< protein_crops
         stocks: "Stocks"                                   #< exploitation
         strawberry_crops: "Strawberry crops"               #< fruits_crops
         sturgeon_farming: "Sturgeon farming"               #< animal_farming
         sunflower_crops: "Sunflower crops"                 #< oilseed_crops
-        theobroma_crops: "Theobroma crops"                 #< oilseed_crops
-        tobacco_crops: "Tobacco crops"                     #< market_garden_crops
+        tobacco_crops: "Tobacco crops"                     #< field_crops
         tomato_crops: "Tomato crops"                       #< market_garden_crops
         triticale_crops: "Triticale crops"                 #< cereal_crops
         turnip_crops: "Turnip crops"                       #< market_garden_crops
         vegetal_crops: "Vegetal crops"
         vetch_crops: "Vetch crops"                         #< protein_crops
         vines: "Vines"                                     #< arboriculture
-        walnut_orchards: "Walnut orchards"                 #< orchard_crops
+        walnut_orchards: "Walnut orchards"                 #< arboriculture
         watermelon_crops: "Watermelon crops"               #< fruits_crops
         wine: "Wine"                                       #< processing
+        works: "Works"                                     #< service
     administrative_area_natures:
       name: "Administrative area natures"
       property_natures:
@@ -1328,6 +1401,7 @@ eng:
         phytosanitary_certification: "Phytosanitary certification"
         phytosanitary_registry: "Phytosanitary registry"
         prescription: "Prescription"
+        products_sheet: "Products sheet"
         provisional_manure_management_plan: "Provisional manure management plan"
         purchases_estimate: "Purchases estimate"
         purchases_invoice: "Purchases invoice"
@@ -1340,150 +1414,43 @@ eng:
         stocks: "Stocks"
         tax_assessment: "Tax assessment"
         trial_balance: "Trial balance"
-        vat_taxe_registry: "Vat taxe registry"
+        vat_registry: "VAT registry"
         veterinary_booklet: "Veterinary booklet"
         vine_phytosanitary_registry: "Vine phytosanitary registry"
         wine_bottling_registry: "Wine bottling registry"
         wine_detention_registry: "Wine detention registry"
         wine_manipulation_registry: "Wine manipulation registry"
-    enterprise_resource_actions:
-      name: "Enterprise resource actions"
-      items:
-        close: "Close"
-        execute: "Execute"
-        link: "Link"
-        lock: "Lock"
-        read: "Read"
-        reopen: "Reopen"
-        write: "Write"
-    enterprise_resources:
-      name: "Enterprise resources"
-      property_natures:
-        accesses: "Accesses"
-      items:
-        accounts: "Accounts"
-        activities: "Activities"
-        affairs: "Affairs"
-        analyses: "Analyses"
-        analytic_distributions: "Analytic distributions"
-        animal_foods: "Animal foods"
-        animal_groups: "Animal groups"
-        animal_medicines: "Animal medicines"
-        animal_products: "Animal products"
-        animals: "Animals"
-        bank_statements: "Bank statements"
-        building_divisions: "Building divisions"
-        buildings: "Buildings"
-        campaigns: "Campaigns"
-        cash_transfers: "Cash transfers"
-        cashes: "Cashes"
-        catalogs: "Catalogs"
-        cultivable_zones: "Cultivable zones"
-        custom_fields: "Custom fields"
-        deposits: "Deposits"
-        districts: "Districts"
-        document_templates: "Document templates"
-        documents: "Documents"
-        entities: "Entities"
-        equipments: "Equipments"
-        establishments: "Establishments"
-        events: "Events"
-        exports: "Exports"
-        financial_assets: "Financial assets"
-        financial_years: "Financial years"
-        fungi: "Fungi"
-        gaps: "Gaps"
-        georeadings: "Georeadings"
-        guide_analyses: "Guide analyses"
-        guides: "Guides"
-        identifiers: "Identifiers"
-        imports: "Imports"
-        incoming_deliveries: "Incoming deliveries"
-        incoming_payment_modes: "Incoming payment modes"
-        incoming_payments: "Incoming payments"
-        interventions: "Interventions"
-        inventories: "Inventories"
-        issues: "Issues"
-        journal_entries: "Journal entries"
-        journals: "Journals"
-        land_parcel_clusters: "Land parcel clusters"
-        land_parcel_groups: "Land parcel groups"
-        land_parcels: "Land parcels"
-        legal_entities: "Legal entities"
-        listings: "Listings"
-        manure_management_plans: "Manure management plans"
-        matters: "Matters"
-        myselves: "Myselves"
-        net_services: "Net services"
-        observations: "Observations"
-        outgoing_deliveries: "Outgoing deliveries"
-        outgoing_payment_modes: "Outgoing payment modes"
-        outgoing_payments: "Outgoing payments"
-        people: "People"
-        plant_medicines: "Plant medicines"
-        plants: "Plants"
-        postal_zones: "Postal zones"
-        prescriptions: "Prescriptions"
-        product_groups: "Product groups"
-        product_nature_categories: "Product nature categories"
-        product_nature_variants: "Product nature variants"
-        product_natures: "Product natures"
-        productions: "Productions"
-        products: "Products"
-        purchase_natures: "Purchase natures"
-        purchases: "Purchases"
-        roles: "Roles"
-        sale_natures: "Sale natures"
-        sales: "Sales"
-        sequences: "Sequences"
-        settings: "Settings"
-        settlements: "Settlements"
-        subscription_natures: "Subscription natures"
-        subscriptions: "Subscriptions"
-        taxes: "Taxes"
-        teams: "Teams"
-        trackings: "Trackings"
-        transformed_products: "Transformed products"
-        transports: "Transports"
-        users: "Users"
-        wine_tanks: "Wine tanks"
-        wine_transformers: "Wine transformers"
-        workers: "Workers"
     entity_link_natures:
       name: "Entity link natures"
       property_natures:
-        entity_1: "Entity 1"
-        entity_2: "Entity 2"
+        entity: "Entity"
+        linked: "Linked"
         symmetric: "Symmetric"
       items:
-        association: "Association"
         collaboration: "Collaboration"
-        cooperation: "Cooperation"
         direct_kinship: "Direct kinship"
-        management: "Management"
+        hierarchy: "Hierarchy"
+        membership: "Membership"
+        sibling_kinship: "Sibling kinship"
         transform: "Transform"
         undefined: "Undefined"
-        work: "Work"
-    entity_natures:
-      name: "Entity natures"
-      items:
-        association: "Association"                         #< legal_entity
-        civil_society: "Civil society"                     #< legal_entity
-        collectivity: "Collectivity"                       #< legal_entity
-        company: "Company"                                 #< legal_entity
-        cooperative: "Cooperative"                         #< legal_entity
-        doctor: "Doctor"                                   #< person
-        economic_interest_group: "Economic interest group" #< legal_entity
-        entity: "Entity"
-        foundation: "Foundation"                           #< legal_entity
-        legal_entity: "Legal entity"                       #< entity
-        madam: "Madam"                                     #< person
-        person: "Person"                                   #< entity
-        professor: "Professor"                             #< person
-        public_establishment: "Public establishment"       #< legal_entity
-        public_interest_group: "Public interest group"     #< legal_entity
-        sir: "Sir"                                         #< person
-        syndicate: "Syndicate"                             #< legal_entity
+      notions:
+        entity:
+          collaboration: "Collaborator"
+          direct_kinship: "Parent"
+          hierarchy: "Manager"
+          membership: "Member"
+          sibling_kinship: "Sibling"
+          transform: "Old organization"
+          undefined: "Acquaintance"
+        linked:
+          collaboration: "Collaborator"
+          direct_kinship: "Child"
+          hierarchy: "Managee"
+          membership: "Organization"
+          sibling_kinship: "Sibling"
+          transform: "New organization"
+          undefined: "Acquaintance"
     event_natures:
       name: "Event natures"
       property_natures:
@@ -1516,39 +1483,53 @@ eng:
       name: "Exchange types"
       items:
         agro_systemes_soil_analyses: "AGRO Systèmes soil analyses"
+        agro_systemes_water_analyses: "AGRO Systèmes water analyses"
         bordeaux_sciences_agro_istea_general_ledger: "Bordeaux sciences agro istea general ledger"
         bordeaux_sciences_agro_istea_journals: "Bordeaux sciences agro istea journals"
         bovins_croissance_cattle_performance_controls: "Bovins Croissance cattle performance controls"
-        charentes_alliance_water_analyses: "Charentes Alliance water analyses"
+        charentes_alliance_incoming_deliveries: "Charentes alliance incoming deliveries"
         ebp_edi: "EBP EDI"
         ekylibre_activities: "Ekylibre activities"
-        # ekylibre_backup: "Ekylibre backup"
+        ekylibre_animal_groups: "Ekylibre animal groups"
+        ekylibre_animals: "Ekylibre animals"
+        ekylibre_backup: "Ekylibre backup"
+        ekylibre_bank_statements: "Ekylibre bank statements"
         ekylibre_budgets: "Ekylibre budgets"
         ekylibre_cultivable_zones: "Ekylibre Cultivable zones"
         ekylibre_entities: "Ekylibre Entities"
         ekylibre_equipments: "Ekylibre equipments"
         ekylibre_georeadings: "Ekylibre Georeadings"
+        ekylibre_incoming_payments: "Ekylibre incoming payments"
         ekylibre_interventions: "Ekylibre interventions"
         ekylibre_land_parcels: "Ekylibre Land parcels"
         ekylibre_matters: "Ekylibre matters"
         ekylibre_original_purchase_files: "Ekylibre original purchase files"
         ekylibre_outgoing_payments: "Ekylibre outgoing payments"
+        ekylibre_pictures: "Ekylibre pictures"
         ekylibre_plants: "Ekylibre Plants"
         ekylibre_purchases: "Ekylibre purchases"
         ekylibre_sales: "Ekylibre sales"
         ekylibre_settings: "Ekylibre Settings"
+        ekylibre_variants: "Ekylibre variants"
         ekylibre_visuals: "Ekylibre Visuals"
         ekylibre_workers: "Ekylibre workers"
         ekylibre_zones: "Ekylibre zones"
-        galactea3_monthly_unitary_milk_analyses: "Galactea 3 monthly unitary milk analyses"
+        fiea_galactea: "FIEA galactea"
         isagri_isacompta_export: "Isagri isacompta export"
         isagri_isaculture_csv_import: "Isagri isaculture csv import"
+        la_graine_informatique_vinifera_entities: "La graine informatique vinifera entities"
         legrain_epicea_accounts: "Legrain epicea accounts"
         legrain_epicea_journals: "Legrain epicea journals"
         lilco_milk_analyses: "Lilco milk analyses"
-        telepac_cap_land_parcels: "Telepac cap land parcels"
-        telepac_land_parcels: "Telepac land parcels"
+        synel_animals: "Synel animals"
+        synel_inventory: "Synel inventory"
+        telepac_v2014_cap_land_parcels: "Telepac v2014 cap land parcels"
+        telepac_v2014_land_parcels: "Telepac v2014 land parcels"
+        telepac_v2015_cap_land_parcels: "Telepac v2015 cap land parcels"
+        telepac_v2015_land_parcels: "Telepac v2015 land parcels"
+        unicoque_outgoing_deliveries: "Unicoque outgoing deliveries"
         unicoque_plant_zones: "Unicoque plant zones"
+        upra_reproductors: "Upra reproductors"
         viniteca_interventions: "Viniteca interventions"
         viniteca_plant_zones: "Viniteca plant zones"
     fence_perimeters:
@@ -1610,6 +1591,7 @@ eng:
         gathering: "Gathering"
         individual_identifier: "Individual identifier"
         interpolation: "Interpolation"
+        probe: "Probe"
         related_to: "Related to"
         unit: "Unit"
       choices:
@@ -1699,6 +1681,9 @@ eng:
         maximal_storable_net_mass: "Maximal storable net mass"
         maximal_storable_net_volume: "Maximal storable net volume"
         meat_withdrawal_period: "Meat withdrawal period"
+        members_count: "Members count"
+        members_livestock_unit: "Members livestock unit"
+        members_population: "Members population"
         milk_daily_production: "Milk daily production"
         milk_withdrawal_period: "Milk withdrawal period"
         molybdenum_concentration: "Molybdenum concentration"
@@ -1788,6 +1773,7 @@ eng:
         edema: "Edema"                                     #< disease
         empoasca_vitis_leafhopper: "Empoasca vitis leafhopper" #< insecta_disease
         empty_fuel_tank: "Empty fuel tank"                 #< mechanical_issue
+        equipment_crash: "Equipment crash"                 #< accident
         escape: "Escape"                                   #< issue
         fecondity_problem: "Fecondity problem"             #< disease
         fever: "Fever"                                     #< disease
@@ -2035,6 +2021,16 @@ eng:
       name: "Abacus 12 of the Poitou-Charentes manure management plan computation method"
     nmp_poitou_charentes_abacus_two:
       name: "Abacus 2 of the Poitou-Charentes manure management plan computation method"
+    opportunity_origins:
+      name: "Opportunity origins"
+      items:
+        advertisement: "Advertisement"
+        employee_referral: "Employee referral"
+        external_referral: "External referral"
+        partner: "Partner"
+        public_relations: "Public relations"
+        trade_show: "Trade show"
+        web: "Web"
     phosphorus_analysis_methods:
       name: "Phosphorus analysis methods"
       items:
@@ -2078,7 +2074,9 @@ eng:
         addition: "Addition"                               #< transformation
         administrative_task: "Administrative task"
         animal_care: "Animal care"
+        animal_changing: "Animal changing"
         animal_curative_medicine_admission: "Animal curative medicine admission" #< animal_illness_treatment
+        animal_evolution: "Animal evolution"
         animal_fecondation: "Animal fecondation"
         animal_group_changing: "Animal group changing"
         animal_housing_cleaning: "Animal housing cleaning" #< animal_care
@@ -2104,12 +2102,15 @@ eng:
         food_mixing: "Food mixing"                         #< animal_nutrition
         food_supply: "Food supply"                         #< animal_nutrition
         garden_human_working: "Garden human working"       #< manual_working
+        gardening_harvest: "Gardening harvest"             #< harvest
         grain_transport: "Grain transport"                 #< transport
         grains_harvest: "Grains harvest"                   #< harvest
         grape_harvest: "Grape harvest"                     #< harvest
         grape_transport: "Grape transport"                 #< transport
         grinding: "Grinding"
         ground_arrangement: "Ground arrangement"
+        group_exclusion: "Group exclusion"
+        group_inclusion: "Group inclusion"
         growth_control: "Growth control"
         harvest: "Harvest"
         haymaking: "Haymaking"
@@ -2117,6 +2118,7 @@ eng:
         implantation: "Implantation"
         implanting: "Implanting"                           #< implantation
         maintenance_task: "Maintenance task"
+        manual_food_supply: "Manual food supply"           #< animal_nutrition
         manual_soil_enrichment: "Manual soil enrichment"   #< soil_enrichment
         manual_working: "Manual working"
         milk_production: "Milk production"                 #< animal_production
@@ -2137,6 +2139,8 @@ eng:
         plant_nutrition: "Plant nutrition"
         plowing: "Plowing"                                 #< tillage
         pressing: "Pressing"                               #< transformation
+        product_evolution: "Product evolution"
+        product_moving: "Product moving"
         pruning: "Pruning"
         raking: "Raking"                                   #< tillage
         remontage: "Remontage"                             #< transformation
@@ -2147,6 +2151,7 @@ eng:
         sowing: "Sowing"                                   #< implantation
         straw_processing: "Straw processing"               #< harvest
         straw_transport: "Straw transport"                 #< transport
+        technical_task: "Technical task"
         thermal_weed_killing: "Thermal weed killing"       #< weed_killing
         tillage: "Tillage"
         transfer: "Transfer"                               #< transformation
@@ -2159,19 +2164,22 @@ eng:
       items:
         container: "Container"
         doer: "Doer"
+        includer: "Includer"
         input: "Input"
         input_origin: "Input origin"
         output: "Output"
         target: "Target"
         tool: "Tool"
+        variant: "Variant"
     product_nature_categories:
       name: "Product nature categories"
       property_natures:
         charge_account: "Charge account"
         depreciable: "Depreciable"
-        financial_asset_account: "Financial asset account"
-        financial_asset_depreciations_account: "Financial asset depreciations account"
-        financial_asset_depreciations_inputations_expenses_account: "Financial asset depreciations inputations expenses account"
+        depreciation_percentage: "Depreciation percentage"
+        fixed_asset_account: "Fixed asset account"
+        fixed_asset_allocation_account: "Fixed asset depreciations account"
+        fixed_asset_expenses_account: "Fixed asset depreciations inputations expenses account"
         pictogram: "Pictogram"
         product_account: "Product account"
         purchasable: "Purchasable"
@@ -2185,6 +2193,7 @@ eng:
           barn: "Barn"
           beaker: "Beaker"
           bolt: "Bolt"
+          book: "Book"
           bug: "Bug"
           building: "Building"
           car: "Car"
@@ -2227,6 +2236,7 @@ eng:
           wrench: "Wrench"
       items:
         animal_food: "Animal food"
+        animal_housing_services: "Animal housing services"
         animal_medicine: "Animal medicine"
         animal_reproduction: "Animal reproduction"
         animals_making_services: "Animals making services"
@@ -2234,6 +2244,8 @@ eng:
         aves_band: "Aves band"
         aves_herd: "Aves herd"
         bank_service: "Bank service"
+        bee_band: "Bee band"
+        biological_auxiliary: "Biological auxiliary"
         bonus_staff_expense: "Bonus staff expense"
         building: "Building"
         building_division: "Building division"
@@ -2242,6 +2254,8 @@ eng:
         catalog_and_print: "Catalog and print"
         cattle_herd: "Cattle herd"
         congress: "Congress"
+        construction_materials_in_own_outstanding_installation: "Construction materials in own outstanding installation"
+        consumer_goods_office_item: "Consumer goods office item"
         crop: "Crop"
         cultivable_zone: "Cultivable zone"
         discount_and_reduction: "Discount and reduction"
@@ -2251,31 +2265,42 @@ eng:
         electronic_equipment: "Electronic equipment"
         equipment: "Equipment"
         equipment_rent: "Equipment rent"
+        equipment_repair_services: "Equipment repair services"
         exploitation_subsidies: "Exploitation subsidies"
+        farm_teaching_services: "Farm teaching services"
         fee: "Fee"
         female_adult_cow: "Female adult cow"
         female_adult_pig: "Female adult pig"
         female_young_cow: "Female young cow"
         fertilizer: "Fertilizer"
+        fiscal_fine: "Fiscal fine"
         fish_band: "Fish band"
+        forwarding_agent_fees_expense: "Forwarding agent fees expense"
         fruit: "Fruit"
         fuel: "Fuel"
         gas: "Gas"
         grain: "Grain"
         grass: "Grass"
+        honey: "Honey"
+        infirmity_and_death_insurance: "Infirmity and death insurance"
         installation: "Installation"
+        installing_charge: "Installing charge"
         insurance: "Insurance"
         irrigation_water: "Irrigation water"
         land_parcel: "Land parcel"
         land_parcel_cluster: "Land parcel cluster"
+        land_parcel_construction: "Land parcel construction"
+        land_parcel_locative_charge: "Land parcel locative charge"
         leasing: "Leasing"
         licence: "Licence"
         little_office_item: "Little office item"
+        loan_interest: "Loan interest"
         long_time_animal: "Long time animal"
         maintenance: "Maintenance"
         male_adult_cow: "Male adult cow"
         male_adult_pig: "Male adult pig"
         male_young_cow: "Male young cow"
+        meat: "Meat"
         milk: "Milk"
         natural_water: "Natural water"
         oenological_product: "Oenological product"
@@ -2286,6 +2311,8 @@ eng:
         pig_band: "Pig band"
         plant: "Plant"
         plant_medicine: "Plant medicine"
+        processed_meat: "Processed meat"
+        processed_milk: "Processed milk"
         professional_subscription: "Professional subscription"
         rabbit_band: "Rabbit band"
         raw_materials: "Raw materials"
@@ -2301,11 +2328,13 @@ eng:
         small_electronic_equipment: "Small electronic equipment"
         small_equipment: "Small equipment"
         straw: "Straw"
+        studies_and_research: "Studies and research"
         subcontracting: "Subcontracting"
         taxe: "Taxe"
         telecommunication: "Telecommunication"
         trade_show: "Trade show"
         travel: "Travel"
+        various_loan_interest: "Various loan interest"
         vegetals_making_services: "Vegetals making services"
         wine: "Wine"
         wine_package_consumable: "Wine package consumable"
@@ -2362,6 +2391,7 @@ eng:
           meal: "Meal"
           month: "Month"
           night: "Night"
+          package: "Package"
           person: "Person"
           plant: "Plant"
           roll: "Roll"
@@ -2390,10 +2420,13 @@ eng:
         all_inclusive_corn_sower: "All inclusive corn sower"
         animal_building: "Animal building"
         animal_division: "Animal division"
+        animal_fence: "Animal fence"
         animal_food_division: "Animal food division"
         animal_housing_cleaner: "Animal housing cleaner"
+        animal_housing_service: "Animal housing service"
         animal_medicine_tank: "Animal medicine tank"
         animal_waste_building_division: "Animal waste building division"
+        animals_making_service: "Animals making service"
         annual_fallow_crop: "Annual fallow crop"
         anti_slug: "Anti slug"
         apple_crop: "Apple crop"
@@ -2407,6 +2440,11 @@ eng:
         barley_grain: "Barley grain"
         battery: "Battery"
         bean_crop: "Bean crop"
+        bee_band: "Bee band"
+        bee_band_pollinate_service: "Bee band pollinate service"
+        beef_dried_sausage: "Beef dried sausage"
+        beef_meat: "Beef meat"
+        beef_sausage: "Beef sausage"
         beet_crop: "Beet crop"
         big_sticker: "Big sticker"
         blackcurrant_crop: "Blackcurrant crop"
@@ -2421,6 +2459,7 @@ eng:
         building_division: "Building division"
         building_insurance: "Building insurance"
         building_material: "Building material"
+        building_material_in_own_outstanding_installation: "Building material in own outstanding installation"
         bulk_ammo_phosphorus_sulfur_20_23_0: "Bulk ammo phosphorus sulfur 20 23 0"
         bulk_ammonitrate_27: "Bulk ammonitrate 27"
         bulk_ammonitrate_33: "Bulk ammonitrate 33"
@@ -2433,6 +2472,8 @@ eng:
         bulk_kg_animal_food: "Bulk kg animal food"
         bulk_urea_46: "Bulk urea 46"
         bulk_wheat_straw: "Bulk wheat straw"
+        bumblebee_band: "Bumblebee band"
+        burdock_crop: "Burdock crop"
         butler_hazelnut: "Butler hazelnut"
         cabbage_crop: "Cabbage crop"
         calcium_carbonate_25kg: "Calcium carbonate 25kg"
@@ -2455,7 +2496,11 @@ eng:
         chainsaw: "Chainsaw"
         chandler_walnut: "Chandler walnut"
         chemical_fertilizer_division: "Chemical fertilizer division"
+        cherry_laurel_crop: "Cherry laurel crop"
+        chick_hen_band: "Chick hen band"
         chicken_egg: "Chicken egg"
+        chicken_meat: "Chicken meat"
+        chicory_crop: "Chicory crop"
         common_consumable: "Common consumable"
         common_package: "Common package"
         complete_herbicide: "Complete herbicide"
@@ -2464,6 +2509,7 @@ eng:
         computer_mouse: "Computer mouse"
         concrete_tank: "Concrete tank"
         congress: "Congress"
+        consumer_goods_office_item: "Consumer goods office item"
         coop:adexar_5l: "Coop:adexar 5l"
         coop:altacid_vrac: "Coop:altacid vrac"
         coop:altiplus_gr_vrac: "Coop:altiplus gr vrac"
@@ -2571,6 +2617,7 @@ eng:
         corn_silage_crop: "Corn silage crop"
         cover_implanter: "Cover implanter"
         cow_milk: "Cow milk"
+        creation_society_study: "Creation society study"
         crop_residue: "Crop residue"
         cultivable_zone: "Cultivable zone"
         daily_project_management: "Daily project management"
@@ -2592,12 +2639,15 @@ eng:
         equipment: "Equipment"
         equipment_building_division: "Equipment building division"
         equipment_insurance: "Equipment insurance"
+        equipment_repair_service: "Equipment repair service"
+        escalope_veal_meat: "Escalope veal meat"
         escourgeon_barley_crop: "Escourgeon barley crop"
         etincel_winter_barley_crop: "Etincel winter barley crop"
         euclide_wheat_crop: "Euclide wheat crop"
         euclide_wheat_seed_25: "Euclide wheat seed 25"
         ewe_milk: "Ewe milk"
         fallow_crop: "Fallow crop"
+        farm_teaching_service: "Farm teaching service"
         fee: "Fee"
         female_adult_cattle_herd: "Female adult cattle herd"
         female_adult_cow: "Female adult cow"
@@ -2613,6 +2663,7 @@ eng:
         female_pig_band: "Female pig band"
         female_young_cattle_herd: "Female young cattle herd"
         female_young_cow: "Female young cow"
+        female_young_goat: "Female young goat"
         female_young_pig_band: "Female young pig band"
         female_young_sheep: "Female young sheep"
         fercoril_corabel_hazelnut: "Fercoril corabel hazelnut"
@@ -2623,10 +2674,14 @@ eng:
         fiberglass_tank: "Fiberglass tank"
         fig_crop: "Fig crop"
         fig_seedling: "Fig seedling"
+        fiscal_fine: "Fiscal fine"
+        flax_crop: "Flax crop"
         food_equipment_division: "Food equipment division"
         food_show: "Food show"
         food_tank: "Food tank"
         forager: "Forager"
+        forklift: "Forklift"
+        forwarding_agent_fees_expense: "Forwarding agent fees expense"
         franquette_walnut: "Franquette walnut"
         freelance_sofware_development: "Freelance sofware development"
         freezer_tank: "Freezer tank"
@@ -2643,6 +2698,7 @@ eng:
         goat_milk: "Goat milk"
         gooseberry_crop: "Gooseberry crop"
         gooseberry_seedling: "Gooseberry seedling"
+        grain_crusher: "Grain crusher"
         grain_tank: "Grain tank"
         granulated_insecticide_12: "Granulated insecticide 12"
         grape_reaper: "Grape reaper"
@@ -2688,6 +2744,7 @@ eng:
         hydraulic_oil: "Hydraulic oil"
         ichn_subsidies: "Ichn subsidies"
         implanter: "Implanter"
+        infirmity_and_death_insurance: "Infirmity and death insurance"
         ink_cartridge: "Ink cartridge"
         insecticide: "Insecticide"
         inseminator: "Inseminator"
@@ -2699,14 +2756,18 @@ eng:
         jemstegaard_hazelnut: "Jemstegaard hazelnut"
         lactic_acid_25kg: "Lactic acid 25kg"
         lamb: "Lamb"
+        lamb_meat: "Lamb meat"
+        lamb_sausage: "Lamb sausage"
         land_parcel: "Land parcel"
         land_parcel_cluster: "Land parcel cluster"
+        land_parcel_locative_charge: "Land parcel locative charge"
         lara_walnut: "Lara walnut"
         lavender_crop: "Lavender crop"
         leasing: "Leasing"
         leek_crop: "Leek crop"
         legal_registration: "Legal registration"
         lentil_crop: "Lentil crop"
+        lettuce_crop: "Lettuce crop"
         lewis_hazelnut: "Lewis hazelnut"
         liquid_10_25_d1.4: "Liquid 10 25 d1.4"
         liquid_10_34_d1.4: "Liquid 10 34 d1.4"
@@ -2714,8 +2775,11 @@ eng:
         little_office_equipment: "Little office equipment"
         little_office_good: "Little office good"
         livestock_cleanliness_product: "Livestock cleanliness product"
+        loan_interest: "Loan interest"
+        lucerne_bulk_hay: "Lucerne bulk hay"
         lucerne_crop: "Lucerne crop"
         lucerne_seed: "Lucerne seed"
+        lupin_crop: "Lupin crop"
         maintenance: "Maintenance"
         male_adult_cattle_herd: "Male adult cattle herd"
         male_adult_cow: "Male adult cow"
@@ -2730,6 +2794,7 @@ eng:
         male_pig_band: "Male pig band"
         male_young_cattle_herd: "Male young cattle herd"
         male_young_cow: "Male young cow"
+        male_young_goat: "Male young goat"
         male_young_pig_band: "Male young pig band"
         male_young_sheep: "Male young sheep"
         malic_acid_25kg: "Malic acid 25kg"
@@ -2739,11 +2804,14 @@ eng:
         market_gardening_crop: "Market gardening crop"
         meadow_grass: "Meadow grass"
         meal_travel: "Meal travel"
-        melon_crop: "Melon crop"
         merlot_noir_so4_vine_seedling: "Merlot noir so4 vine seedling"
         merveille_hazelnut: "Merveille hazelnut"
         milk_tank: "Milk tank"
+        milked_lamb_meat: "Milked lamb meat"
+        milked_pork_meat: "Milked pork meat"
         milking_division: "Milking division"
+        minced_beef_meat: "Minced beef meat"
+        minced_ox_meat: "Minced ox meat"
         mineral_cleaner: "Mineral cleaner"
         mineral_feed_block_25: "Mineral feed block 25"
         miradoux_hard_wheat_crop: "Miradoux hard wheat crop"
@@ -2758,9 +2826,12 @@ eng:
         moving_travel: "Moving travel"
         mower: "Mower"
         mud: "Mud"
+        muskmelon_crop: "Muskmelon crop"
+        myrobalan_plum_crop: "Myrobalan plum crop"
         natural_cork: "Natural cork"
         natural_water: "Natural water"
         negret_hazelnut: "Negret hazelnut"
+        nibble_lamb_meat: "Nibble lamb meat"
         nomacorc_cork: "Nomacorc cork"
         oenological_yeast_sc_500g: "Oenological yeast sc 500g"
         office_building: "Office building"
@@ -2769,13 +2840,20 @@ eng:
         other_herbicide: "Other herbicide"
         ovis_compost: "Ovis compost"
         ovis_manure: "Ovis manure"
+        ox_meat: "Ox meat"
         oyster_band: "Oyster band"
+        packed_beef_meat: "Packed beef meat"
+        packed_ox_meat: "Packed ox meat"
+        packed_veal_meat: "Packed veal meat"
+        pallet: "Pallet"
         pauetet_hazelnut: "Pauetet hazelnut"
         pea_crop: "Pea crop"
         pea_grain: "Pea grain"
         pea_seed: "Pea seed"
         peach_crop: "Peach crop"
         peach_seedling: "Peach seedling"
+        peanut: "Peanut"
+        peanut_crop: "Peanut crop"
         pear_crop: "Pear crop"
         pear_seedling: "Pear seedling"
         permanent_meadow_crop: "Permanent meadow crop"
@@ -2785,9 +2863,11 @@ eng:
         pig_manure: "Pig manure"
         pig_slurry: "Pig slurry"
         piglet_band: "Piglet band"
+        piglet_meat: "Piglet meat"
         plant_medicine_tank: "Plant medicine tank"
         plastic_cover_500m: "Plastic cover 500m"
         plow: "Plow"
+        plum: "Plum"
         plum_crop: "Plum crop"
         plum_reaper: "Plum reaper"
         plum_seedling: "Plum seedling"
@@ -2795,6 +2875,9 @@ eng:
         poaceae_herbicide: "Poaceae herbicide"
         polyester_tank: "Polyester tank"
         pony_herd: "Pony herd"
+        popcorn_grain: "Popcorn grain"
+        pork_dried_sausage: "Pork dried sausage"
+        pork_sausage: "Pork sausage"
         portable_computer: "Portable computer"
         portable_hard_disk: "Portable hard disk"
         postal_charges: "Postal charges"
@@ -2802,10 +2885,14 @@ eng:
         potassium_bicarbonate_25kg: "Potassium bicarbonate 25kg"
         potassium_ferrocyanide_25kg: "Potassium ferrocyanide 25kg"
         potato_crop: "Potato crop"
+        poultry_sausage: "Poultry sausage"
         preparation_division: "Preparation division"
         printer: "Printer"
         product_warranty: "Product warranty"
+        project_study: "Project study"
         pruning_platform: "Pruning platform"
+        quince_crop: "Quince crop"
+        quinoa_crop: "Quinoa crop"
         rabbit_herd: "Rabbit herd"
         rabbit_manure: "Rabbit manure"
         rape_crop: "Rape crop"
@@ -2817,6 +2904,8 @@ eng:
         representation_suit: "Representation suit"
         responsibility_insurance: "Responsibility insurance"
         riflexine: "Riflexine"
+        roast_veal_meat: "Roast veal meat"
+        roll: "Roll"
         rollup: "Rollup"
         ronde_de_piemont_hazelnut: "Ronde de piemont hazelnut"
         rose_crop: "Rose crop"
@@ -2837,6 +2926,7 @@ eng:
         server_rental: "Server rental"
         settlement: "Settlement"
         sheep_herd: "Sheep herd"
+        shoulder_veal_meat: "Shoulder veal meat"
         silage_distributor: "Silage distributor"
         silage_division: "Silage division"
         small_equipment: "Small equipment"
@@ -2871,9 +2961,11 @@ eng:
         superficial_plow: "Superficial plow"
         tablur_hard_wheat_crop: "Tablur hard wheat crop"
         tablur_hard_wheat_seed_25: "Tablur hard wheat seed 25"
+        tangerine_crop: "Tangerine crop"
         taxe: "Taxe"
         technician: "Technician"
         temporary_meadow_crop: "Temporary meadow crop"
+        thicket_crop: "Thicket crop"
         tobacco_crop: "Tobacco crop"
         tonda_giffoni_hazelnut: "Tonda giffoni hazelnut"
         tractor: "Tractor"
@@ -2881,6 +2973,8 @@ eng:
         triticale_crop: "Triticale crop"
         truck: "Truck"
         urban_compost: "Urban compost"
+        various_loan_interest: "Various loan interest"
+        veal_meat: "Veal meat"
         vine_grape_berry: "Vine grape berry"
         vine_grape_crop: "Vine grape crop"
         vine_grape_juice: "Vine grape juice"
@@ -2907,7 +3001,6 @@ eng:
         wire_50m_roll: "Wire 50m roll"
         wood_stake_200: "Wood stake 200"
         wood_stake_250: "Wood stake 250"
-        young_goat: "Young goat"
         young_pig_band: "Young pig band"
         young_rabbit: "Young rabbit"
         zea_herbicide: "Zea herbicide"
@@ -2938,16 +3031,20 @@ eng:
         animal_food: "Animal food"
         animal_food_building_division: "Animal food building division"
         animal_housing_cleaner: "Animal housing cleaner"
+        animal_housing_services: "Animal housing services"
         animal_medicine: "Animal medicine"
         animal_medicine_tank: "Animal medicine tank"
         animals_making_services: "Animals making services"
         associate_social_contribution: "Associate social contribution"
         baler: "Baler"
         bank_service: "Bank service"
+        bee_band: "Bee band"
+        beef_meat: "Beef meat"
         bonus_staff_expense: "Bonus staff expense"
         bottle: "Bottle"
         building: "Building"
         building_division: "Building division"
+        bumblebee_band: "Bumblebee band"
         calf: "Calf"
         car: "Car"
         carriage: "Carriage"
@@ -2955,6 +3052,7 @@ eng:
         cattle_herd: "Cattle herd"
         cereal_crop: "Cereal crop"
         chainsaw: "Chainsaw"
+        cheese: "Cheese"
         chemical_fertilizer: "Chemical fertilizer"
         clarification_solution: "Clarification solution"
         common_consumable: "Common consumable"
@@ -2963,6 +3061,8 @@ eng:
         computer: "Computer"
         computer_device: "Computer device"
         congress: "Congress"
+        construction_material_in_own_outstanding_installation: "Construction material in own outstanding installation"
+        consumer_goods_office_item: "Consumer goods office item"
         cork: "Cork"
         corker: "Corker"
         cover_implanter: "Cover implanter"
@@ -2976,7 +3076,9 @@ eng:
         electricity: "Electricity"
         equipment: "Equipment"
         equipment_building_division: "Equipment building division"
+        equipment_repair_services: "Equipment repair services"
         exploitation_subsidies: "Exploitation subsidies"
+        farm_teaching_services: "Farm teaching services"
         fee: "Fee"
         female_adult_cattle_herd: "Female adult cattle herd"
         female_adult_cow: "Female adult cow"
@@ -2988,14 +3090,19 @@ eng:
         female_adult_sheep_herd: "Female adult sheep herd"
         female_rabbit: "Female rabbit"
         female_young_cow: "Female young cow"
+        female_young_goat: "Female young goat"
         female_young_sheep: "Female young sheep"
         fence: "Fence"
         fermented_grape_juice: "Fermented grape juice"
+        fermented_milk: "Fermented milk"
+        fiscal_fine: "Fiscal fine"
         flower_crop: "Flower crop"
         food_distributor: "Food distributor"
         food_equipment_division: "Food equipment division"
         food_tank: "Food tank"
         forager: "Forager"
+        forklift: "Forklift"
+        forwarding_agent_fees_expense: "Forwarding agent fees expense"
         freelance: "Freelance"
         freezer_tank: "Freezer tank"
         fruit: "Fruit"
@@ -3024,19 +3131,26 @@ eng:
         hen_herd: "Hen herd"
         herbicide: "Herbicide"
         hoe: "Hoe"
+        honey: "Honey"
         horse_herd: "Horse herd"
         hydraulic_oil: "Hydraulic oil"
         implanter: "Implanter"
+        infirmity_and_death_insurance: "Infirmity and death insurance"
         insecticide: "Insecticide"
         inseminator: "Inseminator"
+        installing_charge: "Installing charge"
         insurance: "Insurance"
         irrigation_water: "Irrigation water"
         lamb: "Lamb"
+        lamb_meat: "Lamb meat"
         land_parcel: "Land parcel"
         land_parcel_cluster: "Land parcel cluster"
+        land_parcel_construction: "Land parcel construction"
+        land_parcel_locative_charge: "Land parcel locative charge"
         leasing: "Leasing"
         legal_registration: "Legal registration"
         little_office_item: "Little office item"
+        loan_interest: "Loan interest"
         mail_subscription: "Mail subscription"
         maintenance: "Maintenance"
         male_adult_cow: "Male adult cow"
@@ -3047,12 +3161,16 @@ eng:
         male_adult_sheep: "Male adult sheep"
         male_rabbit: "Male rabbit"
         male_young_cow: "Male young cow"
+        male_young_goat: "Male young goat"
         male_young_sheep: "Male young sheep"
         manager: "Manager"
         manure_division: "Manure division"
         meal_travel: "Meal travel"
+        meat: "Meat"
         mechanic: "Mechanic"
         mechanic_item: "Mechanic item"
+        melon: "Melon"
+        melon_crop: "Melon crop"
         milk: "Milk"
         milk_tank: "Milk tank"
         mineral_cleaner: "Mineral cleaner"
@@ -3070,16 +3188,25 @@ eng:
         organic_fertilizer: "Organic fertilizer"
         oyster_band: "Oyster band"
         packaged_process_food: "Packaged process food"
+        peanut: "Peanut"
         pig_band: "Pig band"
         pig_herd: "Pig herd"
         piglet_band: "Piglet band"
         plant_medicine_tank: "Plant medicine tank"
         plastic_cover: "Plastic cover"
         plow: "Plow"
+        plum: "Plum"
         plum_reaper: "Plum reaper"
         plum_seedling: "Plum seedling"
+        pork_meat: "Pork meat"
+        poultry_meat: "Poultry meat"
         preparation_division: "Preparation division"
         process_food: "Process food"
+        processed_beef_meat: "Processed beef meat"
+        processed_lamb_meat: "Processed lamb meat"
+        processed_meat: "Processed meat"
+        processed_pork_meat: "Processed pork meat"
+        processed_poultry_meat: "Processed poultry meat"
         product_insurance: "Product insurance"
         professional_subscription: "Professional subscription"
         project_management: "Project management"
@@ -3091,6 +3218,7 @@ eng:
         recycling_contribution: "Recycling contribution"
         rent: "Rent"
         representation_item: "Representation item"
+        roll: "Roll"
         running_water: "Running water"
         salary_social_contribution: "Salary social contribution"
         salmon_band: "Salmon band"
@@ -3112,6 +3240,7 @@ eng:
         spreader_trailer: "Spreader trailer"
         stake: "Stake"
         straw: "Straw"
+        studies_and_research: "Studies and research"
         sugar: "Sugar"
         superficial_plow: "Superficial plow"
         taxe: "Taxe"
@@ -3123,6 +3252,7 @@ eng:
         truck: "Truck"
         user_support: "User support"
         usual_vine_seedling: "Usual vine seedling"
+        various_loan_interest: "Various loan interest"
         vegetable_crop: "Vegetable crop"
         vegetals_making_services: "Vegetals making services"
         vial: "Vial"
@@ -3137,7 +3267,6 @@ eng:
         wine_storage_division: "Wine storage division"
         wine_tank: "Wine tank"
         wire: "Wire"
-        young_goat: "Young goat"
         young_rabbit: "Young rabbit"
     production_natures:
       name: "Name"
@@ -3162,6 +3291,9 @@ eng:
         exploitation: "Exploitation"
         five_years_temporary_meadow: "Five years temporary meadow"
         fixed_frost_fallow_land: "Fixed frost fallow land"
+        flax: "Flax"
+        forager_lupin: "Forager lupin"
+        forager_soy: "Forager soy"
         fruit_processing: "Fruit processing"
         garden_center: "Garden center"
         garlic: "Garlic"
@@ -3178,7 +3310,14 @@ eng:
         market_gardening: "Market gardening"
         market_gardening_under_greenhouse: "Market gardening under greenhouse"
         marketable_bean: "Marketable bean"
+        marketable_flax: "Marketable flax"
+        marketable_forager_lupin: "Marketable forager lupin"
+        marketable_forager_soy: "Marketable forager soy"
+        marketable_garden_center: "Marketable garden center"
         marketable_hazel: "Marketable hazel"
+        marketable_lentil: "Marketable lentil"
+        marketable_soy: "Marketable soy"
+        marketable_sunflower: "Marketable sunflower"
         marketable_walnut: "Marketable walnut"
         meat_cattle: "Meat cattle"
         melon: "Melon"
@@ -3208,12 +3347,16 @@ eng:
         soy: "Soy"
         specific_fallow_land: "Specific fallow land"
         spring_barley: "Spring barley"
+        spring_hard_wheat: "Spring hard wheat"
         spring_oat: "Spring oat"
         spring_pea: "Spring pea"
         spring_rapeseed: "Spring rapeseed"
+        spring_soft_wheat: "Spring common wheat"
         strawberry: "Strawberry"
         sunflower: "Sunflower"
+        table_grape_vine: "Table grape vine"
         temporary_meadow: "Temporary meadow"
+        thicket: "Thicket"
         tobacco: "Tobacco"
         trade: "Trade"
         triticale: "Triticale"
@@ -3224,7 +3367,7 @@ eng:
         wine_storehouse: "Wine storehouse"
         winery: "Winery"
         winter_barley: "Winter barley"
-        winter_hard_wheat: "Winter hard wheat"
+        winter_hard_wheat: "Winter durum wheat"
         winter_oat: "Winter oat"
         winter_pea: "Winter pea"
         winter_rapeseed: "Winter rapeseed"
@@ -3330,6 +3473,7 @@ eng:
           amount: "Amount"
           percentage: "Percentage"
       items:
+        asset_vat: "Asset vat"
         inflated_vat: "Inflated VAT"
         intermediate_vat: "Intermediate VAT"
         normal_vat: "Normal VAT"
@@ -3352,6 +3496,11 @@ eng:
         french_vat_normal_1995: "French vat normal 1995"
         french_vat_normal_2000: "French vat normal 2000"
         french_vat_normal_2014: "French vat normal 2014"
+        french_vat_normal_asset_1966: "French vat normal asset 1966"
+        french_vat_normal_asset_1982: "French vat normal asset 1982"
+        french_vat_normal_asset_1995: "French vat normal asset 1995"
+        french_vat_normal_asset_2000: "French vat normal asset 2000"
+        french_vat_normal_asset_2014: "French vat normal asset 2014"
         french_vat_null: "French vat null"
         french_vat_particular_1982: "French vat particular 1982"
         french_vat_particular_1989: "French vat particular 1989"
@@ -3359,6 +3508,10 @@ eng:
         spain_vat_intermediate_2013: "Spain vat intermediate 2013"
         spain_vat_normal_2013: "Spain vat normal 2013"
         spain_vat_reduced_2013: "Spain vat reduced 2013"
+        swiss_vat_normal_2011: "Swiss vat normal 2011"
+        swiss_vat_null_2011: "Swiss vat null 2011"
+        swiss_vat_particular_2011: "Swiss vat particular 2011"
+        swiss_vat_reduced_2011: "Swiss vat reduced 2011"
     units:
       name: "Name"
       property_natures:
@@ -3472,15 +3625,26 @@ eng:
         french_race_code: "French race code"
         itis_tsn: "Itis number id"
       items:
+        acer: "Acer"                                       #< sapindaceae
+        acer_buergerianum: "Acer buergerianum"             #< acer
+        acer_ginnala: "Acer ginnala"                       #< acer
+        acer_pseudoplatanus: "Acer pseudoplatanus"         #< acer
+        acer_saccharinum: "Acer saccharinum"               #< acer
+        acer_saccharum: "Acer saccharum"                   #< acer
+        acer_spicatum: "Acer spicatum"                     #< acer
+        acer_tataricum: "Acer tataricum"                   #< acer
         acipenser: "Acipenser"                             #< acipenseridae
         acipenser_baerii: "Acipenser baerii"               #< acipenser
         acipenser_sturio: "Acipenser sturio"               #< acipenser
         acipenser_transmontanus: "Acipenser transmontanus" #< acipenser
         acipenseridae: "Acipenseridae"                     #< actinopterygii
         actinopterygii: "Actinopterygii"                   #< animal
+        adoxa: "Adoxa"                                     #< adoxaceae
+        adoxaceae: "Adoxaceae"                             #< plant
         aix: "Aix"                                         #< anatidae
         aix_galericulata: "Aix galericulata"               #< aix
         aix_sponsa: "Aix sponsa"                           #< aix
+        alcohol: "Alcohol"                                 #< fermented_juice
         allium: "Garlic"                                   #< amaryllidaceae
         allium_ampeloprasum: "Broadleaf wild leek"         #< allium
         allium_ascalonicum: "Shallot"                      #< allium
@@ -3494,6 +3658,19 @@ eng:
         allium_ursinum: "Bear garlic"                      #< allium
         allium_victorialis: "Victory onion"                #< allium
         allium_vineale: "Wild garlic"                      #< allium
+        alnus: "Alnus"                                     #< betulaceae
+        alnus_cordata: "Alnus cordata"                     #< alnus
+        alnus_glutinosa: "Alnus glutinosa"                 #< alnus
+        alnus_japonica: "Alnus japonica"                   #< alnus
+        alnus_maritima: "Alnus maritima"                   #< alnus
+        alnus_nepalensis: "Alnus nepalensis"               #< alnus
+        alnus_oblongifolia: "Alnus oblongifolia"           #< alnus
+        alnus_pendula: "Alnus pendula"                     #< alnus
+        alnus_rhombifolia: "Alnus rhombifolia"             #< alnus
+        alnus_rubra: "Alnus rubra"                         #< alnus
+        alnus_serrulata: "Alnus serrulata"                 #< alnus
+        alnus_trabeculosa: "Alnus trabeculosa"             #< alnus
+        alnus_viridis: "Alnus viridis"                     #< alnus
         althaea: "Althaea"                                 #< malvaceae
         amaranthaceae: "Amaranthaceae"                     #< plant
         amaryllidaceae: "Amaryllidaceae"                   #< plant
@@ -3527,6 +3704,9 @@ eng:
         arachis: "Arachis"                                 #< fabaceae
         arachis_hypogaea: "Peanut"                         #< arachis
         arachis_pintoi: "Pintoi peanut"                    #< arachis
+        arctium: "Arctium"                                 #< asteraceae
+        arctium_lappa: "Arctium lappa"                     #< arctium
+        arctium_minus: "Arctium minus"                     #< arctium
         asparagaceae: "Asparagaceae"                       #< plant
         asparagus: "Asparagus"                             #< asparagaceae
         asparagus_africanus: "Asparagus africanus"         #< asparagus
@@ -3539,6 +3719,9 @@ eng:
         bacteria: "Bacteria"                               #< bioproduct
         baler: "Baler"                                     #< equipment
         bambusa: "Bamboo"                                  #< poaceae
+        berberidaceae: "Berberidaceae"                     #< plant
+        berberis: "Berberis"                               #< berberidaceae
+        berberis_x_ottawensis: "Berberis x ottawensis"     #< berberis
         beta: "Beta"                                       #< amaranthaceae
         beta_vulgaris: "Beet"                              #< beta
         beta_vulgaris_altissima: "Sugar Beet"              #< beta_vulgaris
@@ -3552,6 +3735,8 @@ eng:
         bison_bonasus: "European Bison"                    #< bison
         bison_bonasus_bonasus: "Common european bison"     #< bison_bonasus
         bivalvia: "Bivalvia"                               #< animal
+        bombus: "Bombus"                                   #< apidae
+        bombus_terrestris: "Bombus terrestris"             #< bombus
         boraginaceae: "Boraginaceae"                       #< plant
         bos: "Bos"                                         #< bovidae
         bos_taurus: "Cow"                                  #< bos
@@ -3559,7 +3744,6 @@ eng:
         bos_taurus_angus: "Cow angus"                      #< bos_taurus
         bos_taurus_armoricaine: "Cow armoricaine"          #< bos_taurus
         bos_taurus_aubrac: "Cow aubrac"                    #< bos_taurus
-        bos_taurus_aurochs: "Aurochs"                      #< bos_taurus
         bos_taurus_ayrshire: "Cow ayrshire"                #< bos_taurus
         bos_taurus_bazadaise: "Cow bazadaise"              #< bos_taurus
         bos_taurus_bearnaise: "Cow bearnaise"              #< bos_taurus
@@ -3592,6 +3776,7 @@ eng:
         bos_taurus_herefort: "Cow herefort"                #< bos_taurus
         bos_taurus_herens: "Cow herens"                    #< bos_taurus
         bos_taurus_highland_cattle: "Cow highland cattle"  #< bos_taurus
+        bos_taurus_indicus: "Zebu"                         #< bos_taurus
         bos_taurus_inra_95: "Cow inra 95"                  #< bos_taurus
         bos_taurus_jersiaise: "Cow jersiaise"              #< bos_taurus
         bos_taurus_limousine: "Cow limousine"              #< bos_taurus
@@ -3608,6 +3793,7 @@ eng:
         bos_taurus_pie_rouge_des_plaines: "Cow pie rouge des plaines" #< bos_taurus
         bos_taurus_piemontaise: "Cow piemontaise"          #< bos_taurus
         bos_taurus_prim_holstein: "Cow prim holstein"      #< bos_taurus
+        bos_taurus_primigenius: "Aurochs"                  #< bos_taurus
         bos_taurus_raco_di_biou: "Cow raco di biou"        #< bos_taurus
         bos_taurus_rouge_des_pres: "Cow rouge des pres"    #< bos_taurus
         bos_taurus_rouge_flamande: "Cow rouge flamande"    #< bos_taurus
@@ -3686,17 +3872,27 @@ eng:
         capsicum_chinense: "Habanero Pepper"               #< capsicum
         capsicum_frutescens: "Hot Pepper"                  #< capsicum
         capsicum_pubescens: "Rocoto"                       #< capsicum
+        carpinus: "Carpinus"                               #< betulaceae
+        carpinus_betulus: "Carpinus betulus"               #< carpinus
+        carpinus_caroliniana: "Carpinus caroliniana"       #< carpinus
         castanea: "Chestnut"                               #< fagaceae
         cerambycidae: "Cerambycidae"                       #< insecta
         ceratonia: "Ceratonia"                             #< fabaceae
         ceratonia_siliqua: "Carob tree"                    #< ceratonia
+        cercis: "Cercis"                                   #< fabaceae
+        cercis_siliquastrum: "Cercis siliquastrum"         #< cercis
         cervidae: "Cervidae"                               #< mammalia
+        cheese: "Cheese"                                   #< preparation
         chenopodium: "Chenopodium"                         #< amaranthaceae
         chenopodium_album: "Chenopodium album"             #< chenopodium
+        chenopodium_quinoa: "Chenopodium quinoa"           #< chenopodium
         cicer: "Cicer"                                     #< fabaceae
         cicer_arietinum: "Chickpea"                        #< cicer
         cichorium: "Cichorium"                             #< asteraceae
-        cichorium_endivia: "Curly chicory"                 #< cichorium
+        cichorium_endivia: "Endive chicory"                #< cichorium
+        cichorium_endivia_crispum: "Frisee chicory"        #< cichorium_endivia
+        cichorium_endivia_latifolium: "Scarole"            #< cichorium_endivia
+        cichorium_intybus: "Cichorium intybus"             #< cichorium
         citrullus: "Watermelon"                            #< cucurbitaceae
         citrullus_colocynthis: "Colocynth"                 #< citrullus
         citrullus_lanatus: "Watermelon Common"             #< citrullus
@@ -3740,6 +3936,8 @@ eng:
         crassostrea_ariakensis: "Crassostrea ariakensis"   #< crassostrea
         crassostrea_gigas: "Crassostrea gigas"             #< crassostrea
         crassostrea_virginica: "Crassostrea virginica"     #< crassostrea
+        crataegus: "Crataegus"                             #< rosaceae
+        crataegus_monogyna: "Crataegus monogyna"           #< crataegus
         crocus: "Crocus"                                   #< iridaceae
         crocus_sativus: "Saffron crocus"                   #< crocus
         croesus_septentrionalis: "Croesus septentrionalis" #< insecta
@@ -3795,6 +3993,8 @@ eng:
         cultivable_zone: "Cultivable zone"                 #< zone
         curculio_nucum: "Curculio nucum"                   #< insecta
         cydia_pomonella: "Cydia pomonella"                 #< insecta
+        cydonia: "Cydonia"                                 #< rosaceae
+        cydonia_oblonga: "Quince"                          #< cydonia
         cynara: "Artichoke"                                #< asteraceae
         dactylis: "Dactylis"                               #< poa
         dactylis_lazuly: "Dactylis Lazuly"                 #< dactylis
@@ -3824,8 +4024,11 @@ eng:
         daucus_carota_white_vosges: "White Vosges Carrot"  #< daucus_carota
         daucus_carota_white_with_green_collar: "White Carrot with green collar" #< daucus_carota
         daucus_carota_yellow_doubs: "Yellow Doubs Carrot"  #< daucus_carota
+        diervillaceae: "Diervillaceae"                     #< plant
         easement: "Easement"                               #< zone
         egg: "Egg"                                         #< raw_matter
+        elaeagnaceae: "Elaeagnaceae"                       #< plant
+        elaeagnus: "Elaeagnus"                             #< elaeagnaceae
         electricity: "Electricity"                         #< matter
         empoasca_vitis: "Empoasca vitis"                   #< insecta
         eotetranychus_coryli: "Eotetranychus coryli"       #< insecta
@@ -3848,6 +4051,7 @@ eng:
         fagus: "Beech"                                     #< fagaceae
         felidae: "Felidae"                                 #< mammalia
         fermented_juice: "Fermented juice"                 #< preparation
+        fermented_milk: "Fermented milk"                   #< preparation
         ficus: "Ficus"                                     #< moraceae
         ficus_carica: "Common fig"                         #< ficus
         ficus_carica_saint_pierre: "Common fig Saint-Pierre" #< ficus_carica
@@ -3859,6 +4063,9 @@ eng:
         fomitiporia: "Fomitiporia"                         #< hymenochaetaceae
         food_deliver: "Food deliver"                       #< equipment
         forager: "Forager"                                 #< equipment
+        forsythia: "Forsythia"                             #< oleaceae
+        forsythia_europaea: "Forsythia europaea"           #< forsythia
+        forsythia_x_intermedia: "Forsythia x intermedia"   #< forsythia
         fortunella: "Fortunella"                           #< rutaceae
         fortunella_japonica: "Round kumquat"               #< fortunella
         fortunella_margarita: "Oval kumquat"               #< fortunella
@@ -3875,6 +4082,7 @@ eng:
         gallus_gallus_domesticus_gournay: "Domesticated chicken Gournay" #< gallus_gallus_domesticus
         gas: "Gas"                                         #< raw_matter
         gastropoda: "Gastropoda"                           #< animal
+        gleditsia: "Gleditsia"                             #< fabaceae
         glycine: "Glycine"                                 #< fabaceae
         glycine_max: "Soy bean"                            #< glycine
         gossypium: "Gossypium"                             #< malvaceae
@@ -3909,6 +4117,10 @@ eng:
         helix_pomatia: "Burgundy snail"                    #< helix
         hevea: "Hevea"                                     #< euphorbiaceae
         hibiscus: "Hibiscus"                               #< malvaceae
+        hibiscus_syriacus: "Hibiscus syriacus"             #< hibiscus
+        hippophae: "Hippophae"                             #< elaeagnaceae
+        hippophae_rhamnoides: "Hippophae rhamnoides"       #< hippophae
+        honey: "Honey"                                     #< raw_matter
         hordeum: "Barley"                                  #< poaceae
         hordeum_hibernum: "Winter Barley"                  #< hordeum
         hordeum_hibernum_arturio: "Winter Barley arturio"  #< hordeum_hibernum
@@ -3922,7 +4134,10 @@ eng:
         hordeum_vulgare_hexastichum: "Bere"                #< hordeum_vulgare
         humulus: "Humulus"                                 #< cannabaceae
         humulus_lupulus: "Hop"                             #< humulus
+        hydrangeaceae: "Hydrangeaceae"                     #< plant
         hymenochaetaceae: "Hymenochaetaceae"               #< fungus
+        hypericaceae: "Hypericaceae"                       #< plant
+        hypericum: "Hypericum"                             #< hypericaceae
         immatter: "Immatter"                               #< product
         implanter: "Implanter"                             #< equipment
         insecta: "Insecta"                                 #< animal
@@ -3937,7 +4152,13 @@ eng:
         juglans_regia_howard: "Common walnut Howard"       #< juglans_regia
         juglans_regia_lara: "Common walnut Lara"           #< juglans_regia
         juice: "Juice"                                     #< preparation
+        koelreuteria: "Koelreuteria"                       #< sapindaceae
+        koelreuteria_bipinnata: "Koelreuteria bipinnata"   #< koelreuteria
+        koelreuteria_elegans: "Koelreuteria elegans"       #< koelreuteria
+        koelreuteria_paniculata: "Koelreuteria paniculata" #< koelreuteria
         label: "Label"                                     #< packaged_matter
+        laburnum: "Laburnum"                               #< fabaceae
+        laburnum_anagyroides: "Laburnum anagyroides"       #< laburnum
         lactuca: "Lettuce"                                 #< asteraceae
         lamiaceae: "Lamiaceae"                             #< plant
         land_parcel: "Land parcel"                         #< easement
@@ -3948,6 +4169,9 @@ eng:
         leporidae: "Leporidae"                             #< mammalia
         lepus: "Lepus"                                     #< leporidae
         lepus_europaeus: "Brown hare"                      #< lepus
+        ligustrum: "Ligustrum"                             #< oleaceae
+        ligustrum_ovalifolium: "Ligustrum ovalifolium"     #< ligustrum
+        ligustrum_vulgare: "Ligustrum vulgare"             #< ligustrum
         limacidae: "Limacidae"                             #< gastropoda
         linaceae: "Linaceae"                               #< plant
         linum: "Linum"                                     #< linaceae
@@ -3971,9 +4195,15 @@ eng:
         meleagris: "Turkey"                                #< phasianidae
         meleagris_gallopavo: "Domestic turkey"             #< meleagris
         meleagris_ocellata: "Ocellated turkey"             #< meleagris
+        melon: "Melon"                                     #< fruit
         milk: "Milk"                                       #< raw_matter
         mix: "Mix"                                         #< preparation
         moraceae: "Moraceae"                               #< plant
+        morus: "Morus"                                     #< moraceae
+        morus_alba: "Morus alba"                           #< morus
+        morus_microphylla: "Morus microphylla"             #< morus
+        morus_nigra: "Morus nigra"                         #< morus
+        morus_rubra: "Morus rubra"                         #< morus
         mower: "Mower"                                     #< equipment
         myocastoridae: "Myocastoridae"                     #< mammalia
         mytilidae: "Mytilidae"                             #< bivalvia
@@ -4010,6 +4240,7 @@ eng:
         pavo: "Peafowl"                                    #< phasianidae
         pavo_cristatus: "Indian peafowl"                   #< pavo
         peach: "Peach"                                     #< fruit
+        peanut: "Peanut"                                   #< fruit
         pear: "Pear"                                       #< fruit
         pecten: "Pecten"                                   #< pectinidae
         pecten_maximus: "Great scallop"                    #< pecten
@@ -4028,6 +4259,7 @@ eng:
         phasianidae: "Phasianidae"                         #< aves
         phasianus: "Phasianus"                             #< phasianidae
         phasianus_colchicus: "Common pheasant"             #< phasianus
+        philadelphus: "Philadelphus"                       #< hydrangeaceae
         phytoptus_avellanae: "Phytoptus avellanae"         #< insecta
         pistacia: "Pistacia"                               #< anacardiaceae
         pistacia_vera: "Pistacia vera"                     #< pistacia
@@ -4055,16 +4287,21 @@ eng:
         potassium_ferrocyanide: "Potassium ferrocyanide"   #< raw_matter
         preparation: "Preparation"                         #< matter
         press: "Press"                                     #< equipment
+        processed_meat: "Processed meat"                   #< preparation
         product: "Product"
         product_group: "Product group"                     #< product
         property_title: "Property title"                   #< immatter
         pruner: "Pruner"                                   #< equipment
         prunus: "Prunus"                                   #< rosaceae
+        prunus_avium: "Prunus avium"                       #< prunus
+        prunus_cerasifera: "Prunus cerasifera"             #< prunus
         prunus_domestica: "Prunus domestica"               #< prunus
         prunus_domestica_bernardina: "Prunus domestica Bernardina" #< prunus_domestica
         prunus_domestica_bluefre: "Prunus domestica Bluefre" #< prunus_domestica
         prunus_domestica_carpatin: "Prunus domestica Carpatin" #< prunus_domestica
         prunus_dulcis: "Almond"                            #< prunus
+        prunus_laurocerasus: "Prunus laurocerasus"         #< prunus
+        prunus_mahaleb: "Prunus mahaleb"                   #< prunus
         prunus_persica: "Prunus persica"                   #< prunus
         prunus_persica_jh_hall: "Prunus persica JH Hall"   #< prunus_persica
         prunus_persica_madeleine: "Prunus persica Madeleine" #< prunus_persica
@@ -4090,6 +4327,11 @@ eng:
         ribes_rubrum: "Redcurrant"                         #< ribes
         ribes_rubrum_wilder: "Redcurrant Wilder"           #< ribes_rubrum
         ricinus: "Castor oil plant"                        #< euphorbiaceae
+        robinia: "Robinia"                                 #< fabaceae
+        robinia_hispida: "Robinia hispida"                 #< robinia
+        robinia_neomexicana: "Robinia neomexicana"         #< robinia
+        robinia_pseudoacacia: "Robinia pseudoacacia"       #< robinia
+        robinia_viscosa: "Robinia viscosa"                 #< robinia
         rosa: "Rosa"                                       #< rosaceae
         rosa_centifolia: "Rosa centifolia"                 #< rosa
         rosa_dades: "Rosa dades"                           #< rosa
@@ -4109,13 +4351,20 @@ eng:
         saccharomyces_cerevisiae_jb3: "Saccharomyces cerevisiae - jb3" #< saccharomyces_cerevisiae
         saccharomycetaceae: "Saccharomycetaceae"           #< fungus
         saccharose: "Saccharose"                           #< sugar
+        salicaceae: "Salicaceae"                           #< plant
+        salix: "Salix"                                     #< salicaceae
+        salix_purpurea: "Salix purpurea"                   #< salix
+        salix_rosmarinifolia: "Salix rosmarinifolia"       #< salix
         salmo: "Salmo"                                     #< salmonidae
         salmo_carpio: "Carpione"                           #< salmo
         salmo_salar: "Atlantic salmon"                     #< salmo
         salmo_trutta: "Brown trout"                        #< salmo
         salmonidae: "Salmonidae"                           #< actinopterygii
         salt: "Salt"                                       #< raw_matter
+        sambucus: "Sambucus"                               #< adoxaceae
+        sambucus_nigra: "Sambucus nigra"                   #< sambucus
         sand: "Sand"                                       #< raw_matter
+        sapindaceae: "Sapindaceae"                         #< plant
         scaphoideus_titanus: "Scaphoideus titanus"         #< insecta
         sclerotiniaceae: "Sclerotiniaceae"                 #< fungus
         screw_bottle: "Screw bottle"                       #< bottle
@@ -4127,6 +4376,7 @@ eng:
         service: "Service"                                 #< immatter
         setaria: "Bristlegrass"                            #< poaceae
         settlement: "Settlement"                           #< easement
+        shepherdia: "Shepherdia"                           #< elaeagnaceae
         silage: "Silage"                                   #< preparation
         slurry: "Slurry"                                   #< excrement
         solanaceae: "Solanaceae"                           #< plant
@@ -4473,6 +4723,8 @@ eng:
         sower: "Sower"                                     #< equipment
         spinacia: "Spinacia"                               #< amaranthaceae
         spinacia_oleracea: "Spinach"                       #< spinacia
+        spiraea: "Spiraea"                                 #< rosaceae
+        spiraea_x_billiardii: "Spiraea x billiardii"       #< spiraea
         sprayer: "Sprayer"                                 #< equipment
         spreader: "Spreader"                               #< equipment
         stake: "Stake"                                     #< packaged_matter
@@ -4526,6 +4778,9 @@ eng:
         theobroma: "Theobroma"                             #< malvaceae
         theobroma_cacao: "Cocoa tree"                      #< theobroma
         theobroma_grandiflorum: "Theobroma grandiflorum"   #< theobroma
+        tilia: "Tilia"                                     #< malvaceae
+        tilia_americana: "Tilia americana"                 #< tilia
+        tilia_cordata: "Tilia cordata"                     #< tilia
         tractor: "Tractor"                                 #< equipment
         trailer: "Trailer"                                 #< equipment
         trifolium: "Clover"                                #< fabaceae
@@ -4620,6 +4875,8 @@ eng:
         valerianella_locusta: "Corn salad"                 #< valerianella
         vegetable: "Vegetable"                             #< raw_matter
         vial: "Vial"                                       #< raw_matter
+        viburnum: "Viburnum"                               #< adoxaceae
+        viburnum_opulus: "Viburnum opulus"                 #< viburnum
         vicia: "Vicia"                                     #< fabaceae
         vicia_faba: "Horsebean"                            #< vicia
         vicia_sativa: "Vicia sativa"                       #< vicia
@@ -4628,6 +4885,9 @@ eng:
         vicia_villosa_pepite: "Vicia villosa pepite"       #< vicia_villosa
         vicia_villosa_savane: "Vicia villosa savane"       #< vicia_villosa
         vicia_villosa_topaze: "Vicia villosa topaze"       #< vicia_villosa
+        virus: "Virus"                                     #< matter
+        vitex: "Vitex"                                     #< lamiaceae
+        vitex_agnus_castus: "Vitex agnus castus"           #< vitex
         vitis: "Vitis"                                     #< plant
         vitis_cinerea: "Vitis cinerea"                     #< vitis
         vitis_cinerea_x_vitis_riparia: "Vitis cinerea x vitis riparia" #< vitis
@@ -4680,6 +4940,8 @@ eng:
         vitis_vinifera_ugni_blanc: "Common grape vine Ugni blanc" #< vitis_vinifera
         walnut: "Walnut"                                   #< fruit
         water: "Water"                                     #< matter
+        weigela: "Weigela"                                 #< diervillaceae
+        weigela_floribunda: "Weigela floribunda"           #< weigela
         wine: "Wine"                                       #< fermented_juice
         wire: "Wire"                                       #< packaged_matter
         worker: "Worker"                                   #< product
@@ -4695,6 +4957,7 @@ eng:
         zea_lg30533: "Corn LG 30.533"                      #< zea
         zea_lg3490: "Corn LG 34.90"                        #< zea
         zea_lg3530: "Corn LG 35.30"                        #< zea
+        zea_mays_everta: "Pop corn"                        #< zea
         zea_mays_saccharata: "Sweet corn"                  #< zea
         zea_shannon: "Corn Shannon"                        #< zea
         zeuzera_pyrina: "Zeuzera pyrina"                   #< insecta
@@ -4707,6 +4970,14 @@ eng:
       items:
         animal_foods: "Animal foods"
         animal_medicines: "Animal medicines"
+        animal_products: "Animal products"
         matters: "Matters"
         oenological_regulateds: "Oenological regulateds products"
         phytosanitary_products: "Phytosanitary products"
+        plant_fertilizers: "Plant fertilizers"
+        plant_medicines: "Plant medicines"
+        plant_products: "Plant products"
+        plant_seedlings: "Plant seedlings"
+        transformed_products: "Transformed products"
+        wine_tanks: "Wine tanks"
+        wine_transformers: "Wine transformers"

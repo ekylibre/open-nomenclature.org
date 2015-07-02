@@ -9,6 +9,8 @@
       <item name="doer"/>
       <item name="input_origin"/>
       <item name="container"/>
+      <item name="includer"/>
+      <item name="variant"/>
     </items>
   </nomenclature>
 </nomenclatures>

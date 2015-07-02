@@ -7,11 +7,20 @@
       <property-nature name="activity_families" type="list" nomenclature="activity_families" required="true"/>
     </property-natures>
     <items>
+      <!-- "Core" types -->
+      <item name="group_inclusion"      roles="target, includer"                activity_families="exploitation, vegetal_crops, animal_farming, processing, service, maintenance"/>
+      <item name="group_exclusion"      roles="target, includer"                activity_families="exploitation, vegetal_crops, animal_farming, processing, service, maintenance"/>
+      <item name="product_evolution"    roles="target, variant"                 activity_families="exploitation, vegetal_crops, animal_farming, processing, service, maintenance"/>
+      <item name="product_moving"       roles="target, container, doer"         activity_families="exploitation, vegetal_crops, animal_farming, processing, service, maintenance"/>
+
+      <!-- "Complex" types -->
       <item name="animal_nutrition"     roles="input, target, doer, tool"       activity_families="animal_farming"/>
       <item name="animal_care"          roles="input, target, doer"             activity_families="animal_farming"/>
       <item name="animal_fecondation"   roles="input_origin, input, target, doer" activity_families="animal_farming"/>
       <item name="animal_moving"        roles="input, target, doer"             activity_families="animal_farming"/>
+      <item name="animal_changing"      roles="target, input, doer, variant"             activity_families="animal_farming"/>
       <item name="animal_group_changing" roles="input, target"                  activity_families="animal_farming"/>
+      <item name="animal_evolution"     roles="target, variant"                 activity_families="animal_farming"/>
       <item name="animal_production"    roles="target, output, doer"            activity_families="animal_farming"/>
       <item name="viviparous_birth"     roles="target, output"                  activity_families="cattle_farming, sheep_farming, goat_farming, pig_farming"/>
       <item name="oviparous_birth"      roles="target, output"                  activity_families="poultry_farming"/>
@@ -36,15 +45,16 @@
       <item name="grinding"             roles="doer, tool, target"              activity_families="vegetal_crops"/>
       <item name="cutting"              roles="doer, tool, target"              activity_families="arboriculture"/>
       <item name="growth_control"       roles="target"                          activity_families="vegetal_crops"/>
-      <item name="maintenance_task"     roles="target, doer"                    activity_families="exploitation"/>
-      <item name="administrative_task"  roles="doer"                            activity_families="exploitation"/>
+      <item name="maintenance_task"     roles="target, doer"                    activity_families="vegetal_crops, animal_farming, exploitation"/>
+      <item name="technical_task"       roles="target, doer"                    activity_families="vegetal_crops, animal_farming, exploitation"/>
+      <item name="administrative_task"  roles="doer"                            activity_families="vegetal_crops, animal_farming, exploitation"/>
     </items>
   </nomenclature>
 
   <nomenclature name="procedure_natures-implantation">
     <items>
       <item name="sowing"               roles="input, target, output, doer, tool, input_origin" activity_families="field_crops, market_garden_crops"/>
-      <item name="seed_mixing"          roles="input, output, doer"             activity_families="cereal_crops, corn_crops, oilseed_crops, protein_crops, fodder_crops, meadow"/>
+      <item name="seed_mixing"          roles="input, output, doer"             activity_families="cereal_crops, maize_crops, oilseed_crops, protein_crops, fodder_crops, meadow"/>
       <item name="implanting"           roles="input, target, output, doer, tool, input_origin" activity_families="arboriculture, fruits_crops, aromatic_and_medicinal_plants"/>
       <item name="mulching"             roles="input, target, doer, tool, input_origin" activity_families="market_garden_crops"/>
     </items>
@@ -59,18 +69,19 @@
 
   <nomenclature name="procedure_natures-harvest">
     <items>
-      <item name="grains_harvest"        roles="target, output, doer, tool"      activity_families="cereal_crops, corn_crops"/>
-      <item name="silage"               roles="target, output, doer, tool"       activity_families="corn_crops, fodder_crops, meadow, fallow_land"/>
-      <item name="grape_harvest"        roles="target, output, doer, tool"       activity_families="vines"/>
-      <item name="nuts_harvest"        roles="target, output, doer, tool"        activity_families="orchard_crops"/>
-      <item name="straw_processing"      roles="input, output, doer, tool"         activity_families="cereal_crops, fodder_crops, meadow, fallow_land"/>
+      <item name="grains_harvest"       roles="target, output, doer, tool"     activity_families="cereal_crops, maize_crops"/>
+      <item name="silage"               roles="target, output, doer, tool"     activity_families="maize_crops, fodder_crops, meadow, fallow_land"/>
+      <item name="grape_harvest"        roles="target, output, doer, tool"     activity_families="vines"/>
+      <item name="nuts_harvest"         roles="target, output, doer, tool"     activity_families="chestnut_orchards, hazel_orchards, walnut_orchards"/>
+      <item name="straw_processing"     roles="input, output, doer, tool"      activity_families="cereal_crops, fodder_crops, meadow, fallow_land"/>
+      <item name="gardening_harvest"    roles="target, doer, tool"             activity_families="market_garden_crops, arboriculture, flower_crops"/>
     </items>
   </nomenclature>
 
   <nomenclature name="procedure_natures-maintenance_task">
     <items>
-      <item name="consummables_addition" roles="target, doer, input"            activity_families="exploitation"/>
-      <item name="piece_replacement"    roles="target, doer, input"             activity_families="exploitation"/>
+      <item name="consummables_addition" roles="target, doer, input"           activity_families="exploitation"/>
+      <item name="piece_replacement"     roles="target, doer, input"           activity_families="exploitation"/>
     </items>
   </nomenclature>
 
@@ -78,7 +89,7 @@
     <items>
       <item name="grape_transport"      roles="doer, tool, target, container" activity_families="vines"/>
       <item name="grain_transport"      roles="doer, tool, target, container" activity_families="cereal_crops"/>
-      <item name="nuts_transport"        roles="doer, tool, target, container" activity_families="orchard_crops"/>
+      <item name="nuts_transport"       roles="doer, tool, target, container" activity_families="chestnut_orchards, hazel_orchards, walnut_orchards"/>
       <item name="straw_transport"      roles="doer, tool, target, container" activity_families="cereal_crops, fodder_crops, meadow"/>
     </items>
   </nomenclature>
@@ -136,7 +147,8 @@
 
   <nomenclature name="procedure_natures-animal_nutrition">
     <items>
-      <item name="food_supply"          roles="input, target, doer, tool"       activity_families="animal_farming"/>
+      <item name="food_supply"          roles="input, target, doer, tool, input_origin"       activity_families="animal_farming"/>
+      <item name="manual_food_supply"   roles="input, target, doer, input_origin"             activity_families="animal_farming"/>
       <item name="pasturing"            roles="input, target, doer"             activity_families="animal_farming"/>
       <item name="food_mixing"          roles="input, output, doer"             activity_families="animal_farming"/>
     </items>
@@ -153,7 +165,7 @@
     <items>
       <item name="chemical_weed_killing" roles="input, target, doer, tool, input_origin" activity_families="vegetal_crops, exploitation"/>
       <item name="physical_weed_killing" roles="target, doer, tool" activity_families="vegetal_crops, exploitation"/>
-      <item name="thermal_weed_killing" roles="target, doer, tool" activity_families="vegetal_crops, exploitation"/>
+      <item name="thermal_weed_killing"  roles="target, doer, tool" activity_families="vegetal_crops, exploitation"/>
     </items>
   </nomenclature>
 
