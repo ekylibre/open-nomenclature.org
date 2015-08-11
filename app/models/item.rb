@@ -18,20 +18,19 @@ class Item < ActiveRecord::Base
   include Translateable, Checkable
   belongs_to :nomenclature
   has_many :properties
-  belongs_to :parent, class_name: "Item"
+  belongs_to :parent, class_name: 'Item'
   acts_as_nested_set
 
   scope :root, -> { where(parent_id: nil) }
 
   def to_param
-    self.name
+    name
   end
 
   def get(property_nature)
     unless property_nature.is_a? PropertyNature
-      property_nature = self.nomenclature.property_nature.find_by(name: property_nature)
+      property_nature = nomenclature.property_nature.find_by(name: property_nature)
     end
-    return self.properties.find_by(nature_id: property_nature.id)
+    properties.find_by(nature_id: property_nature.id)
   end
-
 end

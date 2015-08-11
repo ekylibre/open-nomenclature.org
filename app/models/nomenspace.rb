@@ -19,6 +19,6 @@ class Nomenspace < ActiveRecord::Base
   acts_as_nested_set
 
   def to_param
-    self.name
+    name
   end
 end

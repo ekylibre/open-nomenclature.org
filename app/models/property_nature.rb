@@ -18,5 +18,5 @@
 class PropertyNature < ActiveRecord::Base
   include Translateable, Checkable
   belongs_to :nomenclature
-  belongs_to :choices, class_name: "Nomenclature"
+  belongs_to :choices, class_name: 'Nomenclature'
 end

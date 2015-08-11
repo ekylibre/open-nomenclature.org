@@ -21,7 +21,6 @@ class Nomenclature < ActiveRecord::Base
   has_many :items
 
   def to_param
-    self.name
+    name
   end
-
 end

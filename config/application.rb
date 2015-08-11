@@ -21,6 +21,5 @@ module Nomen
     config.i18n.load_path += Dir[Rails.root.join('config' 'locales', '**', '*.yml').to_s]
     config.i18n.default_locale = :fra
     # I18n.enforce_available_locales = false
-
   end
 end

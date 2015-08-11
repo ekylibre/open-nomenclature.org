@@ -1,5 +1,4 @@
 Nomen::Application.routes.draw do
-
   resources :nomenclatures do
     resources :attributes do
     end
@@ -10,5 +9,5 @@ Nomen::Application.routes.draw do
     end
   end
 
-  root to: "home#index"
+  root to: 'home#index'
 end

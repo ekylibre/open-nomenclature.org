@@ -1,7 +1,6 @@
 require 'csv'
 
 class NomenclaturesController < ApplicationController
-
   def index
     @nomenclatures = Nomenclature.localized
   end
@@ -13,5 +12,4 @@ class NomenclaturesController < ApplicationController
   def tree
     @nomenclature = Nomenclature.find_by(name: params[:id])
   end
-
 end

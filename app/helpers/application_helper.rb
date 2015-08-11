@@ -1,11 +1,8 @@
 module ApplicationHelper
-
-  def title(*args, &block)
+  def title(*args, &_block)
     default = "actions.#{controller_path}.#{action_name}".t
     if args.any?
-      if args.first.is_a?(String)
-        content_for(:title, args.first)
-      end
+      content_for(:title, args.first) if args.first.is_a?(String)
     elsif block_given?
       content_for(:title) do
         yield default
@@ -15,11 +12,8 @@ module ApplicationHelper
     end
   end
 
-
   def state_icon(record)
     classes = [:fa, :state, record.class.name.underscore, record.state]
-    return content_tag(:i, "", class: classes.join(' '))
+    content_tag(:i, '', class: classes.join(' '))
   end
-  
-
 end
