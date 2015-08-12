@@ -11,7 +11,7 @@ module Translateable
 
   module ClassMethods
     def translations_model
-      reflections[:translations].class_name.constantize
+      reflections['translations'].class_name.constantize
     end
   end
 

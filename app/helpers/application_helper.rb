@@ -16,4 +16,7 @@ module ApplicationHelper
     classes = [:fa, :state, record.class.name.underscore, record.state]
     content_tag(:i, '', class: classes.join(' '))
   end
+
+  def graph(_item)
+  end
 end

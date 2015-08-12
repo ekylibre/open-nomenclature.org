@@ -1,7 +1,7 @@
 eng:
   nomenclatures:
     abilities:
-      name: "Name"
+      name: "Abilities"
       property_natures:
         parameters: "Parameters"
       items:
@@ -63,7 +63,7 @@ eng:
         uncompact: "Uncompact"
         wrap: "Wrap"
     accounts:
-      name: "Name"
+      name: "Accounts"
       property_natures:
         debtor: "Debtor"
         fr_pcg82: "French PCG82"
@@ -1488,6 +1488,7 @@ eng:
         bordeaux_sciences_agro_istea_journals: "Bordeaux sciences agro istea journals"
         bovins_croissance_cattle_performance_controls: "Bovins Croissance cattle performance controls"
         charentes_alliance_incoming_deliveries: "Charentes alliance incoming deliveries"
+        charentes_alliance_outgoing_deliveries: "Charentes alliance outgoing deliveries"
         ebp_edi: "EBP EDI"
         ekylibre_activities: "Ekylibre activities"
         ekylibre_animal_groups: "Ekylibre animal groups"
@@ -1583,7 +1584,7 @@ eng:
         quandl_token: "Quandl token"
         synel_username: "Synel username"
     indicators:
-      name: "Name"
+      name: "Indicators"
       property_natures:
         choices: "Choices"
         curve: "Curve"
@@ -2066,7 +2067,7 @@ eng:
         high: "High"
         low: "Low"
     procedure_natures:
-      name: "Name"
+      name: "Procedure natures"
       property_natures:
         activity_families: "Activity families"
         roles: "Roles"
@@ -2311,6 +2312,7 @@ eng:
         pig_band: "Pig band"
         plant: "Plant"
         plant_medicine: "Plant medicine"
+        processed_grain: "Processed grain"
         processed_meat: "Processed meat"
         processed_milk: "Processed milk"
         professional_subscription: "Professional subscription"
@@ -2394,6 +2396,7 @@ eng:
           package: "Package"
           person: "Person"
           plant: "Plant"
+          quintal: "Quintal"
           roll: "Roll"
           room: "Room"
           round_bale: "Round bale"
@@ -2455,6 +2458,8 @@ eng:
         bos_vial: "Bos vial"
         bottle_75cl_wine: "Bottle 75cl wine"
         brassicaceae_fungicide: "Brassicaceae fungicide"
+        buckwheat_crop: "Buckwheat crop"
+        buckwheat_grain: "Buckwheat grain"
         building: "Building"
         building_division: "Building division"
         building_insurance: "Building insurance"
@@ -2516,6 +2521,7 @@ eng:
         coop:ammonitre_27_vr: "Coop:ammonitre 27 vr"
         coop:ammonitre_33_5_bb: "Coop:ammonitre 33 5 bb"
         coop:ammonitre_33_5_vr: "Coop:ammonitre 33 5 vr"
+        coop:arturio_barley_grain: "Coop:arturio barley grain"
         coop:atlantis_wg_3_kg: "Coop:atlantis wg 3 kg"
         coop:atlantis_wg_600_gr: "Coop:atlantis wg 600 gr"
         coop:aviator_xpro_5l: "Coop:aviator xpro 5l"
@@ -2548,12 +2554,14 @@ eng:
         coop:ceando_5_l: "Coop:ceando 5 l"
         coop:chardex_5_l: "Coop:chardex 5 l"
         coop:chlorure_60_gr_vr: "Coop:chlorure 60 gr vr"
+        coop:class_a_corn_grain: "Coop:class a corn grain"
         coop:da_lazuly_10kg: "Coop:da lazuly 10kg"
         coop:eca_excel_pack_protor_b_vrac: "Coop:eca excel pack protor b vrac"
         coop:eca_pack_tonus_b_vrac: "Coop:eca pack tonus b vrac"
         coop:elite_4_sc_5_l: "Coop:elite 4 sc 5 l"
         coop:esc_s_arturio_r1_gau_red_25kg: "Coop:esc s arturio r1 gau red 25kg"
         coop:esc_s_etincel_r1_gau_red_s25kg: "Coop:esc s etincel r1 gau red s25kg"
+        coop:etincel_barley_grain: "Coop:etincel barley grain"
         coop:extralugec_techn_o_15kg: "Coop:extralugec techn o 15kg"
         coop:fandango_s_5_l: "Coop:fandango s 5 l"
         coop:fertiactyl_starter: "Coop:fertiactyl starter"
@@ -2590,21 +2598,25 @@ eng:
         coop:moha_10kg: "Coop:moha 10kg"
         coop:moha_25kg: "Coop:moha 25kg"
         coop:nikeyl_5_l: "Coop:nikeyl 5 l"
+        coop:oleic_sunflower_grain: "Coop:oleic sunflower grain"
         coop:op_s_traveler_r1_cel_orge_net_s25kg: "Coop:op s traveler r1 cel orge net s25kg"
         coop:pois_s_kayanne_print_wakil_xl_r1_s25kg: "Coop:pois s kayanne print wakil xl r1 s25kg"
         coop:presite_sx_300_gr: "Coop:presite sx 300 gr"
         coop:prosaro_5_l: "Coop:prosaro 5 l"
         coop:ray_g_hyb_bahial_10kg: "Coop:ray g hyb bahial 10kg"
+        coop:red_label_caphorn_wheat_grain: "Coop:red label caphorn wheat grain"
         coop:sel_mer_essore_la_baleine_sac_25kg: "Coop:sel mer essore la baleine sac 25kg"
         coop:sorgho_ensilage_bmr_333_220mg: "Coop:sorgho ensilage bmr 333 220mg"
         coop:super_45_gr_vr: "Coop:super 45 gr vr"
         coop:super_46_gr_vr: "Coop:super 46 gr vr"
         coop:technomousse_500_ml: "Coop:technomousse 500 ml"
         coop:to_ol_ferti_150mg: "Coop:to ol ferti 150mg"
+        coop:traveler_barley_grain: "Coop:traveler barley grain"
         coop:trefle_alexandrie_s10k: "Coop:trefle alexandrie s10k"
         coop:trefle_v_segur_s10k: "Coop:trefle v segur s10k"
         coop:uree_gr_vrac: "Coop:uree gr vrac"
         coop:vesce_velue_savane_hiver_10k: "Coop:vesce velue savane hiver 10k"
+        coop:yellow_pea_grain: "Coop:yellow pea grain"
         corabel_hazelnut: "Corabel hazelnut"
         corker: "Corker"
         corn_crop: "Corn crop"
@@ -2676,6 +2688,7 @@ eng:
         fig_seedling: "Fig seedling"
         fiscal_fine: "Fiscal fine"
         flax_crop: "Flax crop"
+        flour: "Flour"
         food_equipment_division: "Food equipment division"
         food_show: "Food show"
         food_tank: "Food tank"
@@ -2767,6 +2780,7 @@ eng:
         leek_crop: "Leek crop"
         legal_registration: "Legal registration"
         lentil_crop: "Lentil crop"
+        lentil_grain: "Lentil grain"
         lettuce_crop: "Lettuce crop"
         lewis_hazelnut: "Lewis hazelnut"
         liquid_10_25_d1.4: "Liquid 10 25 d1.4"
@@ -2940,6 +2954,8 @@ eng:
         sorghum_seed_25: "Sorghum seed 25"
         sower: "Sower"
         soy_crop: "Soy crop"
+        soy_grain: "Soy grain"
+        spelt_grain: "Spelt grain"
         spelt_seed_25: "Spelt seed 25"
         spelt_wheat_crop: "Spelt wheat crop"
         sprayer: "Sprayer"
@@ -2971,6 +2987,7 @@ eng:
         tractor: "Tractor"
         trailer: "Trailer"
         triticale_crop: "Triticale crop"
+        triticale_grain: "Triticale grain"
         truck: "Truck"
         urban_compost: "Urban compost"
         various_loan_interest: "Various loan interest"
@@ -3005,7 +3022,7 @@ eng:
         young_rabbit: "Young rabbit"
         zea_herbicide: "Zea herbicide"
     product_natures:
-      name: "Name"
+      name: "Product natures"
       property_natures:
         abilities: "Abilities"
         category: "Category"
@@ -3203,6 +3220,7 @@ eng:
         preparation_division: "Preparation division"
         process_food: "Process food"
         processed_beef_meat: "Processed beef meat"
+        processed_grain: "Processed grain"
         processed_lamb_meat: "Processed lamb meat"
         processed_meat: "Processed meat"
         processed_pork_meat: "Processed pork meat"
@@ -3269,7 +3287,7 @@ eng:
         wire: "Wire"
         young_rabbit: "Young rabbit"
     production_natures:
-      name: "Name"
+      name: "Production natures"
       property_natures:
         activity: "Activity"
         production_code: "Production code"
@@ -3513,7 +3531,7 @@ eng:
         swiss_vat_particular_2011: "Swiss vat particular 2011"
         swiss_vat_reduced_2011: "Swiss vat reduced 2011"
     units:
-      name: "Name"
+      name: "Units"
       property_natures:
         a: "A"
         b: "B"
@@ -3618,7 +3636,7 @@ eng:
         unity_per_square_meter: "Unity per square meter"
         watt: "Watt"
     varieties:
-      name: "Name"
+      name: "Varieties"
       property_natures:
         derivative_of: "Derivative of"
         europa_tsn: "Europa number id"
@@ -3702,7 +3720,7 @@ eng:
         apium_graveolens_rapaceum: "Celeriac"              #< apium_graveolens
         apium_graveolens_secalinum: "Chinese celery"       #< apium_graveolens
         arachis: "Arachis"                                 #< fabaceae
-        arachis_hypogaea: "Peanut"                         #< arachis
+        arachis_hypogaea: "Common peanut"                  #< arachis
         arachis_pintoi: "Pintoi peanut"                    #< arachis
         arctium: "Arctium"                                 #< asteraceae
         arctium_lappa: "Arctium lappa"                     #< arctium
@@ -3952,20 +3970,20 @@ eng:
         cucurbita: "Cucurbita"                             #< cucurbitaceae
         cucurbita_argyrosperma: "Cushaw"                   #< cucurbita
         cucurbita_ficifolia: "Figleaf Gourd"               #< cucurbita
-        cucurbita_maxima: "WinterSquash"                   #< cucurbita
+        cucurbita_maxima: "Winter squash"                  #< cucurbita
         cucurbita_maxima_atlantic_giant: "Atlantic Giant"  #< cucurbita_maxima
         cucurbita_maxima_baleine: "Whale Pumpkin"          #< cucurbita_maxima
         cucurbita_maxima_blanc_de_mayet: "White Pumpkin"   #< cucurbita_maxima
-        cucurbita_maxima_bleu_de_hongrie: "Bleu de Hongrie Squash" #< cucurbita_maxima
-        cucurbita_maxima_buttercup: "Buttercup Squash"     #< cucurbita_maxima
+        cucurbita_maxima_bleu_de_hongrie: "Bleu de Hongrie squash" #< cucurbita_maxima
+        cucurbita_maxima_buttercup: "Buttercup squash"     #< cucurbita_maxima
         cucurbita_maxima_dalencon: "Alencon Gourd"         #< cucurbita_maxima
-        cucurbita_maxima_de_lohio: "Ohio Squash"           #< cucurbita_maxima
+        cucurbita_maxima_de_lohio: "Ohio squash"           #< cucurbita_maxima
         cucurbita_maxima_du_chili: "Chilian Gourd"         #< cucurbita_maxima
-        cucurbita_maxima_galeuse_deysines: "Galeux d'Eysines Squash" #< cucurbita_maxima
-        cucurbita_maxima_green_hubbard: "Green Hubbard Squash" #< cucurbita_maxima
+        cucurbita_maxima_galeuse_deysines: "Galeux d'Eysines squash" #< cucurbita_maxima
+        cucurbita_maxima_green_hubbard: "Green Hubbard squash" #< cucurbita_maxima
         cucurbita_maxima_gros_jaune_de_paris: "Yellow Gourd" #< cucurbita_maxima
-        cucurbita_maxima_marina_di_chioggia: "Marina di Chioggia Squash" #< cucurbita_maxima
-        cucurbita_maxima_maxima: "Common Winter Squash "   #< cucurbita_maxima
+        cucurbita_maxima_marina_di_chioggia: "Marina di Chioggia squash" #< cucurbita_maxima
+        cucurbita_maxima_maxima: "Common Winter squash "   #< cucurbita_maxima
         cucurbita_maxima_noir_du_bresil: "Black Brasilian Pumpkin" #< cucurbita_maxima
         cucurbita_maxima_potimarron: "Potimarron"          #< cucurbita_maxima
         cucurbita_maxima_rouge_vif_detampes: "Red Pumpkin" #< cucurbita_maxima
@@ -3988,7 +4006,7 @@ eng:
         cucurbita_pepo_ovifera: "Egg Field Pumpkin"        #< cucurbita_pepo
         cucurbita_pepo_pepo: "Zucchini"                    #< cucurbita_pepo
         cucurbita_pepo_round: "Round Zucchini"             #< cucurbita_pepo
-        cucurbita_pepo_spaghetti: "Spaghetti Squash"       #< cucurbita_pepo
+        cucurbita_pepo_spaghetti: "Spaghetti squash"       #< cucurbita_pepo
         cucurbitaceae: "Cucurbitaceae"                     #< plant
         cultivable_zone: "Cultivable zone"                 #< zone
         curculio_nucum: "Curculio nucum"                   #< insecta
@@ -4048,6 +4066,9 @@ eng:
         excrement: "Excrement"                             #< raw_matter
         fabaceae: "Fabaceae"                               #< plant
         fagaceae: "Fagaceae"                               #< plant
+        fagopyrum: "Buckwheat"                             #< polygonaceae
+        fagopyrum_esculentum: "Common buckwheat"           #< fagopyrum
+        fagopyrum_tataricum: "Japanese buckwheat"          #< fagopyrum
         fagus: "Beech"                                     #< fagaceae
         felidae: "Felidae"                                 #< mammalia
         fermented_juice: "Fermented juice"                 #< preparation
@@ -4283,10 +4304,12 @@ eng:
         poa: "Poa"                                         #< poaceae
         poaceae: "Poaceae"                                 #< plant
         pollen: "Pollen"                                   #< raw_matter
+        polygonaceae: "Polygonaceae"                       #< plant
         pomace: "Pomace"                                   #< preparation
         potassium_ferrocyanide: "Potassium ferrocyanide"   #< raw_matter
         preparation: "Preparation"                         #< matter
         press: "Press"                                     #< equipment
+        processed_grain: "Processed grain"                 #< preparation
         processed_meat: "Processed meat"                   #< preparation
         product: "Product"
         product_group: "Product group"                     #< product

@@ -21,6 +21,7 @@ class Item < ActiveRecord::Base
   belongs_to :parent, class_name: 'Item'
   acts_as_nested_set
 
+  delegate :name, to: :nomenclature, prefix: true
   scope :root, -> { where(parent_id: nil) }
 
   def to_param

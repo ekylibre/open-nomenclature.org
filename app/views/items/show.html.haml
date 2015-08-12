@@ -11,7 +11,11 @@
     - for format in [:xml, :json, :csv]
       = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
 
+%h2 ID
+%strong= @item.name      
+
 - if @item.properties.any?
+  %h2 Properties
   %table.table.table-bordered.table-striped
     %thead
       %tr
@@ -22,3 +26,29 @@
         %tr
           %td= property.label
           %td= property.value
+
+- if @item.parent
+  %h2 Parent        
+  - item = @item.parent
+  = link_to(item.label, nomenclature_item_path(item.nomenclature_name, item.name))
+  = h(" (") + link_to(item.name, nomenclature_item_path(item.nomenclature_name, item.name)) + h(")")
+                
+- if @item.siblings.any?
+  %h2 Siblings
+  %ul
+    - for item in @item.siblings
+      %li
+        = link_to(item.label, nomenclature_item_path(item.nomenclature_name, item.name))
+        = h(" (") + link_to(item.name, nomenclature_item_path(item.nomenclature_name, item.name)) + h(")")
+          
+- if @item.children.any?
+  %h2 Children
+  %ul
+    - for item in @item.children
+      %li
+        = link_to(item.label, nomenclature_item_path(item.nomenclature_name, item.name))
+        = h(" (") + link_to(item.name, nomenclature_item_path(item.nomenclature_name, item.name)) + h(")")
+
+        
+          
+          
