@@ -119,19 +119,21 @@ ActiveRecord::Schema.define(version: 20140227154532) do
   add_index "property_nature_translations", ["language"], name: "index_property_nature_translations_on_language", using: :btree
 
   create_table "property_natures", force: :cascade do |t|
-    t.integer  "nomenclature_id",                 null: false
-    t.string   "name",                            null: false
-    t.string   "datatype",                        null: false
-    t.boolean  "required",        default: false, null: false
+    t.integer  "nomenclature_id",                           null: false
+    t.string   "name",                                      null: false
+    t.string   "datatype",                                  null: false
+    t.boolean  "required",                  default: false, null: false
     t.text     "default_value"
     t.string   "fallbacks"
-    t.string   "state",                           null: false
-    t.integer  "choices_id"
+    t.string   "state",                                     null: false
+    t.integer  "choices_nomenclature_id"
+    t.string   "choices_nomenclature_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "property_natures", ["choices_id"], name: "index_property_natures_on_choices_id", using: :btree
+  add_index "property_natures", ["choices_nomenclature_id"], name: "index_property_natures_on_choices_nomenclature_id", using: :btree
+  add_index "property_natures", ["choices_nomenclature_name"], name: "index_property_natures_on_choices_nomenclature_name", using: :btree
   add_index "property_natures", ["name"], name: "index_property_natures_on_name", using: :btree
   add_index "property_natures", ["nomenclature_id"], name: "index_property_natures_on_nomenclature_id", using: :btree
 

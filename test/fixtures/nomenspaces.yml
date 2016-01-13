@@ -4,8 +4,8 @@
 #
 #  id         :integer          not null, primary key
 #  parent_id  :integer
-#  name       :string(255)      not null
-#  state      :string(255)      not null
+#  name       :string           not null
+#  state      :string           not null
 #  lft        :integer
 #  rgt        :integer
 #  depth      :integer

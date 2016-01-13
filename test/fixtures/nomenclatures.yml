@@ -5,10 +5,10 @@
 #  id            :integer          not null, primary key
 #  nomenspace_id :integer
 #  property_id   :integer
-#  name          :string(255)      not null
+#  name          :string           not null
 #  translateable :boolean          default(FALSE), not null
 #  hierarchical  :boolean          default(FALSE), not null
-#  state         :string(255)      not null
+#  state         :string           not null
 #  created_at    :datetime
 #  updated_at    :datetime
 #

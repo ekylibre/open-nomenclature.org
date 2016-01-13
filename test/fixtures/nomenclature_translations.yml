@@ -4,7 +4,7 @@
 #
 #  id              :integer          not null, primary key
 #  nomenclature_id :integer          not null
-#  language        :string(255)      not null
+#  language        :string           not null
 #  label           :text
 #  description     :text
 #  created_at      :datetime

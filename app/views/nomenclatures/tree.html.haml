@@ -1,19 +1,4 @@
-- title do
-  %h1
-    = link_to(nomenclatures_path, class: :home) do
-      %i
-    %span= "/"
-    = @nomenclature.label
-  %p
-    - for format in [:xml, :json, :csv]
-      = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
-    = link_to(nomenclature_path(@nomenclature), class: "label label-primary list") do
-      %i
+= render 'title'
 
-
-%ul
-  - for item in @nomenclature.items.root.localized
-    = render "item", item: item
-
-
--# %ul= render partial: "item", collection: @nomenclature.items.root.localized
+= cache @nomenclature, :tree do
+  .tree= render 'list', items: @nomenclature.items.root

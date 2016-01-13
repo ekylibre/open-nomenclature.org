@@ -28,17 +28,13 @@ module Translateable
   end
 
   def label=(value)
-    unless translation = translations.find_by(language: I18n.locale)
-      translation = translations.build(language: I18n.locale)
-    end
+    translation = translations.find_or_initialize_by(language: I18n.locale)
     translation.label = value
     translation.save!
   end
 
   def description=(value)
-    unless translation = translations.find_by(language: I18n.locale)
-      translation = translations.build(language: I18n.locale)
-    end
+    translation = translations.find_or_initialize_by(language: I18n.locale)
     translation.description = value
     translation.save!
   end

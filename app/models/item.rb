@@ -5,8 +5,9 @@
 #  id              :integer          not null, primary key
 #  nomenclature_id :integer          not null
 #  parent_id       :integer
-#  name            :string(255)      not null
-#  state           :string(255)      not null
+#  parent_name     :string
+#  name            :string           not null
+#  state           :string           not null
 #  lft             :integer
 #  rgt             :integer
 #  depth           :integer
@@ -26,6 +27,10 @@ class Item < ActiveRecord::Base
 
   def to_param
     name
+  end
+
+  def siblings
+    super.where(nomenclature: nomenclature)
   end
 
   def get(property_nature)

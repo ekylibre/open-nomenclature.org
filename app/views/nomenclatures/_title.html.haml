@@ -1,0 +1,15 @@
+- title do
+  %h1
+    = link_to(nomenclatures_path, class: :home) do
+      %i
+    %span= "/"
+    = @nomenclature.label
+  %p
+    - for format in [:xml, :json, :csv]
+      = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
+    - if action_name == 'tree'
+      = link_to(nomenclature_path(@nomenclature), class: "label label-primary list") do
+        %i
+    - else
+      = link_to(tree_nomenclature_path(@nomenclature), class: "label label-primary tree") do
+        %i

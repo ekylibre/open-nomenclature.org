@@ -8,7 +8,7 @@
     %span= "/"
     = @item.label
   %p
-    - for format in [:xml, :json, :csv]
+    - [:xml, :json, :csv].each do |format|
       = link_to(format.to_s.upcase, {format: format}, class: "label label-primary")
 
 %h2 ID
@@ -22,10 +22,10 @@
         %th= Property.human_attribute_name(:name)
         %th= Property.human_attribute_name(:value)
     %tbody
-      - for property in @item.properties
+      - @item.properties.each do |property|
         %tr
           %td= property.label
-          %td= property.value
+          %td= human_property(property)
 
 - if @item.parent
   %h2 Parent        
@@ -36,7 +36,7 @@
 - if @item.siblings.any?
   %h2 Siblings
   %ul
-    - for item in @item.siblings
+    - @item.siblings.each do |item|
       %li
         = link_to(item.label, nomenclature_item_path(item.nomenclature_name, item.name))
         = h(" (") + link_to(item.name, nomenclature_item_path(item.nomenclature_name, item.name)) + h(")")
@@ -44,7 +44,7 @@
 - if @item.children.any?
   %h2 Children
   %ul
-    - for item in @item.children
+    - @item.children.each do |item|
       %li
         = link_to(item.label, nomenclature_item_path(item.nomenclature_name, item.name))
         = h(" (") + link_to(item.name, nomenclature_item_path(item.nomenclature_name, item.name)) + h(")")

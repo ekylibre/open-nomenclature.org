@@ -52,9 +52,11 @@ class CreateBase < ActiveRecord::Migration
       t.text :default_value
       t.string :fallbacks
       t.string :state, null: false
-      t.references :choices, index: true
+      t.references :choices_nomenclature, index: true
+      t.string :choices_nomenclature_name
       t.timestamps
       t.index :name
+      t.index :choices_nomenclature_name
     end
 
     for reference in [:nomenspace, :nomenclature, :item, :property_nature]

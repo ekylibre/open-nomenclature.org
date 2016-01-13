@@ -117,3 +117,22 @@ table {
     text-align: center;
     padding: 8px;
 }
+
+.tree {
+  li {
+    list-style-type: none;
+  }
+}
+
+
+.item {
+  > .item-actions {
+    
+    .collapse { display: inline-block; }
+    .expand { display: none; }
+  }
+  &.collapsed > .item-actions {
+    .collapse { display: none; }
+    .expand { display: inline-block; }
+  }
+}

@@ -1,0 +1,13 @@
+%ul.item-list
+  - items.localized.each do |item|
+    %li.item
+      %span.item-actions
+        - if item.children.any?
+          = link_to('#', data: {toggle: 'tree'}) do
+            %i.fa.fa-minus-square-o.collapse
+            %i.fa.fa-plus-square-o.expand
+        - else
+          %i.fa.fa-square-o
+      %span.item-label= link_to(item.label, nomenclature_item_path(@nomenclature, item))
+      - if item.children.any?
+        = render 'list', items: item.children
