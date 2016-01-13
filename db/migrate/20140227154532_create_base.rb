@@ -26,6 +26,7 @@ class CreateBase < ActiveRecord::Migration
     create_table :items do |t|
       t.references :nomenclature, null: false, index: true
       t.references :parent, index: true
+      t.string :parent_name
       t.string :name,                          null: false
       t.string :state,                         null: false
       t.integer :lft
@@ -33,6 +34,7 @@ class CreateBase < ActiveRecord::Migration
       t.integer :depth
       t.timestamps
       t.index :name
+      t.index :parent_name
     end
 
     create_table :properties do |t|

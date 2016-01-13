@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140227154532) do
   create_table "items", force: :cascade do |t|
     t.integer  "nomenclature_id", null: false
     t.integer  "parent_id"
+    t.string   "parent_name"
     t.string   "name",            null: false
     t.string   "state",           null: false
     t.integer  "lft"
@@ -42,6 +43,7 @@ ActiveRecord::Schema.define(version: 20140227154532) do
   add_index "items", ["name"], name: "index_items_on_name", using: :btree
   add_index "items", ["nomenclature_id"], name: "index_items_on_nomenclature_id", using: :btree
   add_index "items", ["parent_id"], name: "index_items_on_parent_id", using: :btree
+  add_index "items", ["parent_name"], name: "index_items_on_parent_name", using: :btree
 
   create_table "nomenclature_translations", force: :cascade do |t|
     t.integer  "nomenclature_id", null: false
