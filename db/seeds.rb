@@ -61,9 +61,9 @@ end
 
 def set_parents
   Nomenclature.find_each do |nomenclature|
-    print "<#{nomenclature.name}"
-    ActiveRecord::Base.connection.execute("UPDATE items SET parent_id = i.id FROM items AS i WHERE nomenclature_id = #{nomenclature.id} AND parent_name = i.name")
-    print '>'
+    print " - #{nomenclature.name}"
+    ActiveRecord::Base.connection.execute("UPDATE items SET parent_id = i.id FROM items AS i WHERE items.nomenclature_id = #{nomenclature.id} AND i.nomenclature_id = #{nomenclature.id} AND items.parent_name = i.name")
+    puts '!'
   end
 end
 
