@@ -1,6 +1,6 @@
 = render 'title'
 
-= cache @nomenclature, :list do
+= cache [@nomenclature, :list] do
   - property_natures = @nomenclature.property_natures
   %table.table.table-bordered.table-striped
     %thead
