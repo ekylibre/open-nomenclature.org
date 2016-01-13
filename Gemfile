@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -36,6 +36,11 @@ gem 'haml'
 gem 'rails-i18n'
 gem 'i18n-complements'
 gem 'http_accept_language'
+
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem 'devise-bootstrap-views'
 
 gem 'nokogiri', '~> 1.6.0'
 
