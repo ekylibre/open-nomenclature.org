@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<nomenclatures xmlns="http://www.ekylibre.org/XML/2013/nomenclatures" version="20160206163031">
+<nomenclatures xmlns="http://www.ekylibre.org/XML/2013/nomenclatures" version="20160310145038">
   <nomenclature name="abilities" translateable="true">
     <properties>
       <property name="parameters" type="choice_list" choices="variety, issue_nature"/>
@@ -106,7 +106,8 @@
       <item name="animals_making_expenses_expenses" fr_pcga="6054"/>
       <item name="animals_subsidies" fr_pcga="7454"/>
       <item name="associate_social_contribution_expenses" fr_pcga="646"/>
-      <item name="associated_accounts" fr_pcga="455"/>
+      <item name="associates_current_accounts" fr_pcga="455"/>
+      <item name="associates_frozen_accounts" fr_pcga="4553"/>
       <item name="associates_salary" fr_pcga="6413"/>
       <item name="attorneys" fr_pcg82="467"/>
       <item name="banks" fr_pcg82="512"/>
@@ -222,7 +223,6 @@
       <item name="living_corporeal_assets" fr_pcga="24"/>
       <item name="loans" fr_pcg82="164"/>
       <item name="loans_interests" fr_pcg82="661"/>
-      <item name="locked_associated_accounts" fr_pcga="4553"/>
       <item name="long_cycle_animals_inventory_variations" fr_pcga="7131"/>
       <item name="long_cycle_cultivation_advances" fr_pcga="331"/>
       <item name="long_cycle_products_liquors_stock" fr_pcga="352"/>
@@ -304,7 +304,7 @@
       <item name="plant_medicine_matter_expenses" fr_pcga="6013"/>
       <item name="plant_medicine_stock" fr_pcga="3013"/>
       <item name="plants_subsidies" fr_pcga="7451"/>
-      <item name="principal_associated_accounts" fr_pcga="4551"/>
+      <item name="principal_associates_current_accounts" fr_pcga="4551"/>
       <item name="processing_products_revenues" fr_pcga="703"/>
       <item name="processing_products_stock" fr_pcga="376"/>
       <item name="products_inventory_variations" fr_pcga="7137"/>
@@ -376,7 +376,7 @@
       <item name="transports_expenses" fr_pcga="624"/>
       <item name="travels_expenses" fr_pcga="625"/>
       <item name="unstorable_expenses" fr_pcg82="606"/>
-      <item name="usual_associated_accounts" fr_pcga="4552"/>
+      <item name="usual_associates_current_accounts" fr_pcga="4552"/>
       <item name="usual_bank_overdraft" fr_pcg82="519"/>
       <item name="vat" fr_pcga="445"/>
       <item name="vegetals_making_services_expenses" fr_pcga="6051"/>
@@ -2230,6 +2230,7 @@
       <item name="raking" parent="tillage" roles="target, doer, tool" activity_families="plant_farming"/>
       <item name="remontage" parent="transformation" roles="target, doer" activity_families="processing"/>
       <item name="seed_mixing" parent="implantation" roles="input, output, doer" activity_families="plant_farming, plant_farming, plant_farming, plant_farming, plant_farming, plant_farming"/>
+      <item name="seedling_sorting" parent="transformation" roles="input, output, doer, tool" activity_families="processing"/>
       <item name="silage" parent="harvest" roles="target, output, doer, tool" activity_families="plant_farming, plant_farming, plant_farming, plant_farming"/>
       <item name="soil_cleaning" roles="target" activity_families="animal_farming"/>
       <item name="soil_enrichment" roles="input, target, tool, input_origin" activity_families="plant_farming"/>
@@ -3146,7 +3147,7 @@
       <item name="ferry" category="equipment" variety="equipment" population_counting="unitary" abilities="store(grain), store(plant)" frozen_indicators="" variable_indicators="nominal_storable_net_volume, nominal_storable_easement_area, nominal_storable_net_mass, geolocation"/>
       <item name="fiscal_fine" category="fiscal_fine" variety="service" population_counting="decimal" variable_indicators=""/>
       <item name="flower_crop" category="crop" variety="plant" population_counting="decimal" abilities="consume(water), consume(preparation), produce(pollen), produce(flower), produce(straw), produce(grain)" variable_indicators="plant_life_state, plants_count, shape" frozen_indicators="net_surface_area" derivatives="pollen, flower, straw, grain"/>
-      <item name="foliar_spray" category="plant_medicine" variety="preparation" population_counting="decimal" abilities="care(plant), fertilize, kill(insecta), kill(fugus)" variable_indicators="approved_input_dose, untreated_zone_length, wait_before_entering_period, wait_before_harvest_period" frozen_indicators="net_volume, net_mass"/>
+      <item name="foliar_spray" category="plant_medicine" variety="preparation" population_counting="decimal" abilities="care(plant), fertilize, kill(insecta), kill(fungus)" variable_indicators="approved_input_dose, untreated_zone_length, wait_before_entering_period, wait_before_harvest_period" frozen_indicators="net_volume, net_mass"/>
       <item name="food_distributor" category="equipment" variety="food_deliver" population_counting="unitary" abilities="deliver(silage),deliver(straw),deliver(hay)" variable_indicators="nominal_storable_net_volume, nominal_storable_net_mass" frozen_indicators=""/>
       <item name="food_equipment_division" category="building_division" variety="building_division" population_counting="unitary" abilities="store(equipment), store(grass), store(mix), store(seed)" variable_indicators="net_surface_area, shape, nominal_storable_net_volume, nominal_storable_easement_area" frozen_indicators=""/>
       <item name="food_tank" category="equipment" variety="tank" population_counting="unitary" abilities="store(mix)" variable_indicators="nominal_storable_net_volume, nominal_storable_net_mass" frozen_indicators=""/>
@@ -3246,7 +3247,7 @@
       <item name="oyster_band" category="oyster_band" variety="ostreidae" population_counting="integer" abilities="move, consume(water)" variable_indicators=""/>
       <item name="packaged_process_food" category="fruit" variety="mix" derivative_of="fruit" population_counting="integer" variable_indicators="best_before_period" frozen_indicators="net_mass, net_volume"/>
       <item name="peanut" category="fruit" variety="peanut" derivative_of="arachis" population_counting="decimal" variable_indicators="impurity_concentration, water_content_rate" frozen_indicators="net_mass"/>
-      <item name="picker" category="equipment" variety="equipment" population_counting="unitary" abilities="pick" frozen_indicators="" variable_indicators="application_width, geolocation"/>
+      <item name="picker" category="equipment" variety="equipment" population_counting="unitary" abilities="pick(fruit)" frozen_indicators="" variable_indicators="application_width, geolocation"/>
       <item name="pig_band" category="pig_band" variety="sus" population_counting="integer" abilities="move, consume(water), consume(poaceae), produce(excrement), consume(mix)" variable_indicators="healthy" frozen_indicators="sex, reproductor" derivatives="meat"/>
       <item name="pig_herd" category="cattle_herd" variety="animal_group" derivative_of="sus" population_counting="integer" abilities="move, consume(water), consume(poaceae), produce(excrement), consume(mix), consume(silage)" frozen_indicators=""/>
       <item name="piglet_band" category="pig_band" variety="sus" population_counting="integer" abilities="move, consume(water), consume(poaceae), produce(excrement), consume(mix)" variable_indicators="healthy" frozen_indicators="reproductor" derivatives="meat"/>
@@ -4144,6 +4145,8 @@
       <item name="chenopodium" parent="amaranthaceae" itis_tsn="20589"/>
       <item name="chenopodium_album" parent="chenopodium" itis_tsn="20592"/>
       <item name="chenopodium_quinoa" parent="chenopodium" itis_tsn="506567"/>
+      <item name="chloris" parent="poaceae"/>
+      <item name="chloris_gayana" parent="chloris" itis_tsn="41565"/>
       <item name="chrysopogon" parent="poaceae" itis_tsn="41576"/>
       <item name="chrysopogon_zizanioides" parent="chrysopogon" itis_tsn="782799"/>
       <item name="cicer" parent="fabaceae" itis_tsn="26536"/>

@@ -1,5 +1,4 @@
 AllCops:
-  RunRailsCops: true
   Exclude:
     - 'vendor/**/*'
     - 'tmp/**/*'
@@ -10,3 +9,6 @@ AllCops:
 
 Metrics/LineLength:
   Enabled: false
+
+Rails:
+  Enabled: true
