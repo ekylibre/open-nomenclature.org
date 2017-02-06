@@ -39,11 +39,13 @@ def import_items(nomenclature, name, subsets)
   print "<#{name}"
   subsets[name].xpath('xmlns:items/xmlns:item').each do |element|
     item = Item.create!(name: element.attr(:name), nomenclature: nomenclature, state: 'approved', parent_name: element.attr('parent'))
-    LOCALES.each do |locale|
-      I18n.with_locale(locale) do
-        item.label = "nomenclatures.#{nomenclature.name}.items.#{item.name}".t
+    if nomenclature.translateable?
+      LOCALES.each do |locale|
+        I18n.with_locale(locale) do
+          item.label = "nomenclatures.#{nomenclature.name}.items.#{item.name}".t
+        end
       end
-    end if nomenclature.translateable?
+    end
 
     nomenclature.property_natures.each do |property_nature|
       next unless element.has_attribute?(property_nature.name)

@@ -3,7 +3,7 @@ rm -fr config/locales/nomenclatures.* db/import
 mkdir -p db/import/nomenclatures/
 cp ../ekylibre/db/nomenclatures/db.xml db/import/nomenclatures/
 mkdir -p config/locales
-for locale in arb eng fra jpn por spa
+for locale in arb eng fra jpn por spa cmn deu ita
 do
     cp -r ../ekylibre/config/locales/$locale/nomenclatures.yml config/locales/nomenclatures.${locale}.yml
 done

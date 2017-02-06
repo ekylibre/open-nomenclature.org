@@ -17,13 +17,13 @@ module Translateable
 
   def label
     if translation = translations.find_by(language: I18n.locale)
-      return translation.label
+      translation.label
     end
   end
 
   def description
     if translation = translations.find_by(language: I18n.locale)
-      return translation.description
+      translation.description
     end
   end
 

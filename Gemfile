@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.7.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -16,8 +16,8 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 gem 'jquery-turbolinks'
+gem 'turbolinks'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
@@ -28,19 +28,20 @@ gem 'faker'
 
 gem 'annotate'
 
-gem 'enumerize'
 gem 'awesome_nested_set', '~> 3.0.0'
+gem 'enumerize'
 
 gem 'haml'
 
-gem 'rails-i18n'
-gem 'i18n-complements'
 gem 'http_accept_language'
+gem 'i18n-complements'
+gem 'rails-i18n'
+gem 'routing-filter'
 
 gem 'devise'
+gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
-gem 'devise-bootstrap-views'
 
 gem 'nokogiri', '~> 1.6.0'
 
@@ -82,7 +83,7 @@ end
 group :test do
   gem 'capybara'
   gem 'capybara-webkit'
-  gem 'selenium-webdriver'
-  gem 'database_cleaner'
   gem 'coveralls', '>= 0.6', require: false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
 end

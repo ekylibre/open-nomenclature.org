@@ -1,4 +1,6 @@
 Nomen::Application.routes.draw do
+  filter :locale
+
   resources :nomenclatures do
     resources :attributes do
     end
@@ -9,5 +11,5 @@ Nomen::Application.routes.draw do
     end
   end
 
-  root to: 'home#index'
+  root to: 'nomenclatures#index'
 end

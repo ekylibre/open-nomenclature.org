@@ -17,8 +17,7 @@ module ApplicationHelper
     content_tag(:i, '', class: classes.join(' '))
   end
 
-  def graph(_item)
-  end
+  def graph(_item); end
 
   def human_property(*args)
     if args.first.is_a?(Property)
