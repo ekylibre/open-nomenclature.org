@@ -43,7 +43,7 @@ gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 
-gem 'nokogiri', '~> 1.6.0'
+gem 'nokogiri', '~> 1.13.4'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
